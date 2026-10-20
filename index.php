@@ -366,6 +366,10 @@
         </div>
     </footer>
 
+    <script defer src="https://vps.alexxz.ru/tracker/static/tracker.js"
+            data-site-key="fsGaFTXh1jtgWDGeo1l73o_tuSgjK63jy8hpt2rS5YU"
+            data-start="auto"></script>
+
     <!-- Вставьте свой счётчик Яндекс.Метрики здесь -->
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
