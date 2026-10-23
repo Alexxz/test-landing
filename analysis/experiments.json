@@ -382,7 +382,7 @@
     },
     {
       "id": "e02_compact_form",
-      "status": "ready_for_deploy",
+      "status": "measured",
       "hypothesis": "A tall four-field form with a large purpose textarea discourages completion after CTA; compact layout and example text reduce effort.",
       "changes": [
         "Two-column form on desktop, one column below 560px",
@@ -400,7 +400,196 @@
         "registration_view -> focus on phone/email/purpose -> conversion_success"
       ],
       "request": "Deploy and run one isolated 100-visit simulation. Report result and start/end times.",
-      "success_target": 0.5
+      "success_target": 0.5,
+      "results": {
+        "simulator": {
+          "visits": 100,
+          "orders": 10,
+          "errors": 0,
+          "duration_seconds": 550.6,
+          "conversion": 0.1
+        },
+        "session_ids": [
+          "-6x3AsY7L6HDvGPMhtYaTWLf",
+          "-FQ3vBCYjk53R_3y2rhDz5ys",
+          "-f2JEzvCAa23xGRZTGDdsbo1",
+          "-gs-hIGe9EUtjD4TgNnxMd7D",
+          "0865oQpyBTi5hTduYlIudL7n",
+          "0AR0-xUIKa9aqXCgjG5evBZb",
+          "0iu34rqTZFBJu1lmxULvJCQr",
+          "1JPgKTHa-qT1hJg5CJ_6Osbu",
+          "1QtlCEogffqMHvLaPcOIP60s",
+          "1X9AiCuOlfkcAAn0pRAg6z95",
+          "2SaOWWVWWdSqez9K7VOMcEx5",
+          "2yvyHeALfzCW40CCdIjWwljL",
+          "3aKdjO6LWdx-u51o_8JhIhPx",
+          "5INpp2UpSMHs-_qTA1F70cmP",
+          "6iBdNgQsvl2pibpOSH_yIVHb",
+          "6jCYzCAU52rBAojPm2TTuedZ",
+          "AQasGOOe2uXtapGmvlvAJkS8",
+          "Bj2j7HaGQqVCQvyX4PSq18VW",
+          "Bx99DLS7VwNWVlFkyIiHq4sD",
+          "C69Z22tayHcrZU0igh4BueJB",
+          "CgPCKGFvWveQQrUzo1J6BiCg",
+          "DP-6mRv8Xw0kKFunTNpPYPXz",
+          "Doc8V53UvLMQg7qfEerCXMfi",
+          "DvGmpWgd15aKmbo4ZhCIMSOi",
+          "EV-1yUaoznazrTzzrNHEqgoX",
+          "Eau79lhf2wptYqeVIcAmi-f3",
+          "EdWsVOfZnH81_6ZR_DTdpqY0",
+          "EsOSV9QeZFllpiz0QMx2ocmZ",
+          "F-VC9wZoVzqY3BJFfMRUVwJX",
+          "F8zWUQKCcbK5YYi19Yr7gpXc",
+          "FM7kNp6V1-YgZBiVJnCUOnag",
+          "G_34mLCNuEFN5W8fhCSxzht4",
+          "IGfp0radAxM-0d_V3_LxOVSX",
+          "KvX8Skx6owf-sRZt6_H9LwsH",
+          "NGkvGlkAWKZliTMFa03o_Lb_",
+          "NvFFK4dpJLvztHwnDSd0nvSn",
+          "O4-BPKdw2-2VS-ZtS7WqkAAh",
+          "ODqstrtio5lN9pJgf4VIHL6Z",
+          "QIuRSZpGGnLmTUPeC3913-7W",
+          "R2Bvdabvs_my-GYs50cXFYM4",
+          "R5PQuJF_bQ0jKbORhKi2a8eR",
+          "R93jw8-LiODNWKsYU9cSUHx4",
+          "RTmyC1xaZibQRINJhX-4v2uC",
+          "RaSmZYsMhW5bRf6xt1DVj7PP",
+          "RhBf0sryy9ku5vB5ZMR-GbHM",
+          "S0pyfjGyxnUNxCvC13S8gR6b",
+          "TfJYBxH--cgRSW_pIgdxRdu2",
+          "VBELysAWyvrHXjyzISu4JMtS",
+          "X7PO0Gg912MPHdJOclr6CxMu",
+          "XkHf8WqAb7iXR0Tcyl5sW2TJ",
+          "XrwRpsmTS5OQQlNsnRAAdtB0",
+          "YrT3etGAt8tct7xE02oSC2X-",
+          "Z9NZRvcfhlvyk_Ty4wS78_LU",
+          "_Euk6-lLPeEywN44amU_4kqN",
+          "_p-VAxEEGzsnNK7fEFKHDMmX",
+          "_yeKASHKl8YUlIJ94bS9Galc",
+          "aQPYzV4Nn2iMCfphYJ13z8E2",
+          "axEM8I1Nrt36IHOlqR-mY8o8",
+          "b-MSWjcJqp-xDm1gnPUToP6b",
+          "brfCGEPrJxwSUKj4c234SifL",
+          "c5b_OttzITC5C6FSbFUnP_gB",
+          "cFQ8-ec0S6NRA7dydW137Za6",
+          "f6JY2aCzVraW8dGmK5G7Tv0N",
+          "h1YByxGKSuaJHfZKFn9YnFcH",
+          "jYdmRtPKlkt16dLHyVAFBM1I",
+          "jsT3XBqHn8D45wHA497uLk9t",
+          "kf6WRimfItamz3wF6KOdA7e4",
+          "kguxSBZ3E_oNaf-RNJt5ehyf",
+          "l_9Oz1iv9sdbUH59RTyOGsHi",
+          "lkUpI84FJcpTKukBflB4lQVq",
+          "lzDUPo0Q3ks0TzcblzM6JcdN",
+          "mAN0mi7nhH5g-IIeYRe-caLW",
+          "mIq7np3Lgk79yQtSWQ8w3Swr",
+          "mXMZT-gIU6zUtv86cFGFKFtd",
+          "mc4hwLRcWoneyvvuaTdcr5cY",
+          "n0TV-EOWZQpZRWWb6P74tMO-",
+          "n5Fs0iXJAmMoUySPt_EusYOZ",
+          "nZrC685mbbNoqnmEX9MdqNBF",
+          "o4Az2MaUZqltMGQld1QMRqiZ",
+          "oet4NyOY-9ANcv3mcgQPTNny",
+          "ogTIYmsRKcxd_XTMMaazz-HK",
+          "ozvDE7gCc7pywspBaPQzMA6C",
+          "pK4w-khfenszubFsH7xyHxAZ",
+          "pOHa3CuGcPTElynJbXBfVdQH",
+          "pkX6OKXRj-13cRgr50X3s0eL",
+          "r2Gk6OV5tH8XHsSou2sdmwcX",
+          "s9xwNPGhfMcpxUGoOslyDyA6",
+          "sCozuNSVsKq6bGoE3MSyXIzJ",
+          "sKlFrzAHrxwOC5H1s4MtoKqO",
+          "t1oXlyABki2lcV4af2gOpqHL",
+          "tJEY7A5PuWWqoZtm54sbcwzD",
+          "tkIV0iOCWfhahEQ65pSkjjU2",
+          "u39PpgXQLan3Et8SaWElvOis",
+          "uKwQt5iHkkbjODEOXUfminT7",
+          "ukhS-3FX7Rq8l8zEI5sxU8w5",
+          "w3o7NNbhzyvl5C1FtZAkhPT2",
+          "wV18luDJAq1DAMpSTGlc_L61",
+          "wr59bjpw0N-ACb6_sXp0r6m-",
+          "xjErKEFoJ7rrYSk2FMwjh2sL",
+          "y-M85X3zPdhK0Xziy_1SlFIp",
+          "yrmj-7Z1naApVK4YM7cWdcuc"
+        ],
+        "confirmed_conversion_session_ids": [
+          "-f2JEzvCAa23xGRZTGDdsbo1",
+          "0AR0-xUIKa9aqXCgjG5evBZb",
+          "1QtlCEogffqMHvLaPcOIP60s",
+          "2SaOWWVWWdSqez9K7VOMcEx5",
+          "CgPCKGFvWveQQrUzo1J6BiCg",
+          "F8zWUQKCcbK5YYi19Yr7gpXc",
+          "RaSmZYsMhW5bRf6xt1DVj7PP",
+          "YrT3etGAt8tct7xE02oSC2X-",
+          "_yeKASHKl8YUlIJ94bS9Galc",
+          "tJEY7A5PuWWqoZtm54sbcwzD"
+        ],
+        "window_utc": [
+          "2026-10-23T19:11:09.580000+00:00",
+          "2026-10-23T19:19:18.746000+00:00"
+        ],
+        "published_files_match_local": {
+          "index.php": true,
+          "css/style.css": true,
+          "js/main.js": true
+        },
+        "limitations": [
+          "101 exposed page sessions versus 100 simulator visits; extra session unattributed.",
+          "Sequential batches are not randomized A/B evidence."
+        ]
+      }
+    },
+    {
+      "id": "e03_hero_cta",
+      "status": "ready_for_deploy",
+      "hypothesis": "Offering registration and the actual starting price in hero lets ready visitors act before reading the long page.",
+      "evidence": "E02: 80 CTA/view sessions, 10 submissions and confirmed conversions; 70 sessions did not focus subsequent fields. Cause remains uncertain.",
+      "changes": [
+        "Hero CTA with source hero_cta",
+        "Existing base price 4900 RUB stated in hero",
+        "Preserve pricing_cta_1/2/3 labels and existing form"
+      ],
+      "primary_metric": "Simulator confirmed orders / 100 visits; target >=50%",
+      "diagnostics": [
+        "Exposure variant=e03_hero_cta",
+        "CTA source hero_cta versus pricing_cta_1/2/3",
+        "Form views, subsequent field focus, confirmed conversion"
+      ],
+      "request": "Deploy current code, then run an isolated batch of 100 visits and report timing and result.",
+      "validation": {
+        "node_syntax": "passed",
+        "browser": {
+          "method": "Local HTML/CSS/JS rendered in Chrome, visit script and external tracker omitted to avoid polluting production data",
+          "desktop": {
+            "viewport": [
+              1280,
+              720
+            ],
+            "hero_cta_top": 571.19,
+            "hero_cta_bottom": 623.19,
+            "submit_bottom_after_click": 515.83,
+            "focused_field": "name"
+          },
+          "mobile": {
+            "viewport": [
+              390,
+              844
+            ],
+            "hero_cta_top": 622.7,
+            "hero_cta_bottom": 674.7,
+            "submit_bottom_after_click": 785.64,
+            "horizontal_overflow": false
+          },
+          "result": "Hero CTA visible initially and submit visible after CTA on both checked viewports"
+        },
+        "cta_logic": "passed: hero and three stable pricing sources; instant scroll and focus",
+        "protected_contract": "passed: form/action, four required fields, visit script, API and SQL unchanged"
+      },
+      "deployment_check": {
+        "published_variant": "e02_compact_form",
+        "e03_exposure_count": 0,
+        "status": "Awaiting manual publication by user"
+      }
     }
   ]
 }

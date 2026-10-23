@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'e02_compact_form';
+    const variant = 'e03_hero_cta';
     const pendingEvents = [];
     let exposed = false;
     const track = (name, properties = {}) => {
@@ -31,8 +31,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const message = document.getElementById('form-message');
     const registerButtons = document.querySelectorAll('.btn-register');
 
-    registerButtons.forEach((button, index) => {
-        button.dataset.trackLabel = `pricing_cta_${index + 1}`;
+    let pricingButtonIndex = 0;
+    registerButtons.forEach((button) => {
+        if (!button.dataset.trackLabel) {
+            button.dataset.trackLabel = `pricing_cta_${++pricingButtonIndex}`;
+        }
         button.addEventListener('click', () => {
             if (!registrationSection) {
                 return;

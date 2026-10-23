@@ -19,6 +19,11 @@
                 медиков. Курс построен на практике с инструкторами, которые каждый день работают
                 с реальными вызовами.
             </p>
+            <div class="hero-action">
+                <p class="hero-price">Полный день обучения — от <strong>4 900 ₽</strong></p>
+                <button type="button" class="btn btn-register hero-register" data-track-label="hero_cta">Записаться на курс</button>
+                <p class="hero-action-note">Оставьте заявку — мы подтвердим место и ответим на вопросы.</p>
+            </div>
             <div class="meta-grid">
                 <div class="meta-card">
                     <strong>Дата</strong>
