@@ -736,7 +736,7 @@
     },
     {
       "id": "e04_concise_program",
-      "status": "ready_for_deploy",
+      "status": "measured_and_reverted",
       "hypothesis": "Long module descriptions contribute to friction before the decision to start the form. Concise descriptions may increase genuine input starts and confirmed orders.",
       "confidence": "medium-low; agreed priority across four reviews, cause unproven",
       "evidence_reports": [
@@ -802,6 +802,53 @@
           "horizontal_overflow": false
         },
         "method": "Local preview with external tracker and visit script omitted; no production visits or applications generated"
+      },
+      "results": {
+        "simulator": {
+          "visits": 100,
+          "orders": 16,
+          "errors": 0,
+          "duration_seconds": 541.1,
+          "conversion": 0.16
+        },
+        "tracker_report": "analysis/e04-final.json",
+        "rrweb_comparison": "analysis/e04-comparison.json",
+        "interpretation": "16 conversions in both E03 and E04, true input-start counts unchanged. No demonstrated benefit; restore E03 module descriptions as comparison baseline. One batch does not establish equivalence."
+      }
+    },
+    {
+      "id": "e05_static_cards",
+      "status": "ready_for_deploy",
+      "baseline": "e03_hero_cta; E04 text reduction reverted",
+      "hypothesis": "Pointer cursors and hover elevation on noninteractive cards create a false expectation of action. Removing these affordances may reduce friction and increase form input starts.",
+      "confidence": "low-to-moderate; misleading affordance is verified in code, causal conversion effect unproven",
+      "changes": [
+        "Restore six program-module paragraphs from E03",
+        "Remove pointer cursor and hover transform/shadow transition from feature-card/program-module/injury-card",
+        "Add first registration input event to existing tracker API without reading values",
+        "Exposure variant e05_static_cards"
+      ],
+      "primary_metric": "Simulator confirmed orders / 100 visits; target >=50%",
+      "diagnostics": [
+        "registration_input_start / registration_cta unique sessions",
+        "rrweb card interactions and actual input starts",
+        "Input start -> confirmed conversion"
+      ],
+      "invariants": [
+        "All sections and selectors retained",
+        "Required fields, form action and API/SQL unchanged",
+        "Actual buttons remain interactive"
+      ],
+      "request": "Manually deploy e05 then run an isolated batch of100 visits and report result.",
+      "validation": {
+        "node_syntax": "passed",
+        "diff_check": "passed",
+        "baseline_html": "exact match to E03 commit0b296f9",
+        "protected_files": "API and SQL unchanged",
+        "chrome_desktop": "1280x720: all three card types cursor auto/transform none/transition0s; actual CTA pointer and scroll/focus work; submit visible",
+        "input_event": "Two input events produce one registration_input_start with only variant and field name",
+        "chrome_mobile": "390x844: hero and submit visible, no horizontal overflow, all four required fields retained",
+        "preview": "Production visit/tracker scripts omitted; no production data generated"
       }
     }
   ]

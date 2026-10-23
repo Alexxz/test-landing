@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'e04_concise_program';
+    const variant = 'e05_static_cards';
     const pendingEvents = [];
     let exposed = false;
     const track = (name, properties = {}) => {
@@ -61,6 +61,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }, { threshold: 0.25 });
         observer.observe(form);
     }
+    let inputStarted = false;
+    form.addEventListener('input', (event) => {
+        if (!inputStarted && ['name', 'phone', 'email', 'purpose'].includes(event.target.name)) {
+            inputStarted = true;
+            track('registration_input_start', { step: event.target.name });
+        }
+    });
+
     form.addEventListener('focusin', (event) => {
         if (['name', 'phone', 'email', 'purpose'].includes(event.target.name)) {
             track('registration_field_focus', { step: event.target.name });

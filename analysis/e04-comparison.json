@@ -1,0 +1,1436 @@
+{
+  "e03": {
+    "sessions": 101,
+    "active": 0,
+    "cta": 90,
+    "input_starts": 16,
+    "conversions": 16,
+    "cta_median_ms": 46117.5,
+    "sessions_detail": [
+      {
+        "id": "-8fHbbA6iM6Ro6SsM2MOWkwk",
+        "cta_ms": 46049,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "-agMYq0ksx8_F2z9Vqqsbab_",
+        "cta_ms": 40722,
+        "input_count": 4,
+        "conversion": true,
+        "ended": 1
+      },
+      {
+        "id": "-auK02w0F4lB_yV271VTeZTw",
+        "cta_ms": 48324,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "-lFeKII5RwRnF4_m2Yy-V9fN",
+        "cta_ms": 46186,
+        "input_count": 4,
+        "conversion": true,
+        "ended": 1
+      },
+      {
+        "id": "0GshuzOH5FT37RNf52NdAmRq",
+        "cta_ms": null,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "0fIfp7kNDyPM_aeuQAy1dsv9",
+        "cta_ms": 47057,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "2SCDDDyLctM_knye43FaTg7t",
+        "cta_ms": 46951,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "2Y6NJVpNhTozlCPZ2OoOyxaE",
+        "cta_ms": 48077,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "4siLUusCW_VbhjQQxy_8-KG5",
+        "cta_ms": 39974,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "5sWj5ioRriw5whT_KkEYEoza",
+        "cta_ms": 45354,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "6HvNr5NTaRshQkCFf4RK9OtP",
+        "cta_ms": 47239,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "6mQJn5lN5-lD2SsaOjSSZtiT",
+        "cta_ms": 51480,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "7aLkNiZt11FnYWR9NUS9Eb6a",
+        "cta_ms": 46445,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "843nLZ8YdOTyS8W6RsaoiXfD",
+        "cta_ms": 49095,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "91nOASErltrxF0GONHnfSgjd",
+        "cta_ms": 49641,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "99yVCaIZr9nNDkLdz7IusuTx",
+        "cta_ms": 45993,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "9E-Vpbn7DHhVgeUZOxDjnVr2",
+        "cta_ms": 50797,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "BFj_XlxuqYGQbqguTm4OkImq",
+        "cta_ms": null,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "BUxI0yW23wFDwvOnPtudogVk",
+        "cta_ms": 45287,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "BgnpToKi9GUDmELsir0BqY90",
+        "cta_ms": 51358,
+        "input_count": 4,
+        "conversion": true,
+        "ended": 1
+      },
+      {
+        "id": "BoF8vWF2s4gPG2VtsBus2WRr",
+        "cta_ms": null,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "CIHHZ0tZ3G4JnZDkFLx9VJNx",
+        "cta_ms": 47431,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "CPlKU1HxJOSTxJ0GpSv-yGRg",
+        "cta_ms": 47331,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "Cgb8ZhPIldEllpaSpvqwATLb",
+        "cta_ms": 49505,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "DdAjFJ1kyiB5AmvyFyRkHO8z",
+        "cta_ms": 49509,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "E36Q8cgA1ElCOGb4z0Wm5ajx",
+        "cta_ms": 38941,
+        "input_count": 4,
+        "conversion": true,
+        "ended": 1
+      },
+      {
+        "id": "EKYi9zNbuzhVGQl2hTqkdvm9",
+        "cta_ms": null,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "EzxzfzvATNsJdWyHwhzV-BPu",
+        "cta_ms": 50150,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "FfC6g3E4gCMqa0YQvI9VRqdh",
+        "cta_ms": 51067,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "G8YinVjHQTSO3l_9e-maPJn2",
+        "cta_ms": 51251,
+        "input_count": 4,
+        "conversion": true,
+        "ended": 1
+      },
+      {
+        "id": "GJad5Q-Buxhv77ETfNm9mQL4",
+        "cta_ms": 38092,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "Getr57olSL24ipXq4ou1bnei",
+        "cta_ms": 44628,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "Giscz6jMnQ3pkwlbVSk8sypH",
+        "cta_ms": null,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "HbeSwML9kkZHDUBM-aXI7Y6b",
+        "cta_ms": 49934,
+        "input_count": 4,
+        "conversion": true,
+        "ended": 1
+      },
+      {
+        "id": "IMuy81WDLn3s9V0-MouAlynb",
+        "cta_ms": 38958,
+        "input_count": 4,
+        "conversion": true,
+        "ended": 1
+      },
+      {
+        "id": "JEIQmrt_iKaE0vhfI10SsN59",
+        "cta_ms": 41640,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "JU-ug8CcxlK_MmweGiSD-7XI",
+        "cta_ms": 45541,
+        "input_count": 4,
+        "conversion": true,
+        "ended": 1
+      },
+      {
+        "id": "Ju85uFXLt2su6_FWrf0_4Tib",
+        "cta_ms": 51403,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "Jw9QP_J1C-pecitB8DB71jME",
+        "cta_ms": 38976,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "JzuNckMVqcrVShNxZaARcnQF",
+        "cta_ms": 44778,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "L1H5nbZGo_R0netKQC-qVrT_",
+        "cta_ms": 49762,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "L45sEG6yaj423xOmh6cfbOOJ",
+        "cta_ms": 36316,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "LWP1pmEqRromidEdUGgWrISZ",
+        "cta_ms": 49141,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "Lx5GMrvoaSOuluCtOwh0UUep",
+        "cta_ms": 54699,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "MBkNPedZ7jZJiEAw1EdKHhQe",
+        "cta_ms": 35716,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "MDvrtHc4Z5aFdrAk6IVsWDbH",
+        "cta_ms": 55185,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "MgjQAPl1_uL-OwHuEsutLzmd",
+        "cta_ms": 43870,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "OyUpf_xz_BKU9web3yO9B6T0",
+        "cta_ms": null,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "PIAbSp-vE0EuSUxSP5WLdFyn",
+        "cta_ms": 53194,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "P_uh9zVEGJTzjpUqMWkPIQ_x",
+        "cta_ms": 39772,
+        "input_count": 4,
+        "conversion": true,
+        "ended": 1
+      },
+      {
+        "id": "Pq866v-dVmyTLInnMfHC8CRy",
+        "cta_ms": 42649,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "QnHprghNYaAMynGilQARqwnd",
+        "cta_ms": 45071,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "RU1CMDSz79ht0uvZvWpH99xy",
+        "cta_ms": 55035,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "Rch0zCZY0MvVz8wdSVFtkagX",
+        "cta_ms": 41126,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "Red0f9LWqeOunZhn1KUeAUlA",
+        "cta_ms": 36620,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "Ucj_vVRhs_1QTtqt3996n4N7",
+        "cta_ms": 38862,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "W9nA1OK73bYQTzcK9zSEeIoT",
+        "cta_ms": 50917,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "WPrrWxbpZhSQbWhIS668_HiE",
+        "cta_ms": 50757,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "WvriMSx4fbJnCd-7SKqzm3ES",
+        "cta_ms": 48010,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "Y51g7sbdD_uJUJKGYdpi3ryL",
+        "cta_ms": 49042,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "Z2_cjVLXgNhzCHACzXVp99KT",
+        "cta_ms": 41323,
+        "input_count": 4,
+        "conversion": true,
+        "ended": 1
+      },
+      {
+        "id": "Z6dSDnzsY9T7-6H0F9sGI-QD",
+        "cta_ms": 45563,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "ZI0TdqhENEP2IS5yfxJ4fM-J",
+        "cta_ms": null,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "ZmZBvxJ02pXVdTp6BR7AOkT9",
+        "cta_ms": 40534,
+        "input_count": 4,
+        "conversion": true,
+        "ended": 1
+      },
+      {
+        "id": "_DHMWlabW7m3v5JDXghZ6toG",
+        "cta_ms": 44986,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "_IlfjBOV0PU0qeKaHUxLPE_h",
+        "cta_ms": null,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "bJXKo_ecIIZ5PTfe380R8dcK",
+        "cta_ms": 56805,
+        "input_count": 4,
+        "conversion": true,
+        "ended": 1
+      },
+      {
+        "id": "bKLLp8AhTnG1BrCu1b4Ijbai",
+        "cta_ms": null,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "d-W8mPtrkcOh0L-NzuxtIj61",
+        "cta_ms": 33346,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "dsP6DfjFi_uAcp7qHWHiJqNg",
+        "cta_ms": 51353,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "eUBmSRlnWB6CrX5usPeuO1a8",
+        "cta_ms": 44522,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "eXDhQIf-iVgxiXC__v4k8fs1",
+        "cta_ms": 48768,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "erx2zrn4BaKmwLakTEOiv0Ui",
+        "cta_ms": 46554,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "hXRf1pvBvzM_yxouuT8kIBU1",
+        "cta_ms": 55377,
+        "input_count": 4,
+        "conversion": true,
+        "ended": 1
+      },
+      {
+        "id": "iXIlKWUvXznWZcSqoNKHxhhF",
+        "cta_ms": 40519,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "kCxRy6EaDJTe2ONpD8rWsrd-",
+        "cta_ms": 52032,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "kgwBMHYmzroi_NpN_yX6fePL",
+        "cta_ms": 42898,
+        "input_count": 4,
+        "conversion": true,
+        "ended": 1
+      },
+      {
+        "id": "kx6OWlD1bJ5BCHaa-ViAWkSQ",
+        "cta_ms": 48867,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "lMcPWPPa6J3eYMuvBRUnFP7r",
+        "cta_ms": 48121,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "lgbNHiAuBz70lWLmje7c1RGX",
+        "cta_ms": 48208,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "n7yNXNiJxZKVeqhd3GoSrb63",
+        "cta_ms": 43837,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "nt473rwC8KAOQ40fLaVAFA8a",
+        "cta_ms": 49205,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "oN_1janosaFBglrqd3f72vJz",
+        "cta_ms": 49033,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "prLLJXtUIhuAYJLhb-SlsSLL",
+        "cta_ms": 45669,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "q5Jjzv-4mVeGloVXbO-tdvFU",
+        "cta_ms": 40695,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "qEhZrKCPFQe6OAe4o3s_oYXo",
+        "cta_ms": 38431,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "qnFCQ9fzajRORq1T3XiVHl_A",
+        "cta_ms": 42072,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "r0jn5xEVXCM_lXjzKWw6SgY_",
+        "cta_ms": 45114,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "rDY0A_h8zNQTUWwhLWvVkgcE",
+        "cta_ms": 50626,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "tNM6DffN-ya5ljUgeH-CRVHj",
+        "cta_ms": null,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "tiewbKINiy3m4oBJozqbf51e",
+        "cta_ms": 36814,
+        "input_count": 4,
+        "conversion": true,
+        "ended": 1
+      },
+      {
+        "id": "uaqKtYxY1mQAmSYTg72hCboU",
+        "cta_ms": null,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "v4bITsD1icRcQzPHFnL4vu6V",
+        "cta_ms": 45323,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "v9TIjTv0A9dmQD32e7uYovyl",
+        "cta_ms": 41022,
+        "input_count": 4,
+        "conversion": true,
+        "ended": 1
+      },
+      {
+        "id": "vUrSjoHpEaARe7bhMDFOKIo3",
+        "cta_ms": 43364,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "vVENDOdtsxHJHRS91TEbdxc7",
+        "cta_ms": 53621,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "vXtj4oXdhPU_C5alZ-NZg44X",
+        "cta_ms": 40676,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "xoFR4PRq11bctR6-LjOeBssh",
+        "cta_ms": 43786,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "yKNaSSis9GdfqanmPt1WrFGp",
+        "cta_ms": 43126,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "ypp0jG60JKT3kXORyZzqm3eE",
+        "cta_ms": 38481,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "zNKcF-LoEPhOwvclkXhYqt-v",
+        "cta_ms": 51340,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      }
+    ]
+  },
+  "e04": {
+    "sessions": 101,
+    "active": 0,
+    "cta": 91,
+    "input_starts": 16,
+    "conversions": 16,
+    "cta_median_ms": 46237,
+    "sessions_detail": [
+      {
+        "id": "-7F4k1Txuxle2jDR1XDh9bnm",
+        "cta_ms": 48396,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "-MsrKMcr_NyLdXMJhU3XOuX8",
+        "cta_ms": 51672,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "0790okygXFfnjzj5wzEqvihH",
+        "cta_ms": 44184,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "0NvTthg3_mjoELSJr4m-x44d",
+        "cta_ms": 51216,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "15IfnhGsbwpOGTBCnQbJvW-f",
+        "cta_ms": 48937,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "2ED2ruWLzY5zX9pKGxc83zdb",
+        "cta_ms": 47836,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "2_cQLcnvflNb4sCI_eoiBZpJ",
+        "cta_ms": 38472,
+        "input_count": 4,
+        "conversion": true,
+        "ended": 1
+      },
+      {
+        "id": "3Hc2gULVvghZqIVrM2paZC4X",
+        "cta_ms": 39746,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "3M1y9RyZbXGNYuWW1NFQpUMv",
+        "cta_ms": 49400,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "3fYYuznPI5c1uvBvvhO2SDMj",
+        "cta_ms": 41827,
+        "input_count": 4,
+        "conversion": true,
+        "ended": 1
+      },
+      {
+        "id": "3jEl6cNoLQ5PXlDImpGJ72-V",
+        "cta_ms": 41865,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "3sq60XP64VnFpOqTJnOm2o4I",
+        "cta_ms": 48793,
+        "input_count": 4,
+        "conversion": true,
+        "ended": 1
+      },
+      {
+        "id": "406eAdn-vtQ674qinqgl0uCL",
+        "cta_ms": 38628,
+        "input_count": 4,
+        "conversion": true,
+        "ended": 1
+      },
+      {
+        "id": "4Rxoz_hPLAaq37yrh2S77jDV",
+        "cta_ms": 42506,
+        "input_count": 4,
+        "conversion": true,
+        "ended": 1
+      },
+      {
+        "id": "4v6nDgVUOIszcRumcZ4pn0q6",
+        "cta_ms": 49953,
+        "input_count": 4,
+        "conversion": true,
+        "ended": 1
+      },
+      {
+        "id": "5N90D9-qQ368c3VpO1yJoads",
+        "cta_ms": 46983,
+        "input_count": 4,
+        "conversion": true,
+        "ended": 1
+      },
+      {
+        "id": "5atdI6JQ3rrtgLijFOyrayFO",
+        "cta_ms": 46091,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "5n0vse7m6L_2SUHWFtdXcIqU",
+        "cta_ms": 44181,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "6AOVTvaaeSCUBofisv9LSpld",
+        "cta_ms": null,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "7c7YT5wckzU6dJI5euqymEss",
+        "cta_ms": 46080,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "7dBZVJZrv7AQAuRbKVxDyZ6X",
+        "cta_ms": null,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "7nRLI5Ml5ykH8y6KzGbb6J6t",
+        "cta_ms": 44003,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "9CIx9oYIJt1lp3vz1KZOy37R",
+        "cta_ms": 51129,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "9H9L96qAcWF6p-fP2dhlgfi0",
+        "cta_ms": 48996,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "AFOWEz6EiqS1h_fg6sch9boY",
+        "cta_ms": 47386,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "BRirgSP397E2ax1XFqN2AXoS",
+        "cta_ms": 49539,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "BgzeO1TEkehGlmbW6OPLbV_1",
+        "cta_ms": 53515,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "CL40mz7hRH_PfNazkW38qakK",
+        "cta_ms": 39072,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "CYVmcjOtncljGeGLZvW7AWBk",
+        "cta_ms": 48809,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "D4D7kF9zVE4BwKQoSzcP6YX7",
+        "cta_ms": 42472,
+        "input_count": 4,
+        "conversion": true,
+        "ended": 1
+      },
+      {
+        "id": "DOY5p-qoehGAtdndqKUTd4Hw",
+        "cta_ms": 45896,
+        "input_count": 4,
+        "conversion": true,
+        "ended": 1
+      },
+      {
+        "id": "E3KW02GZ1ioGovLModtDbPjs",
+        "cta_ms": 53259,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "EYKz_AdPlVb2RHeBwxQQSzSY",
+        "cta_ms": 39746,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "FHufpKdfkk9-R-rU6a6MEQO2",
+        "cta_ms": 43229,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "GD8TGD9PsPkT0XYWq2IM5P08",
+        "cta_ms": 38621,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "Gdgyno0f4i3uwyL4yiQ1tEzp",
+        "cta_ms": 48433,
+        "input_count": 4,
+        "conversion": true,
+        "ended": 1
+      },
+      {
+        "id": "ItJvxae2d_96hayDvaroopGB",
+        "cta_ms": 45016,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "Itg272Anv8KjEtuwG6Hr7Q4k",
+        "cta_ms": 52252,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "Iz8p8il5sHTFYMXrS45NziAN",
+        "cta_ms": 48561,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "JEvH5UzxQVmxf-jjd8YxWGd7",
+        "cta_ms": 46291,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "KQNaYtxcSfp-7SNgFTIrn_c8",
+        "cta_ms": 46631,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "KlJq8Feh3WY5vl926uYgIeTu",
+        "cta_ms": 37855,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "Ky8F006fPqrIuO_WXeM-FOAj",
+        "cta_ms": 45767,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "L07zILzRgOTmePuwx7fUZyL2",
+        "cta_ms": 41924,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "L3FdhZw4IXe_k9QPLr0u2khU",
+        "cta_ms": 37099,
+        "input_count": 4,
+        "conversion": true,
+        "ended": 1
+      },
+      {
+        "id": "Ld1SdHx7lkLGS4HcI1SSw_bO",
+        "cta_ms": 48863,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "MH8TD31jhqCtKuEf8YjAntjS",
+        "cta_ms": null,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "MHZJwXSCKYZk4lzYcjLjaLLb",
+        "cta_ms": 43587,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "MQJFwtPVJJxj3r2eDrVWitpL",
+        "cta_ms": 40612,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "MkhQXfbA9MlGtDn-y300jkTO",
+        "cta_ms": 50281,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "MkkPFJXpPb8qnGR9nlfeHCLP",
+        "cta_ms": 42710,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "NohZXB-t1wJ50AXwIoN6fPwE",
+        "cta_ms": 54605,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "ONt-RYffANfutIBTtdzgI2aP",
+        "cta_ms": 34828,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "OoBFWBVTrEvpB7Lrmhuw7Ie3",
+        "cta_ms": null,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "P8hPuGxH2-cEzy0uAcHJKj3N",
+        "cta_ms": 52489,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "PNKrdu7ur_1budj9veeQ7INt",
+        "cta_ms": 38878,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "QhlUSBnczOu5uuYx4yF0hOKL",
+        "cta_ms": 48271,
+        "input_count": 4,
+        "conversion": true,
+        "ended": 1
+      },
+      {
+        "id": "RXnywWSdOzI2ANnzcdz1bbTt",
+        "cta_ms": 42827,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "Rs-wjTLHveNY4Mi-HxLjifNX",
+        "cta_ms": 51345,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "TvT1RdTU8EDFGSKXV6wkec2g",
+        "cta_ms": 39166,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "Vyv_vRzPynoYsn_Z78dGtBeG",
+        "cta_ms": 48843,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "W_f2BigeGeJiVqElfy3aWly6",
+        "cta_ms": 48489,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "XjuB5PBQb3aNs7ry9O-g59BU",
+        "cta_ms": 54570,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "Xq5WVuYCjUgHUMtPrGgkqO4-",
+        "cta_ms": null,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "YEhMHYoDIsO_phg8rdLCmwmK",
+        "cta_ms": 38353,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "ZSiLkY8fGh2jo90nA6mob_hG",
+        "cta_ms": 40969,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "ZmLBs1R6z9uWKnfXH2rvW31n",
+        "cta_ms": 39224,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "acBLS6WPdJFxUFn3fKgQWvz4",
+        "cta_ms": null,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "b3bbvbm8UzgyVEiLlQIG2zmr",
+        "cta_ms": 50744,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "cBbQBc62Ugb1ETZdcDc_fJUQ",
+        "cta_ms": 50472,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "cYXASPGvjxIZmF4ZzrS1zXb6",
+        "cta_ms": 60289,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "coPbcTiTON-aZbbFXAHL2TkC",
+        "cta_ms": 44768,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "cozvkOiwfEQZ1LUapeT_3Nqr",
+        "cta_ms": 46410,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "daFb8BkZdLd1Nc7pnaVOT_Pu",
+        "cta_ms": 45295,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "e81sTJEWZGuJ-xPkhIrSOUpS",
+        "cta_ms": 46237,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "eThHGomn83u8WiCt6CSO6JPX",
+        "cta_ms": 44010,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "gHd_9gXS1I0V85QFU4pZA4jY",
+        "cta_ms": 41342,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "gfIqoMK-r5CPYF2rVsN91r1N",
+        "cta_ms": 47321,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "hntQFrb5M2c-MGr8qVsn_-rt",
+        "cta_ms": 44156,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "i10i9kkV8bDeyVl4e4UWhrUJ",
+        "cta_ms": 53275,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "iXfG8wdqThBucCI-3ny7-74y",
+        "cta_ms": 49435,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "jLOzb7L6C18FNxi5pfwQIWcF",
+        "cta_ms": 48654,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "lS_raempWb1GEQQHWihm9ieS",
+        "cta_ms": 38031,
+        "input_count": 4,
+        "conversion": true,
+        "ended": 1
+      },
+      {
+        "id": "lbgA28o7s5uSzYXqTbIV-lzL",
+        "cta_ms": 47485,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "pJJlJMvCllRCgA5MLWRSwjpS",
+        "cta_ms": null,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "paj1CzHofRMHdunJndVgD6-S",
+        "cta_ms": 41107,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "pkoongI_AFFTDJR7GvWXwSMS",
+        "cta_ms": 47012,
+        "input_count": 4,
+        "conversion": true,
+        "ended": 1
+      },
+      {
+        "id": "px_PlATQVjnZItiS5i8v6dPA",
+        "cta_ms": 49854,
+        "input_count": 4,
+        "conversion": true,
+        "ended": 1
+      },
+      {
+        "id": "rB3KGuUgLxsWhhrLT_ile3H0",
+        "cta_ms": 42413,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "rEJ0aEB-Y2LwdS13D7M_B-s6",
+        "cta_ms": 32336,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "rkfBNYnmD83n2fFaeK7TLjnE",
+        "cta_ms": null,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "sFuegu4-IBuvatg7bTkLAZ2g",
+        "cta_ms": 55859,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "tAABJ-xWfiSl9bPIu1x3BIIV",
+        "cta_ms": 46980,
+        "input_count": 4,
+        "conversion": true,
+        "ended": 1
+      },
+      {
+        "id": "tUyVzPB0XJVK4EzN9M1FqTzU",
+        "cta_ms": null,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "uRe2pODL1M9NPykpC6q9sMub",
+        "cta_ms": null,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "ucTfe4EKD5kBHnctIIpO9eDk",
+        "cta_ms": 43379,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "vmy-22hp5TnKFE4cpWJNzFT2",
+        "cta_ms": 51478,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "w5c3cLz8rIWi9TaO_gZMwO8r",
+        "cta_ms": 38112,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "xJoFarViXQjgWuhtPGcP4Vf3",
+        "cta_ms": 45456,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "xP58aGv-xWEbPoWN6sjNYeEX",
+        "cta_ms": 44141,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      },
+      {
+        "id": "z6AIafIgqXuJMqPf4UraqdyT",
+        "cta_ms": 48848,
+        "input_count": 0,
+        "conversion": false,
+        "ended": 1
+      }
+    ]
+  }
+}
