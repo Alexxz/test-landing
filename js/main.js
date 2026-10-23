@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'e01_instant_form';
+    const variant = 'e02_compact_form';
     const pendingEvents = [];
     let exposed = false;
     const track = (name, properties = {}) => {

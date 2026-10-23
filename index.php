@@ -333,24 +333,24 @@
                 <div class="registration-panel">
                     <h2 class="section-title">Записаться на курс</h2>
                     <p class="section-lead">
-                        Оставьте заявку, и мы свяжемся с вами, чтобы подтвердить место и ответить на вопросы.
+                        Заполните 4 поля — мы свяжемся с вами, подтвердим место и ответим на вопросы.
                     </p>
                     <form class="form-grid" id="registration-form" action="api/submit.php" method="post">
                         <label>
                             Имя
-                            <input type="text" name="name" required autocomplete="name">
+                            <input type="text" name="name" required autocomplete="name" placeholder="Как к вам обращаться">
                         </label>
                         <label>
                             Телефон
-                            <input type="tel" name="phone" required autocomplete="tel">
+                            <input type="tel" name="phone" required autocomplete="tel" placeholder="+7 999 123-45-67">
                         </label>
                         <label>
                             E-mail
-                            <input type="email" name="email" required autocomplete="email">
+                            <input type="email" name="email" required autocomplete="email" placeholder="you@example.ru">
                         </label>
                         <label>
-                            Цель прохождения курса
-                            <textarea name="purpose" required></textarea>
+                            Для чего вам курс?
+                            <textarea name="purpose" required rows="2" placeholder="Например: для семьи, работы или путешествий"></textarea>
                         </label>
                         <button type="submit" class="btn">Отправить заявку</button>
                     </form>
