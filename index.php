@@ -336,9 +336,9 @@
         <section class="section registration-section" id="registration">
             <div class="container">
                 <div class="registration-panel">
-                    <h2 class="section-title">Записаться на курс</h2>
+                    <h2 class="section-title">Оставить заявку</h2>
                     <p class="section-lead">
-                        Заполните 4 поля — мы свяжемся с вами, подтвердим место и ответим на вопросы.
+                        Оставьте контакты для подтверждения места. Мы свяжемся с вами и ответим на вопросы. Оплата на этом шаге не требуется.
                     </p>
                     <form class="form-grid" id="registration-form" action="api/submit.php" method="post">
                         <label>
@@ -354,8 +354,8 @@
                             <input type="email" name="email" required autocomplete="email" placeholder="you@example.ru">
                         </label>
                         <label>
-                            Для чего вам курс?
-                            <textarea name="purpose" required rows="2" placeholder="Например: для семьи, работы или путешествий"></textarea>
+                            Цель — в двух словах
+                            <textarea name="purpose" required rows="2" placeholder="Например: для семьи"></textarea>
                         </label>
                         <button type="submit" class="btn">Отправить заявку</button>
                     </form>

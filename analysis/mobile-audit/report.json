@@ -1,0 +1,1460 @@
+{
+  "version": "e05_static_cards",
+  "method": "Local static copy with real images, CSS and JavaScript; production visit and tracker scripts excluded. Chromium mobile viewport/touch/DPR emulation. Form responses mocked; no real applications submitted.",
+  "layout": [
+    {
+      "name": "small_phone",
+      "emulation": "320x568x2,mobile,touch",
+      "viewport": [
+        320,
+        568
+      ],
+      "dpr": 2,
+      "touch": 1,
+      "overflowPx": 0,
+      "overflowingElements": [],
+      "heroCTA": {
+        "left": 20,
+        "top": 783.96875,
+        "right": 300,
+        "bottom": 835.96875,
+        "width": 280,
+        "height": 52
+      },
+      "heroCTAVisible": false,
+      "formAfterCTA": {
+        "left": 44,
+        "top": 329.3125,
+        "right": 276,
+        "bottom": 813.65625,
+        "width": 232,
+        "height": 484.34375
+      },
+      "focusedField": "name",
+      "submitAfterCTA": {
+        "left": 44,
+        "top": 767.65625,
+        "right": 276,
+        "bottom": 813.65625,
+        "width": 232,
+        "height": 46
+      },
+      "submitVisible": false,
+      "fieldsBelowFold": [
+        "email",
+        "purpose"
+      ],
+      "controlsSmallHeight": [],
+      "minFieldWidth": 232,
+      "minFieldFontPx": 16,
+      "formColumnCount": 1,
+      "imageStatus": [
+        {
+          "loaded": true,
+          "width": 1600
+        }
+      ],
+      "documentHeight": 17758
+    },
+    {
+      "name": "android_small",
+      "emulation": "360x640x3,mobile,touch",
+      "viewport": [
+        360,
+        640
+      ],
+      "dpr": 3,
+      "touch": 1,
+      "overflowPx": 0,
+      "overflowingElements": [],
+      "heroCTA": {
+        "left": 20,
+        "top": 725.09375,
+        "right": 340,
+        "bottom": 777.09375,
+        "width": 320,
+        "height": 52
+      },
+      "heroCTAVisible": false,
+      "formAfterCTA": {
+        "left": 44,
+        "top": 301.140625,
+        "right": 316,
+        "bottom": 785.484375,
+        "width": 272,
+        "height": 484.34375
+      },
+      "focusedField": "name",
+      "submitAfterCTA": {
+        "left": 44,
+        "top": 739.484375,
+        "right": 316,
+        "bottom": 785.484375,
+        "width": 272,
+        "height": 46
+      },
+      "submitVisible": false,
+      "fieldsBelowFold": [
+        "purpose"
+      ],
+      "controlsSmallHeight": [],
+      "minFieldWidth": 272,
+      "minFieldFontPx": 16,
+      "formColumnCount": 1,
+      "imageStatus": [
+        {
+          "loaded": true,
+          "width": 1600
+        }
+      ],
+      "documentHeight": 16188
+    },
+    {
+      "name": "iphone_se_size",
+      "emulation": "375x667x2,mobile,touch",
+      "viewport": [
+        375,
+        667
+      ],
+      "dpr": 2,
+      "touch": 1,
+      "overflowPx": 0,
+      "overflowingElements": [],
+      "heroCTA": {
+        "left": 20,
+        "top": 622.703125,
+        "right": 355,
+        "bottom": 674.703125,
+        "width": 335,
+        "height": 52
+      },
+      "heroCTAVisible": false,
+      "formAfterCTA": {
+        "left": 44,
+        "top": 301.1875,
+        "right": 331,
+        "bottom": 785.53125,
+        "width": 287,
+        "height": 484.34375
+      },
+      "focusedField": "name",
+      "submitAfterCTA": {
+        "left": 44,
+        "top": 739.53125,
+        "right": 331,
+        "bottom": 785.53125,
+        "width": 287,
+        "height": 46
+      },
+      "submitVisible": false,
+      "fieldsBelowFold": [
+        "purpose"
+      ],
+      "controlsSmallHeight": [],
+      "minFieldWidth": 287,
+      "minFieldFontPx": 16,
+      "formColumnCount": 1,
+      "imageStatus": [
+        {
+          "loaded": true,
+          "width": 1600
+        }
+      ],
+      "documentHeight": 15761
+    },
+    {
+      "name": "phone_standard",
+      "emulation": "390x844x3,mobile,touch",
+      "viewport": [
+        390,
+        844
+      ],
+      "dpr": 3,
+      "touch": 1,
+      "overflowPx": 0,
+      "overflowingElements": [],
+      "heroCTA": {
+        "left": 20,
+        "top": 622.703125,
+        "right": 370,
+        "bottom": 674.703125,
+        "width": 350,
+        "height": 52
+      },
+      "heroCTAVisible": true,
+      "formAfterCTA": {
+        "left": 44,
+        "top": 301.03125,
+        "right": 346,
+        "bottom": 785.375,
+        "width": 302,
+        "height": 484.34375
+      },
+      "focusedField": "name",
+      "submitAfterCTA": {
+        "left": 44,
+        "top": 739.375,
+        "right": 346,
+        "bottom": 785.375,
+        "width": 302,
+        "height": 46
+      },
+      "submitVisible": true,
+      "fieldsBelowFold": [],
+      "controlsSmallHeight": [],
+      "minFieldWidth": 302,
+      "minFieldFontPx": 16,
+      "formColumnCount": 1,
+      "imageStatus": [
+        {
+          "loaded": true,
+          "width": 1600
+        }
+      ],
+      "documentHeight": 15444
+    },
+    {
+      "name": "android_large",
+      "emulation": "412x915x2.625,mobile,touch",
+      "viewport": [
+        412,
+        915
+      ],
+      "dpr": 2.625,
+      "touch": 1,
+      "overflowPx": 0,
+      "overflowingElements": [],
+      "heroCTA": {
+        "left": 20,
+        "top": 580.46875,
+        "right": 392,
+        "bottom": 632.46875,
+        "width": 372,
+        "height": 52
+      },
+      "heroCTAVisible": true,
+      "formAfterCTA": {
+        "left": 44,
+        "top": 249.984375,
+        "right": 368,
+        "bottom": 734.328125,
+        "width": 324,
+        "height": 484.34375
+      },
+      "focusedField": "name",
+      "submitAfterCTA": {
+        "left": 44,
+        "top": 688.328125,
+        "right": 368,
+        "bottom": 734.328125,
+        "width": 324,
+        "height": 46
+      },
+      "submitVisible": true,
+      "fieldsBelowFold": [],
+      "controlsSmallHeight": [],
+      "minFieldWidth": 324,
+      "minFieldFontPx": 16,
+      "formColumnCount": 1,
+      "imageStatus": [
+        {
+          "loaded": true,
+          "width": 1600
+        }
+      ],
+      "documentHeight": 14860
+    },
+    {
+      "name": "phone_large",
+      "emulation": "430x932x3,mobile,touch",
+      "viewport": [
+        430,
+        932
+      ],
+      "dpr": 3,
+      "touch": 1,
+      "overflowPx": 0,
+      "overflowingElements": [],
+      "heroCTA": {
+        "left": 20,
+        "top": 551.03125,
+        "right": 410,
+        "bottom": 603.03125,
+        "width": 390,
+        "height": 52
+      },
+      "heroCTAVisible": true,
+      "formAfterCTA": {
+        "left": 44,
+        "top": 222.90625,
+        "right": 386,
+        "bottom": 707.25,
+        "width": 342,
+        "height": 484.34375
+      },
+      "focusedField": "name",
+      "submitAfterCTA": {
+        "left": 44,
+        "top": 661.25,
+        "right": 386,
+        "bottom": 707.25,
+        "width": 342,
+        "height": 46
+      },
+      "submitVisible": true,
+      "fieldsBelowFold": [],
+      "controlsSmallHeight": [],
+      "minFieldWidth": 342,
+      "minFieldFontPx": 16,
+      "formColumnCount": 1,
+      "imageStatus": [
+        {
+          "loaded": true,
+          "width": 1600
+        }
+      ],
+      "documentHeight": 14415
+    },
+    {
+      "name": "phone_landscape",
+      "emulation": "667x375x2,mobile,touch,landscape",
+      "viewport": [
+        667,
+        375
+      ],
+      "dpr": 2,
+      "touch": 1,
+      "overflowPx": 0,
+      "overflowingElements": [],
+      "heroCTA": {
+        "left": 20,
+        "top": 468.0625,
+        "right": 239.140625,
+        "bottom": 520.0625,
+        "width": 219.140625,
+        "height": 52
+      },
+      "heroCTAVisible": false,
+      "formAfterCTA": {
+        "left": 44,
+        "top": 222.046875,
+        "right": 623,
+        "bottom": 500.015625,
+        "width": 579,
+        "height": 277.96875
+      },
+      "focusedField": "name",
+      "submitAfterCTA": {
+        "left": 44,
+        "top": 454.015625,
+        "right": 623,
+        "bottom": 500.015625,
+        "width": 579,
+        "height": 46
+      },
+      "submitVisible": false,
+      "fieldsBelowFold": [
+        "email",
+        "purpose"
+      ],
+      "controlsSmallHeight": [],
+      "minFieldWidth": 280.5,
+      "minFieldFontPx": 16,
+      "formColumnCount": 2,
+      "imageStatus": [
+        {
+          "loaded": true,
+          "width": 1600
+        }
+      ],
+      "documentHeight": 10205
+    },
+    {
+      "name": "phone_landscape_large",
+      "emulation": "844x390x3,mobile,touch,landscape",
+      "viewport": [
+        844,
+        390
+      ],
+      "dpr": 3,
+      "touch": 1,
+      "overflowPx": 0,
+      "overflowingElements": [],
+      "heroCTA": {
+        "left": 20,
+        "top": 527.125,
+        "right": 239.140625,
+        "bottom": 579.125,
+        "width": 219.140625,
+        "height": 52
+      },
+      "heroCTAVisible": false,
+      "formAfterCTA": {
+        "left": 78,
+        "top": 225.765625,
+        "right": 766,
+        "bottom": 503.734375,
+        "width": 688,
+        "height": 277.96875
+      },
+      "focusedField": "name",
+      "submitAfterCTA": {
+        "left": 78,
+        "top": 457.734375,
+        "right": 766,
+        "bottom": 503.734375,
+        "width": 688,
+        "height": 46
+      },
+      "submitVisible": false,
+      "fieldsBelowFold": [
+        "email",
+        "purpose"
+      ],
+      "controlsSmallHeight": [],
+      "minFieldWidth": 335,
+      "minFieldFontPx": 16,
+      "formColumnCount": 2,
+      "imageStatus": [
+        {
+          "loaded": true,
+          "width": 1600
+        }
+      ],
+      "documentHeight": 9462
+    },
+    {
+      "name": "small_tablet",
+      "emulation": "600x960x2,mobile,touch",
+      "viewport": [
+        600,
+        960
+      ],
+      "dpr": 2,
+      "touch": 1,
+      "overflowPx": 0,
+      "overflowingElements": [],
+      "heroCTA": {
+        "left": 20,
+        "top": 492.15625,
+        "right": 239.140625,
+        "bottom": 544.15625,
+        "width": 219.140625,
+        "height": 52
+      },
+      "heroCTAVisible": true,
+      "formAfterCTA": {
+        "left": 44,
+        "top": 453.9375,
+        "right": 556,
+        "bottom": 731.90625,
+        "width": 512,
+        "height": 277.96875
+      },
+      "focusedField": "name",
+      "submitAfterCTA": {
+        "left": 44,
+        "top": 685.90625,
+        "right": 556,
+        "bottom": 731.90625,
+        "width": 512,
+        "height": 46
+      },
+      "submitVisible": true,
+      "fieldsBelowFold": [],
+      "controlsSmallHeight": [],
+      "minFieldWidth": 247,
+      "minFieldFontPx": 16,
+      "formColumnCount": 2,
+      "imageStatus": [
+        {
+          "loaded": true,
+          "width": 1600
+        }
+      ],
+      "documentHeight": 10917
+    },
+    {
+      "name": "tablet_768",
+      "emulation": "768x1024x2,mobile,touch",
+      "viewport": [
+        768,
+        1024
+      ],
+      "dpr": 2,
+      "touch": 1,
+      "overflowPx": 0,
+      "overflowingElements": [],
+      "heroCTA": {
+        "left": 20,
+        "top": 512.03125,
+        "right": 239.140625,
+        "bottom": 564.03125,
+        "width": 219.140625,
+        "height": 52
+      },
+      "heroCTAVisible": true,
+      "formAfterCTA": {
+        "left": 56,
+        "top": 489.5625,
+        "right": 712,
+        "bottom": 767.53125,
+        "width": 656,
+        "height": 277.96875
+      },
+      "focusedField": "name",
+      "submitAfterCTA": {
+        "left": 56,
+        "top": 721.53125,
+        "right": 712,
+        "bottom": 767.53125,
+        "width": 656,
+        "height": 46
+      },
+      "submitVisible": true,
+      "fieldsBelowFold": [],
+      "controlsSmallHeight": [],
+      "minFieldWidth": 319,
+      "minFieldFontPx": 16,
+      "formColumnCount": 2,
+      "imageStatus": [
+        {
+          "loaded": true,
+          "width": 1600
+        }
+      ],
+      "documentHeight": 9970
+    },
+    {
+      "name": "tablet_820",
+      "emulation": "820x1180x2,mobile,touch",
+      "viewport": [
+        820,
+        1180
+      ],
+      "dpr": 2,
+      "touch": 1,
+      "overflowPx": 0,
+      "overflowingElements": [],
+      "heroCTA": {
+        "left": 20,
+        "top": 583.078125,
+        "right": 239.140625,
+        "bottom": 635.078125,
+        "width": 219.140625,
+        "height": 52
+      },
+      "heroCTAVisible": true,
+      "formAfterCTA": {
+        "left": 66,
+        "top": 646,
+        "right": 754,
+        "bottom": 923.96875,
+        "width": 688,
+        "height": 277.96875
+      },
+      "focusedField": "name",
+      "submitAfterCTA": {
+        "left": 66,
+        "top": 877.96875,
+        "right": 754,
+        "bottom": 923.96875,
+        "width": 688,
+        "height": 46
+      },
+      "submitVisible": true,
+      "fieldsBelowFold": [],
+      "controlsSmallHeight": [],
+      "minFieldWidth": 335,
+      "minFieldFontPx": 16,
+      "formColumnCount": 2,
+      "imageStatus": [
+        {
+          "loaded": true,
+          "width": 1600
+        }
+      ],
+      "documentHeight": 9957
+    },
+    {
+      "name": "tablet_large",
+      "emulation": "1024x1366x2,mobile,touch",
+      "viewport": [
+        1024,
+        1366
+      ],
+      "dpr": 2,
+      "touch": 1,
+      "overflowPx": 0,
+      "overflowingElements": [],
+      "heroCTA": {
+        "left": 102,
+        "top": 696.28125,
+        "right": 321.140625,
+        "bottom": 748.28125,
+        "width": 219.140625,
+        "height": 52
+      },
+      "heroCTAVisible": true,
+      "formAfterCTA": {
+        "left": 168,
+        "top": 831.484375,
+        "right": 856,
+        "bottom": 1109.453125,
+        "width": 688,
+        "height": 277.96875
+      },
+      "focusedField": "name",
+      "submitAfterCTA": {
+        "left": 168,
+        "top": 1063.453125,
+        "right": 856,
+        "bottom": 1109.453125,
+        "width": 688,
+        "height": 46
+      },
+      "submitVisible": true,
+      "fieldsBelowFold": [],
+      "controlsSmallHeight": [],
+      "minFieldWidth": 335,
+      "minFieldFontPx": 16,
+      "formColumnCount": 2,
+      "imageStatus": [
+        {
+          "loaded": true,
+          "width": 1600
+        }
+      ],
+      "documentHeight": 9079
+    },
+    {
+      "name": "tablet_landscape",
+      "emulation": "1024x768x2,mobile,touch,landscape",
+      "viewport": [
+        1024,
+        768
+      ],
+      "dpr": 2,
+      "touch": 1,
+      "overflowPx": 0,
+      "overflowingElements": [],
+      "heroCTA": {
+        "left": 102,
+        "top": 562.75,
+        "right": 321.140625,
+        "bottom": 614.75,
+        "width": 219.140625,
+        "height": 52
+      },
+      "heroCTAVisible": true,
+      "formAfterCTA": {
+        "left": 168,
+        "top": 237.015625,
+        "right": 856,
+        "bottom": 514.984375,
+        "width": 688,
+        "height": 277.96875
+      },
+      "focusedField": "name",
+      "submitAfterCTA": {
+        "left": 168,
+        "top": 468.984375,
+        "right": 856,
+        "bottom": 514.984375,
+        "width": 688,
+        "height": 46
+      },
+      "submitVisible": true,
+      "fieldsBelowFold": [],
+      "controlsSmallHeight": [],
+      "minFieldWidth": 335,
+      "minFieldFontPx": 16,
+      "formColumnCount": 2,
+      "imageStatus": [
+        {
+          "loaded": true,
+          "width": 1600
+        }
+      ],
+      "documentHeight": 8789
+    },
+    {
+      "name": "tablet_landscape_large",
+      "emulation": "1366x1024x2,mobile,touch,landscape",
+      "viewport": [
+        1366,
+        1024
+      ],
+      "dpr": 2,
+      "touch": 1,
+      "overflowPx": 0,
+      "overflowingElements": [],
+      "heroCTA": {
+        "left": 273,
+        "top": 571.1875,
+        "right": 492.140625,
+        "bottom": 623.1875,
+        "width": 219.140625,
+        "height": 52
+      },
+      "heroCTAVisible": true,
+      "formAfterCTA": {
+        "left": 339,
+        "top": 489.859375,
+        "right": 1027,
+        "bottom": 767.828125,
+        "width": 688,
+        "height": 277.96875
+      },
+      "focusedField": "name",
+      "submitAfterCTA": {
+        "left": 339,
+        "top": 721.828125,
+        "right": 1027,
+        "bottom": 767.828125,
+        "width": 688,
+        "height": 46
+      },
+      "submitVisible": true,
+      "fieldsBelowFold": [],
+      "controlsSmallHeight": [],
+      "minFieldWidth": 335,
+      "minFieldFontPx": 16,
+      "formColumnCount": 2,
+      "imageStatus": [
+        {
+          "loaded": true,
+          "width": 1600
+        }
+      ],
+      "documentHeight": 8427
+    }
+  ],
+  "functional": [
+    {
+      "name": "small_phone",
+      "viewport": [
+        320,
+        568
+      ],
+      "touch": 1,
+      "reachable": [
+        {
+          "name": "name",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "phone",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "email",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "purpose",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "submit",
+          "withinViewport": true,
+          "unobstructed": true
+        }
+      ],
+      "missingBlocked": true,
+      "invalidEmailBlocked": true,
+      "errorState": {
+        "shown": true,
+        "valuesPreserved": true,
+        "buttonEnabled": true
+      },
+      "successState": {
+        "shown": true,
+        "formReset": true,
+        "buttonEnabled": true,
+        "conversionRecorded": true
+      },
+      "mockedRequests": 2,
+      "network": "Mocked form responses; no API submission"
+    },
+    {
+      "name": "android_small",
+      "viewport": [
+        360,
+        640
+      ],
+      "touch": 1,
+      "reachable": [
+        {
+          "name": "name",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "phone",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "email",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "purpose",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "submit",
+          "withinViewport": true,
+          "unobstructed": true
+        }
+      ],
+      "missingBlocked": true,
+      "invalidEmailBlocked": true,
+      "errorState": {
+        "shown": true,
+        "valuesPreserved": true,
+        "buttonEnabled": true
+      },
+      "successState": {
+        "shown": true,
+        "formReset": true,
+        "buttonEnabled": true,
+        "conversionRecorded": true
+      },
+      "mockedRequests": 2,
+      "network": "Mocked form responses; no API submission"
+    },
+    {
+      "name": "iphone_se_size",
+      "viewport": [
+        375,
+        667
+      ],
+      "touch": 1,
+      "reachable": [
+        {
+          "name": "name",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "phone",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "email",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "purpose",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "submit",
+          "withinViewport": true,
+          "unobstructed": true
+        }
+      ],
+      "missingBlocked": true,
+      "invalidEmailBlocked": true,
+      "errorState": {
+        "shown": true,
+        "valuesPreserved": true,
+        "buttonEnabled": true
+      },
+      "successState": {
+        "shown": true,
+        "formReset": true,
+        "buttonEnabled": true,
+        "conversionRecorded": true
+      },
+      "mockedRequests": 2,
+      "network": "Mocked form responses; no API submission"
+    },
+    {
+      "name": "phone_standard",
+      "viewport": [
+        390,
+        844
+      ],
+      "touch": 1,
+      "reachable": [
+        {
+          "name": "name",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "phone",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "email",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "purpose",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "submit",
+          "withinViewport": true,
+          "unobstructed": true
+        }
+      ],
+      "missingBlocked": true,
+      "invalidEmailBlocked": true,
+      "errorState": {
+        "shown": true,
+        "valuesPreserved": true,
+        "buttonEnabled": true
+      },
+      "successState": {
+        "shown": true,
+        "formReset": true,
+        "buttonEnabled": true,
+        "conversionRecorded": true
+      },
+      "mockedRequests": 2,
+      "network": "Mocked form responses; no API submission"
+    },
+    {
+      "name": "android_large",
+      "viewport": [
+        412,
+        915
+      ],
+      "touch": 1,
+      "reachable": [
+        {
+          "name": "name",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "phone",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "email",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "purpose",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "submit",
+          "withinViewport": true,
+          "unobstructed": true
+        }
+      ],
+      "missingBlocked": true,
+      "invalidEmailBlocked": true,
+      "errorState": {
+        "shown": true,
+        "valuesPreserved": true,
+        "buttonEnabled": true
+      },
+      "successState": {
+        "shown": true,
+        "formReset": true,
+        "buttonEnabled": true,
+        "conversionRecorded": true
+      },
+      "mockedRequests": 2,
+      "network": "Mocked form responses; no API submission"
+    },
+    {
+      "name": "phone_large",
+      "viewport": [
+        430,
+        932
+      ],
+      "touch": 1,
+      "reachable": [
+        {
+          "name": "name",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "phone",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "email",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "purpose",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "submit",
+          "withinViewport": true,
+          "unobstructed": true
+        }
+      ],
+      "missingBlocked": true,
+      "invalidEmailBlocked": true,
+      "errorState": {
+        "shown": true,
+        "valuesPreserved": true,
+        "buttonEnabled": true
+      },
+      "successState": {
+        "shown": true,
+        "formReset": true,
+        "buttonEnabled": true,
+        "conversionRecorded": true
+      },
+      "mockedRequests": 2,
+      "network": "Mocked form responses; no API submission"
+    },
+    {
+      "name": "phone_landscape",
+      "viewport": [
+        667,
+        375
+      ],
+      "touch": 1,
+      "reachable": [
+        {
+          "name": "name",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "phone",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "email",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "purpose",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "submit",
+          "withinViewport": true,
+          "unobstructed": true
+        }
+      ],
+      "missingBlocked": true,
+      "invalidEmailBlocked": true,
+      "errorState": {
+        "shown": true,
+        "valuesPreserved": true,
+        "buttonEnabled": true
+      },
+      "successState": {
+        "shown": true,
+        "formReset": true,
+        "buttonEnabled": true,
+        "conversionRecorded": true
+      },
+      "mockedRequests": 2,
+      "network": "Mocked form responses; no API submission"
+    },
+    {
+      "name": "phone_landscape_large",
+      "viewport": [
+        844,
+        390
+      ],
+      "touch": 1,
+      "reachable": [
+        {
+          "name": "name",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "phone",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "email",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "purpose",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "submit",
+          "withinViewport": true,
+          "unobstructed": true
+        }
+      ],
+      "missingBlocked": true,
+      "invalidEmailBlocked": true,
+      "errorState": {
+        "shown": true,
+        "valuesPreserved": true,
+        "buttonEnabled": true
+      },
+      "successState": {
+        "shown": true,
+        "formReset": true,
+        "buttonEnabled": true,
+        "conversionRecorded": true
+      },
+      "mockedRequests": 2,
+      "network": "Mocked form responses; no API submission"
+    },
+    {
+      "name": "small_tablet",
+      "viewport": [
+        600,
+        960
+      ],
+      "touch": 1,
+      "reachable": [
+        {
+          "name": "name",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "phone",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "email",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "purpose",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "submit",
+          "withinViewport": true,
+          "unobstructed": true
+        }
+      ],
+      "missingBlocked": true,
+      "invalidEmailBlocked": true,
+      "errorState": {
+        "shown": true,
+        "valuesPreserved": true,
+        "buttonEnabled": true
+      },
+      "successState": {
+        "shown": true,
+        "formReset": true,
+        "buttonEnabled": true,
+        "conversionRecorded": true
+      },
+      "mockedRequests": 2,
+      "network": "Mocked form responses; no API submission"
+    },
+    {
+      "name": "tablet_768",
+      "viewport": [
+        768,
+        1024
+      ],
+      "touch": 1,
+      "reachable": [
+        {
+          "name": "name",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "phone",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "email",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "purpose",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "submit",
+          "withinViewport": true,
+          "unobstructed": true
+        }
+      ],
+      "missingBlocked": true,
+      "invalidEmailBlocked": true,
+      "errorState": {
+        "shown": true,
+        "valuesPreserved": true,
+        "buttonEnabled": true
+      },
+      "successState": {
+        "shown": true,
+        "formReset": true,
+        "buttonEnabled": true,
+        "conversionRecorded": true
+      },
+      "mockedRequests": 2,
+      "network": "Mocked form responses; no API submission"
+    },
+    {
+      "name": "tablet_820",
+      "viewport": [
+        820,
+        1180
+      ],
+      "touch": 1,
+      "reachable": [
+        {
+          "name": "name",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "phone",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "email",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "purpose",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "submit",
+          "withinViewport": true,
+          "unobstructed": true
+        }
+      ],
+      "missingBlocked": true,
+      "invalidEmailBlocked": true,
+      "errorState": {
+        "shown": true,
+        "valuesPreserved": true,
+        "buttonEnabled": true
+      },
+      "successState": {
+        "shown": true,
+        "formReset": true,
+        "buttonEnabled": true,
+        "conversionRecorded": true
+      },
+      "mockedRequests": 2,
+      "network": "Mocked form responses; no API submission"
+    },
+    {
+      "name": "tablet_large",
+      "viewport": [
+        1024,
+        1366
+      ],
+      "touch": 1,
+      "reachable": [
+        {
+          "name": "name",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "phone",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "email",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "purpose",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "submit",
+          "withinViewport": true,
+          "unobstructed": true
+        }
+      ],
+      "missingBlocked": true,
+      "invalidEmailBlocked": true,
+      "errorState": {
+        "shown": true,
+        "valuesPreserved": true,
+        "buttonEnabled": true
+      },
+      "successState": {
+        "shown": true,
+        "formReset": true,
+        "buttonEnabled": true,
+        "conversionRecorded": true
+      },
+      "mockedRequests": 2,
+      "network": "Mocked form responses; no API submission"
+    },
+    {
+      "name": "tablet_landscape",
+      "viewport": [
+        1024,
+        768
+      ],
+      "touch": 1,
+      "reachable": [
+        {
+          "name": "name",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "phone",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "email",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "purpose",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "submit",
+          "withinViewport": true,
+          "unobstructed": true
+        }
+      ],
+      "missingBlocked": true,
+      "invalidEmailBlocked": true,
+      "errorState": {
+        "shown": true,
+        "valuesPreserved": true,
+        "buttonEnabled": true
+      },
+      "successState": {
+        "shown": true,
+        "formReset": true,
+        "buttonEnabled": true,
+        "conversionRecorded": true
+      },
+      "mockedRequests": 2,
+      "network": "Mocked form responses; no API submission"
+    },
+    {
+      "name": "tablet_landscape_large",
+      "viewport": [
+        1366,
+        1024
+      ],
+      "touch": 1,
+      "reachable": [
+        {
+          "name": "name",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "phone",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "email",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "purpose",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "submit",
+          "withinViewport": true,
+          "unobstructed": true
+        }
+      ],
+      "missingBlocked": true,
+      "invalidEmailBlocked": true,
+      "errorState": {
+        "shown": true,
+        "valuesPreserved": true,
+        "buttonEnabled": true
+      },
+      "successState": {
+        "shown": true,
+        "formReset": true,
+        "buttonEnabled": true,
+        "conversionRecorded": true
+      },
+      "mockedRequests": 2,
+      "network": "Mocked form responses; no API submission"
+    }
+  ],
+  "findings": [
+    "No horizontal overflow in 14 emulated viewports; all four fields and submit reachable and unobstructed by scrolling.",
+    "All tested controls height >=46px and input text16px.",
+    "At320x568,360x640,375x667 hero CTA is below the initial viewport; form submit requires additional scroll after CTA.",
+    "Phone landscape requires scrolling to CTA and through the form.",
+    "Tablet portrait and landscape tested without layout overflow.",
+    "Required field blocking, invalid email, server error display, value retention, retry and success feedback pass with mocked API responses."
+  ],
+  "limitations": [
+    "Chromium emulation is not a test on physical iPhone/iPad/Android devices or Safari/WebKit.",
+    "Actual on-screen keyboard, browser chrome, safe-area insets, iOS autofill and zoom behavior remain unverified.",
+    "Mocked responses verify client behavior only; no mobile production backend requests were sent.",
+    "Existing simulator sessions are desktop-only, so no mobile conversion impact is established."
+  ],
+  "formContract": {
+    "requiredFields": [
+      "name",
+      "phone",
+      "email",
+      "purpose"
+    ],
+    "ruleSource": "STUDENTS.md",
+    "serverSource": "api/submit.php",
+    "constraint": "All four must be nonempty; email must be valid. API and SQL changes prohibited by challenge. Removing client required cannot make server fields optional."
+  }
+}
