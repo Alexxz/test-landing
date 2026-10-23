@@ -1,0 +1,91 @@
+{
+  "review": "Independent visual hypothesis after E06; no product files changed",
+  "baseline": "E05 (restore E06 text changes before test)",
+  "evidence": {
+    "source_files": [
+      "STUDENTS.md",
+      "css/style.css",
+      "index.php",
+      "analysis/e05-session-review.json",
+      "/tmp/landing-e05-full-review.json.gz"
+    ],
+    "funnel": {
+      "cta_sessions": 100,
+      "input_starts": 25,
+      "confirmed_conversions": 25,
+      "cta_abandon": 75
+    },
+    "session_examples": {
+      "success": [
+        "1rJnmeFi_oIVVZpAcGWPTQtV",
+        "1yHyhReUlCmyeVnSl94_j_U-",
+        "4Cx-Cr4g057E2XbQcYEvHb75"
+      ],
+      "cta_abandon": [
+        "-CPHwEwiBLM3qgodK1J42m0w",
+        "-Ve8bhMMfpHwJqjkPeXMt9Sg",
+        "-lZNm3nvZVHAmnarKN1uPRYx"
+      ]
+    },
+    "cta_sources": "All100 CTA sessions use hero_cta; this does not establish genuine early action or show tariff-button use.",
+    "contrast_calculated_from_css": {
+      "normal_button_surface_vs_white": 1.5481,
+      "field_border_vs_white": 1.4999,
+      "normal_button_text_vs_surface": 8.191,
+      "hero_button_white_text_vs_surface": 8.8997
+    },
+    "css_facts": [
+      "Form fields are white inside white registration panel with1px #d8d2cb borders.",
+      "Normal submit and tariff buttons use pastel #b8d4e3; hero uses dark #194f68.",
+      "Normal button text has strong contrast despite low surface contrast; do not call this a text-legibility failure.",
+      "Actual buttons still have cursor:pointer and hover motion; noninteractive card affordances were removed in E05.",
+      "Expanded tariff has blue border and1.02scale; no observed tariff-button selection separates outcomes."
+    ]
+  },
+  "main_hypothesis": {
+    "id": "field_boundary_salience",
+    "claim": "Increasing the contrast of existing input boundaries may make where to begin more immediately apparent and increase first-input starts among form viewers.",
+    "confidence": "low; verified visual property, unproven behavioral mechanism",
+    "why_this_factor": "The observed loss is before any input; completion after input is25/25, so submit contrast is less directly tied to the measured loss than entry-field salience.",
+    "single_factor": "Only default input/textarea border color, no geometry, text, focus policy, button color or form-required changes.",
+    "exact_diff_plan": [
+      "Restore index.php form copy from E05, because E06 copy is the confounding factor.",
+      "Use separate exposure variant e07_field_boundaries.",
+      "Change .form-grid input,.form-grid textarea border-color from #d8d2cb to #64748b; keep1px width and all dimensions.",
+      "Retain all four required fields, form/action, API, pricing and course content."
+    ],
+    "prediction": "Input-start/CTA increases above E05 while CTA exposure and input-start-to-conversion remain similar.",
+    "falsifier": "With correct variant exposure, field boundary color changes but input-start fraction and confirmed conversion do not improve in comparable batches.",
+    "primary_metric": "Confirmed simulator orders/100 visits. Never count focus or mere visibility as a conversion.",
+    "diagnostics": [
+      "registration_input_start unique sessions / registration_view unique sessions",
+      "rrweb first-input delay after CTA",
+      "Actual input-start to conversion_success"
+    ],
+    "risks": [
+      "Darker field outlines can make a four-field form look heavier rather than easier.",
+      "All75 CTA-abandonments are inert after CTA; scripted start/stop behavior could dominate and not depend on this visual change.",
+      "Sequential batches and100 visits cannot isolate small effects or prove underlying50% conversion."
+    ]
+  },
+  "rejected_for_immediate_test": [
+    {
+      "factor": "Darken submit only",
+      "reason": "All25 starters already complete, so it does not directly target the observed loss. Could still influence willingness to begin, but evidence is weaker."
+    },
+    {
+      "factor": "Change tariff order/prices/featured tier",
+      "reason": "No divergent tariff interactions and all recorded CTA sources are hero. Price sensitivity is not established; changing multiple commercial variables would obscure interpretation."
+    },
+    {
+      "factor": "Global recolor of all buttons and inputs",
+      "reason": "Too broad; cannot distinguish input salience from CTA or overall styling."
+    }
+  ],
+  "test_protocol": [
+    "Deploy E05 baseline plus only chosen border-color change and variant.",
+    "Run isolated100 visits; capture simulator outcome and check exposure/session IDs.",
+    "Inspect full rrweb for successful and nonstarting sessions; compare with E05; avoid interpreting clamped negative clicks as human frustration.",
+    "Do not infer mobile conversion from desktop-only simulator."
+  ]
+}

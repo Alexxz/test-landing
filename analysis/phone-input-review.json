@@ -1,0 +1,28 @@
+{
+  "observed": {
+    "e05": {
+      "phone_focus_sessions": 25,
+      "phone_to_email_sessions": 25,
+      "repeated_phone_focus_sessions": 0,
+      "phone_to_email_ms": {
+        "min": 1001,
+        "median": 1217,
+        "max": 1383
+      }
+    },
+    "e06": {
+      "phone_focus_sessions": 16,
+      "phone_to_email_sessions": 16,
+      "repeated_phone_focus_sessions": 0
+    }
+  },
+  "implementation": {
+    "type": "tel",
+    "autocomplete": "tel",
+    "required": true,
+    "pattern": null,
+    "mask": null,
+    "server_validation": "Nonempty after trim only"
+  },
+  "limitation": "No evidence from real mobile keyboards; timing excludes possible work before focus and does not establish absence of hesitation."
+}

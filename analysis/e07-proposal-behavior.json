@@ -1,0 +1,182 @@
+{
+  "review": "Independent behavioral alternative to form-copy and size experiments",
+  "baseline": "e05_static_cards; E06 copy should be removed before testing another factor",
+  "sources": [
+    "STUDENTS.md",
+    "index.php",
+    "css/style.css",
+    "images/cpr-training.jpg",
+    "/tmp/landing-e05-full-review.json.gz",
+    "analysis/e05-session-review.json"
+  ],
+  "coverage": {
+    "page_sessions": 101,
+    "aligned_cta_sessions": 100,
+    "successes": 25,
+    "cta_abandons": 75,
+    "no_cta": 1
+  },
+  "observations": [
+    {
+      "fact": "CTA timing does not separate success and abandonment",
+      "success_median_ms": 42881,
+      "abandon_median_ms": 41994
+    },
+    {
+      "fact": "After matching the same hero click between streams, both outcomes show deep page traversal before CTA",
+      "success_pre_cta_max_scroll_median_px": 6226,
+      "abandon_pre_cta_max_scroll_median_px": 6446
+    },
+    {
+      "fact": "All25 input starts finish;75 CTA abandonments never start. Friction from completing a particular field is not observed."
+    },
+    {
+      "fact": "Hero states from4900RUB, while the7900RUB extended tariff is visually featured with border and scale. This may blur the basic offer; no trace proves price confusion."
+    },
+    {
+      "fact": "CPR image was visually inspected: training mannequin, gloved hands, no gore. Calling it objectively frightening is unsupported."
+    },
+    {
+      "fact": "Course date15August2026 predates environment23October2026. Exact replacement date is unknown; do not invent a new date. This is a real credibility issue but not the chosen isolated test."
+    }
+  ],
+  "clock_alignment": {
+    "issue": "session.started_at is a server timestamp; rrweb timestamps are client wall time; action.at_ms uses a client elapsed clock. Direct subtraction can mislabel post-CTA scroll as pre-CTA.",
+    "method": "Match rrweb source2/type2 click on snapshot node with class hero-register to action registration_cta; compare rrweb events relative to this common event.",
+    "result": "Scroll y237 occurs before hero click; y7573 occurs after, not before. Deep pre-CTA traversal remains true."
+  },
+  "session_evidence": [
+    {
+      "id": "-CPHwEwiBLM3qgodK1J42m0w",
+      "success": false,
+      "cta_ms": 43117,
+      "max_before_cta": 6567,
+      "last_before": [
+        [
+          37600,
+          6062
+        ],
+        [
+          37750,
+          6567
+        ],
+        [
+          43094,
+          237
+        ]
+      ]
+    },
+    {
+      "id": "-Ve8bhMMfpHwJqjkPeXMt9Sg",
+      "success": false,
+      "cta_ms": 49989,
+      "max_before_cta": 6528,
+      "last_before": [
+        [
+          44176,
+          5935
+        ],
+        [
+          44325,
+          6528
+        ],
+        [
+          49965,
+          237
+        ]
+      ]
+    },
+    {
+      "id": "1rJnmeFi_oIVVZpAcGWPTQtV",
+      "success": true,
+      "cta_ms": 41779,
+      "max_before_cta": 6779,
+      "last_before": [
+        [
+          37486,
+          6257
+        ],
+        [
+          37636,
+          6779
+        ],
+        [
+          41754,
+          237
+        ]
+      ]
+    },
+    {
+      "id": "1yHyhReUlCmyeVnSl94_j_U-",
+      "success": true,
+      "cta_ms": 41578,
+      "max_before_cta": 6242,
+      "last_before": [
+        [
+          37324,
+          5762
+        ],
+        [
+          37474,
+          6242
+        ],
+        [
+          41555,
+          237
+        ]
+      ]
+    }
+  ],
+  "priority_hypothesis": {
+    "id": "basic_tariff_emphasis",
+    "claim": "Aligning the pricing visual emphasis with the4900RUB starting offer may make the affordable complete-course option easier to understand before the decision to enter contacts.",
+    "confidence": "low; pricing hierarchy is verified, price-related intent is not observed in recordings",
+    "single_factor": "Move featured styling from extended tariff to basic tariff; prices, copy, buttons and form unchanged.",
+    "exact_diff_plan": [
+      "On restored E05 HTML, add featured to first pricing-card and remove featured from second pricing-card.",
+      "Keep all3tariffs, their prices/features and every btn-register.",
+      "Keep CSS styles unchanged so this is a relocation of existing emphasis.",
+      "Update exposure variant and experiment log; do not change form fields/validation/API."
+    ],
+    "prediction": "Input-start/CTA and confirmed orders increase over E05 25%, while input-start-to-success remains high. No need to assert increased reading time or hover as intent.",
+    "falsifier": "No increase in input starts and confirmed orders; more hover or pricing visibility alone does not validate the hypothesis.",
+    "risks": [
+      "All CTA actions use hero; pricing visual hierarchy may have little effect on a scripted decision.",
+      "Not all sessions necessarily read prices; deep scroll does not prove attention.",
+      "Featured treatment may create a misleading recommendation if explained as objectively best. Do not add such claims."
+    ],
+    "rules": "Allowed visual appearance/inside-section arrangement; no protected contract changes."
+  },
+  "comparison_quality": {
+    "e05": {
+      "orders": 25,
+      "visits": 100,
+      "wilson95_percent": [
+        17.55,
+        34.3
+      ]
+    },
+    "e06": {
+      "orders": 16,
+      "visits": 100,
+      "wilson95_percent": [
+        10.1,
+        24.42
+      ]
+    },
+    "difference_percentage_points": -9,
+    "pooled_two_proportion_z": 1.5764,
+    "interpretation": "Observed decrease does not establish harm from E06 copy. Intervals overlap; batches are sequential and simulator composition/seed is not controlled. Restore E05 as practical working baseline without claiming E06 proven harmful.",
+    "test_plan": [
+      "One isolated100-visit batch after manual deploy, no mixed versions or QA visits.",
+      "Verify exposure variant, count unique input-start and confirmed-conversion sessions, reconcile with simulator/server orders.",
+      "If a gain is promising, repeat comparable baseline/treatment batches before causal claims.",
+      "Keep primary conversion denominator simulator visits;101tracker page sessions are not100unique humans."
+    ]
+  },
+  "non_recommendations": [
+    "Do not invent an available course date, refund or payment guarantees.",
+    "Do not interpret negative-coordinate simulator clicks or collapsed selection artifacts as frustration.",
+    "Do not claim changing an image is supported by emotion observed in rrweb."
+  ]
+}

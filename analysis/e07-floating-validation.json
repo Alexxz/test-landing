@@ -1,0 +1,992 @@
+[
+  {
+    "name": "desktop",
+    "pageId": 9,
+    "viewport": [
+      1280,
+      720
+    ],
+    "initial": {
+      "heroVisible": true,
+      "floatingHidden": true,
+      "expectedHidden": true
+    },
+    "whileReading": {
+      "shown": true,
+      "withinViewport": true,
+      "buttonHeight": 52
+    },
+    "afterClick": {
+      "focusedField": "name",
+      "floatingHidden": true,
+      "sourceRecorded": true,
+      "autoFocusExplicit": true,
+      "qualifiedBeforeDwell": false,
+      "inputStartBeforeTyping": false
+    },
+    "qualified": {
+      "ratio": 1,
+      "recorded": true,
+      "floatingHidden": true
+    },
+    "fields": [
+      {
+        "name": "name",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "phone",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "email",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "purpose",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "submit",
+        "unobstructed": true,
+        "floatingHidden": true
+      }
+    ],
+    "horizontalOverflow": false,
+    "ctaLabels": [
+      "hero_cta",
+      "pricing_cta_1",
+      "pricing_cta_2",
+      "pricing_cta_3",
+      "floating_cta"
+    ]
+  },
+  {
+    "name": "small_phone",
+    "pageId": 10,
+    "viewport": [
+      320,
+      568
+    ],
+    "initial": {
+      "heroVisible": false,
+      "floatingHidden": false,
+      "expectedHidden": false
+    },
+    "whileReading": {
+      "shown": true,
+      "withinViewport": true,
+      "buttonHeight": 52
+    },
+    "afterClick": {
+      "focusedField": "name",
+      "floatingHidden": true,
+      "sourceRecorded": true,
+      "autoFocusExplicit": true,
+      "qualifiedBeforeDwell": false,
+      "inputStartBeforeTyping": false
+    },
+    "qualified": {
+      "ratio": 1,
+      "recorded": true,
+      "floatingHidden": true
+    },
+    "fields": [
+      {
+        "name": "name",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "phone",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "email",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "purpose",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "submit",
+        "unobstructed": true,
+        "floatingHidden": true
+      }
+    ],
+    "horizontalOverflow": false,
+    "ctaLabels": [
+      "hero_cta",
+      "pricing_cta_1",
+      "pricing_cta_2",
+      "pricing_cta_3",
+      "floating_cta"
+    ]
+  },
+  {
+    "name": "android_small",
+    "pageId": 11,
+    "viewport": [
+      360,
+      640
+    ],
+    "initial": {
+      "heroVisible": false,
+      "floatingHidden": false,
+      "expectedHidden": false
+    },
+    "whileReading": {
+      "shown": true,
+      "withinViewport": true,
+      "buttonHeight": 52
+    },
+    "afterClick": {
+      "focusedField": "name",
+      "floatingHidden": true,
+      "sourceRecorded": true,
+      "autoFocusExplicit": true,
+      "qualifiedBeforeDwell": false,
+      "inputStartBeforeTyping": false
+    },
+    "qualified": {
+      "ratio": 1,
+      "recorded": true,
+      "floatingHidden": true
+    },
+    "fields": [
+      {
+        "name": "name",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "phone",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "email",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "purpose",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "submit",
+        "unobstructed": true,
+        "floatingHidden": true
+      }
+    ],
+    "horizontalOverflow": false,
+    "ctaLabels": [
+      "hero_cta",
+      "pricing_cta_1",
+      "pricing_cta_2",
+      "pricing_cta_3",
+      "floating_cta"
+    ]
+  },
+  {
+    "name": "iphone_se_size",
+    "pageId": 12,
+    "viewport": [
+      375,
+      667
+    ],
+    "initial": {
+      "heroVisible": true,
+      "floatingHidden": true,
+      "expectedHidden": true
+    },
+    "whileReading": {
+      "shown": true,
+      "withinViewport": true,
+      "buttonHeight": 52
+    },
+    "afterClick": {
+      "focusedField": "name",
+      "floatingHidden": true,
+      "sourceRecorded": true,
+      "autoFocusExplicit": true,
+      "qualifiedBeforeDwell": false,
+      "inputStartBeforeTyping": false
+    },
+    "qualified": {
+      "ratio": 1,
+      "recorded": true,
+      "floatingHidden": true
+    },
+    "fields": [
+      {
+        "name": "name",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "phone",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "email",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "purpose",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "submit",
+        "unobstructed": true,
+        "floatingHidden": true
+      }
+    ],
+    "horizontalOverflow": false,
+    "ctaLabels": [
+      "hero_cta",
+      "pricing_cta_1",
+      "pricing_cta_2",
+      "pricing_cta_3",
+      "floating_cta"
+    ]
+  },
+  {
+    "name": "phone_standard",
+    "pageId": 13,
+    "viewport": [
+      390,
+      844
+    ],
+    "initial": {
+      "heroVisible": true,
+      "floatingHidden": true,
+      "expectedHidden": true
+    },
+    "whileReading": {
+      "shown": true,
+      "withinViewport": true,
+      "buttonHeight": 52
+    },
+    "afterClick": {
+      "focusedField": "name",
+      "floatingHidden": true,
+      "sourceRecorded": true,
+      "autoFocusExplicit": true,
+      "qualifiedBeforeDwell": false,
+      "inputStartBeforeTyping": false
+    },
+    "qualified": {
+      "ratio": 1,
+      "recorded": true,
+      "floatingHidden": true
+    },
+    "fields": [
+      {
+        "name": "name",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "phone",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "email",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "purpose",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "submit",
+        "unobstructed": true,
+        "floatingHidden": true
+      }
+    ],
+    "horizontalOverflow": false,
+    "ctaLabels": [
+      "hero_cta",
+      "pricing_cta_1",
+      "pricing_cta_2",
+      "pricing_cta_3",
+      "floating_cta"
+    ]
+  },
+  {
+    "name": "android_large",
+    "pageId": 14,
+    "viewport": [
+      412,
+      915
+    ],
+    "initial": {
+      "heroVisible": true,
+      "floatingHidden": true,
+      "expectedHidden": true
+    },
+    "whileReading": {
+      "shown": true,
+      "withinViewport": true,
+      "buttonHeight": 52
+    },
+    "afterClick": {
+      "focusedField": "name",
+      "floatingHidden": true,
+      "sourceRecorded": true,
+      "autoFocusExplicit": true,
+      "qualifiedBeforeDwell": false,
+      "inputStartBeforeTyping": false
+    },
+    "qualified": {
+      "ratio": 1,
+      "recorded": true,
+      "floatingHidden": true
+    },
+    "fields": [
+      {
+        "name": "name",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "phone",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "email",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "purpose",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "submit",
+        "unobstructed": true,
+        "floatingHidden": true
+      }
+    ],
+    "horizontalOverflow": false,
+    "ctaLabels": [
+      "hero_cta",
+      "pricing_cta_1",
+      "pricing_cta_2",
+      "pricing_cta_3",
+      "floating_cta"
+    ]
+  },
+  {
+    "name": "phone_large",
+    "pageId": 15,
+    "viewport": [
+      430,
+      932
+    ],
+    "initial": {
+      "heroVisible": true,
+      "floatingHidden": true,
+      "expectedHidden": true
+    },
+    "whileReading": {
+      "shown": true,
+      "withinViewport": true,
+      "buttonHeight": 52
+    },
+    "afterClick": {
+      "focusedField": "name",
+      "floatingHidden": true,
+      "sourceRecorded": true,
+      "autoFocusExplicit": true,
+      "qualifiedBeforeDwell": false,
+      "inputStartBeforeTyping": false
+    },
+    "qualified": {
+      "ratio": 1,
+      "recorded": true,
+      "floatingHidden": true
+    },
+    "fields": [
+      {
+        "name": "name",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "phone",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "email",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "purpose",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "submit",
+        "unobstructed": true,
+        "floatingHidden": true
+      }
+    ],
+    "horizontalOverflow": false,
+    "ctaLabels": [
+      "hero_cta",
+      "pricing_cta_1",
+      "pricing_cta_2",
+      "pricing_cta_3",
+      "floating_cta"
+    ]
+  },
+  {
+    "name": "phone_landscape",
+    "pageId": 16,
+    "viewport": [
+      667,
+      375
+    ],
+    "initial": {
+      "heroVisible": false,
+      "floatingHidden": false,
+      "expectedHidden": false
+    },
+    "whileReading": {
+      "shown": true,
+      "withinViewport": true,
+      "buttonHeight": 52
+    },
+    "afterClick": {
+      "focusedField": "name",
+      "floatingHidden": true,
+      "sourceRecorded": true,
+      "autoFocusExplicit": true,
+      "qualifiedBeforeDwell": false,
+      "inputStartBeforeTyping": false
+    },
+    "qualified": {
+      "ratio": 1,
+      "recorded": true,
+      "floatingHidden": true
+    },
+    "fields": [
+      {
+        "name": "name",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "phone",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "email",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "purpose",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "submit",
+        "unobstructed": true,
+        "floatingHidden": true
+      }
+    ],
+    "horizontalOverflow": false,
+    "ctaLabels": [
+      "hero_cta",
+      "pricing_cta_1",
+      "pricing_cta_2",
+      "pricing_cta_3",
+      "floating_cta"
+    ]
+  },
+  {
+    "name": "phone_landscape_large",
+    "pageId": 17,
+    "viewport": [
+      844,
+      390
+    ],
+    "initial": {
+      "heroVisible": false,
+      "floatingHidden": false,
+      "expectedHidden": false
+    },
+    "whileReading": {
+      "shown": true,
+      "withinViewport": true,
+      "buttonHeight": 52
+    },
+    "afterClick": {
+      "focusedField": "name",
+      "floatingHidden": true,
+      "sourceRecorded": true,
+      "autoFocusExplicit": true,
+      "qualifiedBeforeDwell": false,
+      "inputStartBeforeTyping": false
+    },
+    "qualified": {
+      "ratio": 1,
+      "recorded": true,
+      "floatingHidden": true
+    },
+    "fields": [
+      {
+        "name": "name",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "phone",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "email",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "purpose",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "submit",
+        "unobstructed": true,
+        "floatingHidden": true
+      }
+    ],
+    "horizontalOverflow": false,
+    "ctaLabels": [
+      "hero_cta",
+      "pricing_cta_1",
+      "pricing_cta_2",
+      "pricing_cta_3",
+      "floating_cta"
+    ]
+  },
+  {
+    "name": "small_tablet",
+    "pageId": 18,
+    "viewport": [
+      600,
+      960
+    ],
+    "initial": {
+      "heroVisible": true,
+      "floatingHidden": true,
+      "expectedHidden": true
+    },
+    "whileReading": {
+      "shown": true,
+      "withinViewport": true,
+      "buttonHeight": 52
+    },
+    "afterClick": {
+      "focusedField": "name",
+      "floatingHidden": true,
+      "sourceRecorded": true,
+      "autoFocusExplicit": true,
+      "qualifiedBeforeDwell": false,
+      "inputStartBeforeTyping": false
+    },
+    "qualified": {
+      "ratio": 1,
+      "recorded": true,
+      "floatingHidden": true
+    },
+    "fields": [
+      {
+        "name": "name",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "phone",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "email",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "purpose",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "submit",
+        "unobstructed": true,
+        "floatingHidden": true
+      }
+    ],
+    "horizontalOverflow": false,
+    "ctaLabels": [
+      "hero_cta",
+      "pricing_cta_1",
+      "pricing_cta_2",
+      "pricing_cta_3",
+      "floating_cta"
+    ]
+  },
+  {
+    "name": "tablet_768",
+    "pageId": 19,
+    "viewport": [
+      768,
+      1024
+    ],
+    "initial": {
+      "heroVisible": true,
+      "floatingHidden": true,
+      "expectedHidden": true
+    },
+    "whileReading": {
+      "shown": true,
+      "withinViewport": true,
+      "buttonHeight": 52
+    },
+    "afterClick": {
+      "focusedField": "name",
+      "floatingHidden": true,
+      "sourceRecorded": true,
+      "autoFocusExplicit": true,
+      "qualifiedBeforeDwell": false,
+      "inputStartBeforeTyping": false
+    },
+    "qualified": {
+      "ratio": 1,
+      "recorded": true,
+      "floatingHidden": true
+    },
+    "fields": [
+      {
+        "name": "name",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "phone",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "email",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "purpose",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "submit",
+        "unobstructed": true,
+        "floatingHidden": true
+      }
+    ],
+    "horizontalOverflow": false,
+    "ctaLabels": [
+      "hero_cta",
+      "pricing_cta_1",
+      "pricing_cta_2",
+      "pricing_cta_3",
+      "floating_cta"
+    ]
+  },
+  {
+    "name": "tablet_820",
+    "pageId": 20,
+    "viewport": [
+      820,
+      1180
+    ],
+    "initial": {
+      "heroVisible": true,
+      "floatingHidden": true,
+      "expectedHidden": true
+    },
+    "whileReading": {
+      "shown": true,
+      "withinViewport": true,
+      "buttonHeight": 52
+    },
+    "afterClick": {
+      "focusedField": "name",
+      "floatingHidden": true,
+      "sourceRecorded": true,
+      "autoFocusExplicit": true,
+      "qualifiedBeforeDwell": false,
+      "inputStartBeforeTyping": false
+    },
+    "qualified": {
+      "ratio": 1,
+      "recorded": true,
+      "floatingHidden": true
+    },
+    "fields": [
+      {
+        "name": "name",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "phone",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "email",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "purpose",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "submit",
+        "unobstructed": true,
+        "floatingHidden": true
+      }
+    ],
+    "horizontalOverflow": false,
+    "ctaLabels": [
+      "hero_cta",
+      "pricing_cta_1",
+      "pricing_cta_2",
+      "pricing_cta_3",
+      "floating_cta"
+    ]
+  },
+  {
+    "name": "tablet_large",
+    "pageId": 21,
+    "viewport": [
+      1024,
+      1366
+    ],
+    "initial": {
+      "heroVisible": true,
+      "floatingHidden": true,
+      "expectedHidden": true
+    },
+    "whileReading": {
+      "shown": true,
+      "withinViewport": true,
+      "buttonHeight": 52
+    },
+    "afterClick": {
+      "focusedField": "name",
+      "floatingHidden": true,
+      "sourceRecorded": true,
+      "autoFocusExplicit": true,
+      "qualifiedBeforeDwell": false,
+      "inputStartBeforeTyping": false
+    },
+    "qualified": {
+      "ratio": 1,
+      "recorded": true,
+      "floatingHidden": true
+    },
+    "fields": [
+      {
+        "name": "name",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "phone",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "email",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "purpose",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "submit",
+        "unobstructed": true,
+        "floatingHidden": true
+      }
+    ],
+    "horizontalOverflow": false,
+    "ctaLabels": [
+      "hero_cta",
+      "pricing_cta_1",
+      "pricing_cta_2",
+      "pricing_cta_3",
+      "floating_cta"
+    ]
+  },
+  {
+    "name": "tablet_landscape",
+    "pageId": 22,
+    "viewport": [
+      1024,
+      768
+    ],
+    "initial": {
+      "heroVisible": true,
+      "floatingHidden": true,
+      "expectedHidden": true
+    },
+    "whileReading": {
+      "shown": true,
+      "withinViewport": true,
+      "buttonHeight": 52
+    },
+    "afterClick": {
+      "focusedField": "name",
+      "floatingHidden": true,
+      "sourceRecorded": true,
+      "autoFocusExplicit": true,
+      "qualifiedBeforeDwell": false,
+      "inputStartBeforeTyping": false
+    },
+    "qualified": {
+      "ratio": 1,
+      "recorded": true,
+      "floatingHidden": true
+    },
+    "fields": [
+      {
+        "name": "name",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "phone",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "email",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "purpose",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "submit",
+        "unobstructed": true,
+        "floatingHidden": true
+      }
+    ],
+    "horizontalOverflow": false,
+    "ctaLabels": [
+      "hero_cta",
+      "pricing_cta_1",
+      "pricing_cta_2",
+      "pricing_cta_3",
+      "floating_cta"
+    ]
+  },
+  {
+    "name": "tablet_landscape_large",
+    "pageId": 23,
+    "viewport": [
+      1366,
+      1024
+    ],
+    "initial": {
+      "heroVisible": true,
+      "floatingHidden": true,
+      "expectedHidden": true
+    },
+    "whileReading": {
+      "shown": true,
+      "withinViewport": true,
+      "buttonHeight": 52
+    },
+    "afterClick": {
+      "focusedField": "name",
+      "floatingHidden": true,
+      "sourceRecorded": true,
+      "autoFocusExplicit": true,
+      "qualifiedBeforeDwell": false,
+      "inputStartBeforeTyping": false
+    },
+    "qualified": {
+      "ratio": 1,
+      "recorded": true,
+      "floatingHidden": true
+    },
+    "fields": [
+      {
+        "name": "name",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "phone",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "email",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "purpose",
+        "unobstructed": true,
+        "floatingHidden": true
+      },
+      {
+        "name": "submit",
+        "unobstructed": true,
+        "floatingHidden": true
+      }
+    ],
+    "horizontalOverflow": false,
+    "ctaLabels": [
+      "hero_cta",
+      "pricing_cta_1",
+      "pricing_cta_2",
+      "pricing_cta_3",
+      "floating_cta"
+    ]
+  }
+]

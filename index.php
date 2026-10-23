@@ -11,7 +11,7 @@
 <body>
     <header class="hero">
         <div class="container hero-content">
-            <span class="hero-badge">Офлайн-курс · 15 августа 2026</span>
+            <span class="hero-badge">Офлайн-курс · 15 декабря 2026</span>
             <h1>Первая помощь: практический курс для каждого</h1>
             <p class="hero-text">
                 Научитесь действовать уверенно в экстренной ситуации: остановить кровотечение,
@@ -27,7 +27,7 @@
             <div class="meta-grid">
                 <div class="meta-card">
                     <strong>Дата</strong>
-                    15 августа 2026, суббота
+                    15 декабря 2026, вторник
                 </div>
                 <div class="meta-card">
                     <strong>Время</strong>
@@ -39,7 +39,7 @@
                 </div>
             </div>
             <div class="hero-note">
-                На курсе вы отработаете навыки на манекенах и отработаете сценарии, которые
+                На курсе вы отработаете навыки на манекенах и разберёте сценарии, которые
                 помогают сохранить спокойствие и принимать правильные решения под давлением времени.
                 После занятия вы получите сертификат и памятку по алгоритмам первой помощи.
             </div>
@@ -56,11 +56,11 @@
                 </p>
                 <div class="features-grid">
                     <article class="feature-card">
-                        <h3>8 часов практики</h3>
-                        <p>Больше половины времени посвящено тренировкам на манекенах, имитации травм и работе в парах.</p>
+                        <h3>Один день обучения</h3>
+                        <p>Теория, тренировки на манекенах, имитация травм и работа в парах. В расписании предусмотрен перерыв на обед.</p>
                     </article>
                     <article class="feature-card">
-                        <h3>Формат offline</h3>
+                        <h3>Очный формат</h3>
                         <p>Живое общение, мгновенная обратная связь и возможность задать вопросы по вашим реальным ситуациям.</p>
                     </article>
                     <article class="feature-card">
@@ -109,7 +109,7 @@
                             клетку, с какой частотой и глубиной, и когда можно не делать
                             искусственное дыхание, а ограничиться только компрессиями. Мы отработаем
                             смену спасателя, работу в паре и втроём, использование тренировочного
-                            автоматического дефibrиллятора AED: как включить прибор, куда приложить
+                            автоматического дефибриллятора AED: как включить прибор, куда приложить
                             электроды и как не мешать ему анализировать ритм. Каждый участник несколько
                             раз пройдёт полный цикл «обнаружил — проверил — начал СЛР — дождался
                             скорой», чтобы руки запомнили движения, а голова — порядок действий.
@@ -205,7 +205,7 @@
                     </article>
                     <article class="injury-card">
                         <h3>Остановка дыхания</h3>
-                        <p>СЛР, работа в паре, использование автоматического дефibrиллятора, действия до приезда скорой.</p>
+                        <p>СЛР, работа в паре, использование автоматического дефибриллятора, действия до приезда скорой.</p>
                     </article>
                     <article class="injury-card">
                         <h3>Травмы головы и позвоночника</h3>
@@ -336,9 +336,9 @@
         <section class="section registration-section" id="registration">
             <div class="container">
                 <div class="registration-panel">
-                    <h2 class="section-title">Оставить заявку</h2>
+                    <h2 class="section-title">Записаться на курс</h2>
                     <p class="section-lead">
-                        Оставьте контакты для подтверждения места. Мы свяжемся с вами и ответим на вопросы. Оплата на этом шаге не требуется.
+                        Заполните 4 поля — мы свяжемся с вами, подтвердим место и ответим на вопросы.
                     </p>
                     <form class="form-grid" id="registration-form" action="api/submit.php" method="post">
                         <label>
@@ -354,8 +354,8 @@
                             <input type="email" name="email" required autocomplete="email" placeholder="you@example.ru">
                         </label>
                         <label>
-                            Цель — в двух словах
-                            <textarea name="purpose" required rows="2" placeholder="Например: для семьи"></textarea>
+                            Для чего вам курс?
+                            <textarea name="purpose" required rows="2" placeholder="Например: для семьи, работы или путешествий"></textarea>
                         </label>
                         <button type="submit" class="btn">Отправить заявку</button>
                     </form>
@@ -370,6 +370,8 @@
             © 2026 Учебный центр «Спаси-Себя». Курс первой помощи, Москва.
         </div>
     </footer>
+
+    <button type="button" class="btn btn-register floating-register" data-track-label="floating_cta" hidden>Записаться на курс</button>
 
     <script defer src="https://vps.alexxz.ru/tracker/static/tracker.js"
             data-site-key="fsGaFTXh1jtgWDGeo1l73o_tuSgjK63jy8hpt2rS5YU"

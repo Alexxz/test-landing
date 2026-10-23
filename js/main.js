@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'e06_application_clarity';
+    const variant = 'e07_floating_cta';
     const pendingEvents = [];
     let exposed = false;
     const track = (name, properties = {}) => {
@@ -43,10 +43,42 @@ document.addEventListener('DOMContentLoaded', () => {
 
             track('registration_cta', { source: button.dataset.trackLabel });
             registrationSection.scrollIntoView({ behavior: 'instant', block: 'start' });
-            form?.querySelector('[name="name"]')?.focus({ preventScroll: true });
+            const nameField = form?.querySelector('[name="name"]');
+            if (nameField) {
+                track('registration_focus_auto', { step: 'name', source: button.dataset.trackLabel });
+                nameField.focus({ preventScroll: true });
+            }
             track('registration_arrival', { source: button.dataset.trackLabel });
         });
     });
+
+    const floatingButton = document.querySelector('.floating-register');
+    const heroButton = document.querySelector('.hero-register');
+    if (floatingButton && heroButton && registrationSection) {
+        let floatingExposed = false;
+        const updateFloatingButton = () => {
+            const heroRect = heroButton.getBoundingClientRect();
+            const sectionRect = registrationSection.getBoundingClientRect();
+            const viewportHeight = document.documentElement.clientHeight;
+            const heroVisible = heroRect.bottom > 0 && heroRect.top < viewportHeight;
+            const registrationVisible = sectionRect.bottom > 0 && sectionRect.top < viewportHeight;
+            const shouldHide = heroVisible || registrationVisible;
+            if (floatingButton.hidden !== shouldHide) floatingButton.hidden = shouldHide;
+            if (!floatingButton.hidden && !floatingExposed) {
+                track('floating_cta_view', { source: 'floating_cta' });
+                floatingExposed = true;
+            }
+        };
+        // Actual geometry also handles a phone with a short initial viewport.
+        if ('IntersectionObserver' in window) {
+            const floatingObserver = new IntersectionObserver(updateFloatingButton);
+            floatingObserver.observe(heroButton);
+            floatingObserver.observe(registrationSection);
+        }
+        window.addEventListener('scroll', updateFloatingButton, { passive: true });
+        window.addEventListener('resize', updateFloatingButton);
+        updateFloatingButton();
+    }
 
     if (!form) {
         return;
@@ -61,6 +93,39 @@ document.addEventListener('DOMContentLoaded', () => {
         }, { threshold: 0.25 });
         observer.observe(form);
     }
+    // A separate qualified view is not evidence of reading or intent.
+    // Keep the legacy view event so historical reports remain comparable.
+    if ('IntersectionObserver' in window) {
+        let viewTimer = null;
+        let halfVisible = false;
+        let qualified = false;
+        const visibleFraction = () => {
+            const rect = form.getBoundingClientRect();
+            const width = Math.max(0, Math.min(rect.right, document.documentElement.clientWidth) - Math.max(rect.left, 0));
+            const height = Math.max(0, Math.min(rect.bottom, document.documentElement.clientHeight) - Math.max(rect.top, 0));
+            return rect.width * rect.height ? width * height / (rect.width * rect.height) : 0;
+        };
+        const checkView = () => {
+            clearTimeout(viewTimer);
+            if (qualified || !halfVisible || document.visibilityState !== 'visible') return;
+            viewTimer = setTimeout(() => {
+                if (document.visibilityState === 'visible' && visibleFraction() >= 0.5) {
+                    qualified = true;
+                    track('registration_view_qualified', { step: 'half_form_1s' });
+                    viewObserver.disconnect();
+                    document.removeEventListener('visibilitychange', checkView);
+                }
+            }, 1000);
+        };
+        const viewObserver = new IntersectionObserver((entries) => {
+            halfVisible = entries.some((entry) => entry.isIntersecting && entry.intersectionRatio >= 0.5);
+            checkView();
+        }, { threshold: [0, 0.5] });
+        viewObserver.observe(form);
+        document.addEventListener('visibilitychange', checkView);
+        window.addEventListener('pagehide', () => clearTimeout(viewTimer));
+    }
+
     let inputStarted = false;
     form.addEventListener('input', (event) => {
         if (!inputStarted && ['name', 'phone', 'email', 'purpose'].includes(event.target.name)) {

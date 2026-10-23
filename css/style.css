@@ -455,3 +455,31 @@ img {
         width: 100%;
     }
 }
+
+/* e07: keep registration available while reading the course page. */
+.floating-register {
+    position: fixed;
+    right: 20px;
+    bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+    z-index: 20;
+    width: auto;
+    min-width: 180px;
+    min-height: 52px;
+    max-width: calc(100% - 40px);
+    background: #194f68;
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(25, 79, 104, 0.24);
+}
+
+.floating-register[hidden] {
+    display: none;
+}
+
+@media (max-width: 560px) {
+    .floating-register {
+        left: 16px;
+        right: 16px;
+        width: calc(100% - 32px);
+        max-width: none;
+    }
+}

@@ -1,0 +1,59 @@
+{
+  "reviewer": "next_form",
+  "scope": "Independent form UX hypothesis; no product files changed and no production visits made.",
+  "baseline": "e05_static_cards; revert E06 text changes first.",
+  "observed_evidence": [
+    {
+      "source": "analysis/e05-session-review.json",
+      "fact": "100 sessions opened form,25 began input and25 converted;75 CTA abandonments show no input, mouse movement or clicks after CTA."
+    },
+    {
+      "source": "analysis/e05-session-review.json",
+      "fact": "All observed input starts complete; no validation or server error explains the loss."
+    },
+    {
+      "source": "css/style.css",
+      "fact": "Form field borders are pale #d8d2cb and submit uses the general pastel --blue #b8d4e3. Hero CTA already uses dark #194f68, so the actionable style changes at the handoff."
+    },
+    {
+      "source": "Parent verified E06 tracker",
+      "fact": "101 ended page sessions,100CTA/view,16input_start=16submit=16conversion; E05same100CTA but25input-start/conversions. Loss remains entirely before input. This does not identify its cause."
+    }
+  ],
+  "main_hypothesis": {
+    "id": "e07_form_affordance",
+    "claim": "Make the genuine form controls as visually actionable as the hero CTA: clearer field boundaries, a strong focused-field cue and dark submit treatment may increase the decision to start input.",
+    "mechanism": "After automatic scroll/focus, the form should be immediately recognizable as the next action. E05 removed misleading interactivity from content cards; this experiment strengthens interactivity only where it is real.",
+    "confidence": "low-to-moderate; styling discrepancy is verified, but traces do not prove overlooked controls or uncertainty.",
+    "why_new": "Changes visual affordance, not text length, layout compactness, required fields or explanatory copy.",
+    "prediction": "More CTA sessions produce registration_input_start and confirmed applications; the input-start-to-success rate remains high.",
+    "falsifier": "Input-start share and confirmed applications remain flat or lower despite exposure and visible styling change. More scrolling/focus alone does not count as success."
+  },
+  "exact_diff_plan": [
+    "Restore registration heading, lead, purpose label and purpose placeholder from E05 commit77d6e00; preserve all other retained improvements.",
+    "Change only JS exposure variant to e07_form_affordance; preserve analytics behavior.",
+    "Add scoped CSS .registration-panel .form-grid input, .registration-panel .form-grid textarea { border-color:#687d88; }.",
+    "Add scoped CSS .registration-panel .form-grid input:focus, .registration-panel .form-grid textarea:focus { outline:2px solid #194f68; outline-offset:2px; border-color:#194f68; }.",
+    "Add scoped CSS .registration-panel .form-grid button[type=\"submit\"] { background:#194f68; color:#fff; }.",
+    "Do not change width,height,padding,grid,number/order/required/type/name of fields,action/API/SQL,CTA routing,pricing,or card cursor behavior."
+  ],
+  "verification": [
+    "Check actual computed border/focus/button styles at1280x720,320x568,390x844,768x1024.",
+    "Ensure focus ring is visible and not clipped; required-field validation,server-error retention and success feedback still work with mocked responses.",
+    "Retain all four required fields and simulator selectors unchanged; no fake/default field values.",
+    "After manual deploy verify published variant, then run100 visits and identify exact session IDs by exposure tag.",
+    "Primary comparison is confirmed simulator applications/100 versus E05 25%; diagnose with unique genuine input starts/CTA. A single batch remains directional evidence."
+  ],
+  "risks": [
+    "Current pastel submit already has readable text and native browser focus exists; the discrepancy may not cause any conversion loss.",
+    "Uniform scripted sessions may not respond like real human attention; no causal intent can be inferred from idle traces.",
+    "The dark submit and stronger boundaries are one coherent visual-affordance factor but do not identify which individual style mattered.",
+    "The change is unlikely to fix all75 pre-input decisions by itself; no evidence promises reaching50%.",
+    "Restoring E05 is appropriate operational baseline, but observed16 versus25 may include random simulator variation."
+  ],
+  "rejected_alternatives": [
+    "Do not remove required fields or change API: forbidden by STUDENTS.md and backend requires nonempty values.",
+    "Do not repeat reduction of module text or further shrink form: no demonstrated mechanism from input-completion behavior.",
+    "A voluntary purpose-choice helper is a possible later experiment, but it adds controls/height and cannot be justified as a response to observed difficulty finishing purpose; no failed session starts typing."
+  ]
+}
