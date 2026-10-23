@@ -1,0 +1,282 @@
+{
+  "experiment": "e02_compact_form",
+  "method": "Manual inspection of action timeline, rrweb DOM snapshot presence, mouse/scroll/focus/input event streams; no visual replay used.",
+  "sample_selection": "2 successful, 3 CTA abandonments, 1 early exit, selected deterministically by session ID; not representative sampling.",
+  "sessions": [
+    {
+      "session_id": "-f2JEzvCAa23xGRZTGDdsbo1",
+      "confirmed_conversion": true,
+      "duration_ms": 56074,
+      "cta_at_ms": 43325,
+      "time_after_cta_ms": 12749,
+      "rrweb_event_count": 107,
+      "has_dom_snapshot": true,
+      "rrweb_input_event_count": 4,
+      "post_cta_actions": [
+        {
+          "at_ms": 43325,
+          "kind": "custom",
+          "name": "registration_cta",
+          "field": null
+        },
+        {
+          "at_ms": 43326,
+          "kind": "custom",
+          "name": "registration_field_focus",
+          "field": "name"
+        },
+        {
+          "at_ms": 43326,
+          "kind": "custom",
+          "name": "registration_arrival",
+          "field": null
+        },
+        {
+          "at_ms": 43333,
+          "kind": "custom",
+          "name": "registration_view",
+          "field": null
+        },
+        {
+          "at_ms": 47871,
+          "kind": "custom",
+          "name": "registration_field_focus",
+          "field": "phone"
+        },
+        {
+          "at_ms": 49071,
+          "kind": "custom",
+          "name": "registration_field_focus",
+          "field": "email"
+        },
+        {
+          "at_ms": 50488,
+          "kind": "custom",
+          "name": "registration_field_focus",
+          "field": "purpose"
+        },
+        {
+          "at_ms": 53788,
+          "kind": "form_submit",
+          "name": null,
+          "field": null
+        },
+        {
+          "at_ms": 53788,
+          "kind": "custom",
+          "name": "registration_submit",
+          "field": null
+        },
+        {
+          "at_ms": 53801,
+          "kind": "conversion_success",
+          "name": null,
+          "field": null
+        }
+      ]
+    },
+    {
+      "session_id": "0AR0-xUIKa9aqXCgjG5evBZb",
+      "confirmed_conversion": true,
+      "duration_ms": 62844,
+      "cta_at_ms": 50612,
+      "time_after_cta_ms": 12232,
+      "rrweb_event_count": 121,
+      "has_dom_snapshot": true,
+      "rrweb_input_event_count": 4,
+      "post_cta_actions": [
+        {
+          "at_ms": 50612,
+          "kind": "custom",
+          "name": "registration_cta",
+          "field": null
+        },
+        {
+          "at_ms": 50612,
+          "kind": "custom",
+          "name": "registration_field_focus",
+          "field": "name"
+        },
+        {
+          "at_ms": 50613,
+          "kind": "custom",
+          "name": "registration_arrival",
+          "field": null
+        },
+        {
+          "at_ms": 50623,
+          "kind": "custom",
+          "name": "registration_view",
+          "field": null
+        },
+        {
+          "at_ms": 55027,
+          "kind": "custom",
+          "name": "registration_field_focus",
+          "field": "phone"
+        },
+        {
+          "at_ms": 56077,
+          "kind": "custom",
+          "name": "registration_field_focus",
+          "field": "email"
+        },
+        {
+          "at_ms": 57560,
+          "kind": "custom",
+          "name": "registration_field_focus",
+          "field": "purpose"
+        },
+        {
+          "at_ms": 60612,
+          "kind": "form_submit",
+          "name": null,
+          "field": null
+        },
+        {
+          "at_ms": 60612,
+          "kind": "custom",
+          "name": "registration_submit",
+          "field": null
+        },
+        {
+          "at_ms": 60623,
+          "kind": "conversion_success",
+          "name": null,
+          "field": null
+        }
+      ]
+    },
+    {
+      "session_id": "-6x3AsY7L6HDvGPMhtYaTWLf",
+      "confirmed_conversion": false,
+      "duration_ms": 56598,
+      "cta_at_ms": 49979,
+      "time_after_cta_ms": 6619,
+      "rrweb_event_count": 77,
+      "has_dom_snapshot": true,
+      "rrweb_input_event_count": 0,
+      "post_cta_actions": [
+        {
+          "at_ms": 49979,
+          "kind": "custom",
+          "name": "registration_cta",
+          "field": null
+        },
+        {
+          "at_ms": 49980,
+          "kind": "custom",
+          "name": "registration_field_focus",
+          "field": "name"
+        },
+        {
+          "at_ms": 49980,
+          "kind": "custom",
+          "name": "registration_arrival",
+          "field": null
+        },
+        {
+          "at_ms": 49989,
+          "kind": "custom",
+          "name": "registration_view",
+          "field": null
+        }
+      ]
+    },
+    {
+      "session_id": "-gs-hIGe9EUtjD4TgNnxMd7D",
+      "confirmed_conversion": false,
+      "duration_ms": 52685,
+      "cta_at_ms": 46518,
+      "time_after_cta_ms": 6167,
+      "rrweb_event_count": 72,
+      "has_dom_snapshot": true,
+      "rrweb_input_event_count": 0,
+      "post_cta_actions": [
+        {
+          "at_ms": 46518,
+          "kind": "custom",
+          "name": "registration_cta",
+          "field": null
+        },
+        {
+          "at_ms": 46519,
+          "kind": "custom",
+          "name": "registration_field_focus",
+          "field": "name"
+        },
+        {
+          "at_ms": 46519,
+          "kind": "custom",
+          "name": "registration_arrival",
+          "field": null
+        },
+        {
+          "at_ms": 46527,
+          "kind": "custom",
+          "name": "registration_view",
+          "field": null
+        }
+      ]
+    },
+    {
+      "session_id": "0865oQpyBTi5hTduYlIudL7n",
+      "confirmed_conversion": false,
+      "duration_ms": 53057,
+      "cta_at_ms": 46507,
+      "time_after_cta_ms": 6550,
+      "rrweb_event_count": 74,
+      "has_dom_snapshot": true,
+      "rrweb_input_event_count": 0,
+      "post_cta_actions": [
+        {
+          "at_ms": 46507,
+          "kind": "custom",
+          "name": "registration_cta",
+          "field": null
+        },
+        {
+          "at_ms": 46508,
+          "kind": "custom",
+          "name": "registration_field_focus",
+          "field": "name"
+        },
+        {
+          "at_ms": 46508,
+          "kind": "custom",
+          "name": "registration_arrival",
+          "field": null
+        },
+        {
+          "at_ms": 46518,
+          "kind": "custom",
+          "name": "registration_view",
+          "field": null
+        }
+      ]
+    },
+    {
+      "session_id": "-FQ3vBCYjk53R_3y2rhDz5ys",
+      "confirmed_conversion": false,
+      "duration_ms": 3906,
+      "cta_at_ms": null,
+      "time_after_cta_ms": null,
+      "rrweb_event_count": 16,
+      "has_dom_snapshot": true,
+      "rrweb_input_event_count": 0,
+      "post_cta_actions": []
+    }
+  ],
+  "findings": [
+    "Successful samples have input events in all four fields and confirmed conversion.",
+    "All three CTA-abandonment samples contain no rrweb input events and no field clicks after CTA; they continue scrolling before exit.",
+    "CTA-to-exit time in the three abandonment samples is approximately 6.2 to 6.6 seconds.",
+    "Repeated top-edge clicks and collapsed selection attempts occur in both successful and unsuccessful samples; they do not distinguish conversion outcome.",
+    "Early exit contains programmatic-looking clicks at (0,0) on cards with hit-test mismatches. Intent cannot be inferred from those clicks."
+  ],
+  "implications": [
+    "Do not describe observed drop-off as field validation failure or difficulty finishing purpose: sampled abandonments never begin typing.",
+    "Early CTA hypothesis remains experimental; no causal evidence yet.",
+    "Next hypotheses should address decision to begin filling and page friction, with rrweb samples reviewed alongside aggregate events."
+  ]
+}

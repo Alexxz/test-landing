@@ -1,0 +1,6356 @@
+{
+  "experiment": "e03_hero_cta",
+  "review_scope": "All CTA sessions without confirmed conversion from the complete 101-session export.",
+  "method": "Inspected action timelines and rrweb Meta/DOM/incremental event streams programmatically for every selected session; manually examined representative complete mouse/scroll/input traces and DOM field attributes. No visual playback or simulator source inspection. No form values reproduced.",
+  "coverage": {
+    "total_sessions": 101,
+    "all_sessions_ended": true,
+    "confirmed_conversion_sessions": 16,
+    "cta_without_conversion_sessions": 74,
+    "selected_sessions_with_dom_snapshot": 74,
+    "selected_sessions_with_input": 0,
+    "selected_sessions_with_post_cta_clicks": 0,
+    "selected_sessions_with_post_cta_mousemove": 0,
+    "selected_sessions_with_validation_or_submit_errors": 0,
+    "selected_sessions_with_form_submit": 0
+  },
+  "clusters": [
+    {
+      "name": "Never begin typing after CTA; scroll briefly then exit",
+      "count": 74,
+      "session_ids": [
+        "-8fHbbA6iM6Ro6SsM2MOWkwk",
+        "-auK02w0F4lB_yV271VTeZTw",
+        "0fIfp7kNDyPM_aeuQAy1dsv9",
+        "2SCDDDyLctM_knye43FaTg7t",
+        "2Y6NJVpNhTozlCPZ2OoOyxaE",
+        "4siLUusCW_VbhjQQxy_8-KG5",
+        "5sWj5ioRriw5whT_KkEYEoza",
+        "6HvNr5NTaRshQkCFf4RK9OtP",
+        "6mQJn5lN5-lD2SsaOjSSZtiT",
+        "7aLkNiZt11FnYWR9NUS9Eb6a",
+        "843nLZ8YdOTyS8W6RsaoiXfD",
+        "91nOASErltrxF0GONHnfSgjd",
+        "99yVCaIZr9nNDkLdz7IusuTx",
+        "9E-Vpbn7DHhVgeUZOxDjnVr2",
+        "BUxI0yW23wFDwvOnPtudogVk",
+        "CIHHZ0tZ3G4JnZDkFLx9VJNx",
+        "CPlKU1HxJOSTxJ0GpSv-yGRg",
+        "Cgb8ZhPIldEllpaSpvqwATLb",
+        "DdAjFJ1kyiB5AmvyFyRkHO8z",
+        "EzxzfzvATNsJdWyHwhzV-BPu",
+        "FfC6g3E4gCMqa0YQvI9VRqdh",
+        "GJad5Q-Buxhv77ETfNm9mQL4",
+        "Getr57olSL24ipXq4ou1bnei",
+        "JEIQmrt_iKaE0vhfI10SsN59",
+        "Ju85uFXLt2su6_FWrf0_4Tib",
+        "Jw9QP_J1C-pecitB8DB71jME",
+        "JzuNckMVqcrVShNxZaARcnQF",
+        "L1H5nbZGo_R0netKQC-qVrT_",
+        "L45sEG6yaj423xOmh6cfbOOJ",
+        "LWP1pmEqRromidEdUGgWrISZ",
+        "Lx5GMrvoaSOuluCtOwh0UUep",
+        "MBkNPedZ7jZJiEAw1EdKHhQe",
+        "MDvrtHc4Z5aFdrAk6IVsWDbH",
+        "MgjQAPl1_uL-OwHuEsutLzmd",
+        "PIAbSp-vE0EuSUxSP5WLdFyn",
+        "Pq866v-dVmyTLInnMfHC8CRy",
+        "QnHprghNYaAMynGilQARqwnd",
+        "RU1CMDSz79ht0uvZvWpH99xy",
+        "Rch0zCZY0MvVz8wdSVFtkagX",
+        "Red0f9LWqeOunZhn1KUeAUlA",
+        "Ucj_vVRhs_1QTtqt3996n4N7",
+        "W9nA1OK73bYQTzcK9zSEeIoT",
+        "WPrrWxbpZhSQbWhIS668_HiE",
+        "WvriMSx4fbJnCd-7SKqzm3ES",
+        "Y51g7sbdD_uJUJKGYdpi3ryL",
+        "Z6dSDnzsY9T7-6H0F9sGI-QD",
+        "_DHMWlabW7m3v5JDXghZ6toG",
+        "d-W8mPtrkcOh0L-NzuxtIj61",
+        "dsP6DfjFi_uAcp7qHWHiJqNg",
+        "eUBmSRlnWB6CrX5usPeuO1a8",
+        "eXDhQIf-iVgxiXC__v4k8fs1",
+        "erx2zrn4BaKmwLakTEOiv0Ui",
+        "iXIlKWUvXznWZcSqoNKHxhhF",
+        "kCxRy6EaDJTe2ONpD8rWsrd-",
+        "kx6OWlD1bJ5BCHaa-ViAWkSQ",
+        "lMcPWPPa6J3eYMuvBRUnFP7r",
+        "lgbNHiAuBz70lWLmje7c1RGX",
+        "n7yNXNiJxZKVeqhd3GoSrb63",
+        "nt473rwC8KAOQ40fLaVAFA8a",
+        "oN_1janosaFBglrqd3f72vJz",
+        "prLLJXtUIhuAYJLhb-SlsSLL",
+        "q5Jjzv-4mVeGloVXbO-tdvFU",
+        "qEhZrKCPFQe6OAe4o3s_oYXo",
+        "qnFCQ9fzajRORq1T3XiVHl_A",
+        "r0jn5xEVXCM_lXjzKWw6SgY_",
+        "rDY0A_h8zNQTUWwhLWvVkgcE",
+        "v4bITsD1icRcQzPHFnL4vu6V",
+        "vUrSjoHpEaARe7bhMDFOKIo3",
+        "vVENDOdtsxHJHRS91TEbdxc7",
+        "vXtj4oXdhPU_C5alZ-NZg44X",
+        "xoFR4PRq11bctR6-LjOeBssh",
+        "yKNaSSis9GdfqanmPt1WrFGp",
+        "ypp0jG60JKT3kXORyZzqm3eE",
+        "zNKcF-LoEPhOwvclkXhYqt-v"
+      ],
+      "cta_to_exit_ms": {
+        "min": 4554,
+        "median": 5845.0,
+        "max": 7195
+      },
+      "observed_click_pattern": "Three clicks on html at (211,0), then hero CTA; no subsequent clicks.",
+      "observed_field_pattern": "Only name focus, set automatically by CTA handler. Zero rrweb input events.",
+      "observed_pointer_pattern": "No mouse-move batches after CTA+100ms; hover changes can be caused by scrolling content under a stationary pointer."
+    }
+  ],
+  "observations": [
+    {
+      "claim": "Hero CTA is clicked after substantial page traversal, not immediately on the first screen.",
+      "evidence": "Across selected sessions, maximum pre-CTA scroll Y is between 5732 and 7573; first CTA at 33.3–55.2 seconds.",
+      "examples": [
+        "-8fHbbA6iM6Ro6SsM2MOWkwk",
+        "-auK02w0F4lB_yV271VTeZTw"
+      ]
+    },
+    {
+      "claim": "No observed field-level completion obstacle in this group.",
+      "evidence": "All 74 have zero rrweb input, zero validation failures, zero post-CTA clicks, and only automatic name focus."
+    },
+    {
+      "claim": "Behaviour is strongly templated.",
+      "evidence": "All have the same three top-edge html clicks, one hero CTA, no further clicks/input; viewport is 1280x720 for all.",
+      "limitation": "This is consistent with a simulator, but does not establish its decision rules or the reason for refusing to start."
+    }
+  ],
+  "hypotheses_ranked": [
+    {
+      "rank": 1,
+      "hypothesis": "Friction accumulated in long noninteractive program content or misleading card affordances affects the decision before the form.",
+      "basis": "CTA occurs only after deep page traversal and repeated top-edge html clicks. Other early-exit review should assess card interactions.",
+      "confidence": "medium-low; cause not established",
+      "test": "Keep current form and CTA unchanged; shorten program module paragraphs into compact summaries while preserving modules/selectors/section order; remove pointer/hover affordances from noninteractive cards. Prefer separate experiments for summary text and affordances.",
+      "prediction": "More of the existing CTA cohort initiates genuine name input; median program dwell/repeated dead actions decline. If only final-field errors change, this hypothesis is not supported."
+    },
+    {
+      "rank": 2,
+      "hypothesis": "Visitors decide against sharing four required fields before typing; visible required-field burden may discourage initiation.",
+      "basis": "No one in the abandonment cohort begins typing. This is compatible with perceived burden, but not evidence of a specific field problem.",
+      "confidence": "low",
+      "test": "Retain mandatory fields and API; clarify near CTA/form exactly what follows submitting and why phone/email/purpose are needed, using only facts confirmed by owner. Do not invent privacy promises or response deadlines.",
+      "prediction": "Share of CTA sessions with genuine rrweb input increases; completion among those who already start should stay similar."
+    },
+    {
+      "rank": 3,
+      "hypothesis": "Initial visible hero CTA did not create an earlier path for the current simulator population.",
+      "basis": "All abandonment sessions click hero after having scrolled deep into the page.",
+      "confidence": "high for observation, low for mechanism",
+      "test": "Use session timing as diagnostic in future experiments; do not treat hero source attribution alone as evidence of shortcutting the reading path.",
+      "prediction": "A successful early-action design would move first CTA time materially earlier and avoid deep pre-CTA traversal."
+    }
+  ],
+  "form_complexity_verdict": {
+    "supported": "Perceived burden before typing remains possible.",
+    "not_supported": "The claim that users get stuck while filling fields or fail validation: no such interactions exist in the 74-session cohort.",
+    "cannot_prove": "Underlying simulator decision rules are not observable from recordings alone."
+  },
+  "limitations": [
+    "101 page sessions versus 100 simulator visits; one extra page session is not identified.",
+    "rrweb records rendering/interactions, not intent or simulator reasoning.",
+    "Post-CTA alignment uses server session started_at plus client elapsed time with a 100ms exclusion margin; clock offsets are small in inspected examples but exact alignment is not guaranteed.",
+    "All observed sessions are desktop 1280x720, so no mobile conclusion can be made."
+  ],
+  "sessions": [
+    {
+      "session_id": "-8fHbbA6iM6Ro6SsM2MOWkwk",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 46049,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 6627,
+      "clicks": [
+        {
+          "at_ms": 36377,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 37807,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 39093,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 46048,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 615,
+          "x": 0,
+          "y": 7447
+        },
+        {
+          "relative_ms": 3782,
+          "x": 0,
+          "y": 7331
+        },
+        {
+          "relative_ms": 3932,
+          "x": 0,
+          "y": 7253
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 85,
+      "max_pre_cta_scroll_y": 6688,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "-auK02w0F4lB_yV271VTeZTw",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 48324,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5867,
+      "clicks": [
+        {
+          "at_ms": 38186,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 39282,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 40451,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 48324,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 192,
+          "x": 0,
+          "y": 7435
+        },
+        {
+          "relative_ms": 342,
+          "x": 0,
+          "y": 7266
+        },
+        {
+          "relative_ms": 493,
+          "x": 0,
+          "y": 7246
+        },
+        {
+          "relative_ms": 1607,
+          "x": 0,
+          "y": 7369
+        },
+        {
+          "relative_ms": 3407,
+          "x": 0,
+          "y": 7532
+        },
+        {
+          "relative_ms": 3557,
+          "x": 0,
+          "y": 7575
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 81,
+      "max_pre_cta_scroll_y": 6770,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "0fIfp7kNDyPM_aeuQAy1dsv9",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 47057,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5528,
+      "clicks": [
+        {
+          "at_ms": 36954,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 37891,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 38883,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 47057,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 398,
+          "x": 0,
+          "y": 7449
+        },
+        {
+          "relative_ms": 548,
+          "x": 0,
+          "y": 7424
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 74,
+      "max_pre_cta_scroll_y": 6914,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "2SCDDDyLctM_knye43FaTg7t",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 46951,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 6332,
+      "clicks": [
+        {
+          "at_ms": 38564,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 39604,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 40655,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 46951,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 465,
+          "x": 0,
+          "y": 7450
+        },
+        {
+          "relative_ms": 615,
+          "x": 0,
+          "y": 7310
+        },
+        {
+          "relative_ms": 765,
+          "x": 0,
+          "y": 7298
+        },
+        {
+          "relative_ms": 1532,
+          "x": 0,
+          "y": 7369
+        },
+        {
+          "relative_ms": 3265,
+          "x": 0,
+          "y": 7487
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 83,
+      "max_pre_cta_scroll_y": 6361,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "2Y6NJVpNhTozlCPZ2OoOyxaE",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 48077,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5232,
+      "clicks": [
+        {
+          "at_ms": 36168,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 37282,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 38519,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 48077,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 185,
+          "x": 0,
+          "y": 7462
+        },
+        {
+          "relative_ms": 335,
+          "x": 0,
+          "y": 7361
+        },
+        {
+          "relative_ms": 485,
+          "x": 0,
+          "y": 7294
+        },
+        {
+          "relative_ms": 1051,
+          "x": 0,
+          "y": 7369
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 67,
+      "max_pre_cta_scroll_y": 6616,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "4siLUusCW_VbhjQQxy_8-KG5",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 39974,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5000,
+      "clicks": [
+        {
+          "at_ms": 31237,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 32349,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 33343,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 39973,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 286,
+          "x": 0,
+          "y": 7463
+        },
+        {
+          "relative_ms": 436,
+          "x": 0,
+          "y": 7446
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 62,
+      "max_pre_cta_scroll_y": 5975,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "5sWj5ioRriw5whT_KkEYEoza",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 45354,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5634,
+      "clicks": [
+        {
+          "at_ms": 36377,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 37306,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 38710,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 45354,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 354,
+          "x": 0,
+          "y": 7407
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 77,
+      "max_pre_cta_scroll_y": 6059,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "6HvNr5NTaRshQkCFf4RK9OtP",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 47239,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5993,
+      "clicks": [
+        {
+          "at_ms": 37426,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 38452,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 39827,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 47239,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 314,
+          "x": 0,
+          "y": 7398
+        },
+        {
+          "relative_ms": 463,
+          "x": 0,
+          "y": 7290
+        },
+        {
+          "relative_ms": 1447,
+          "x": 0,
+          "y": 7369
+        },
+        {
+          "relative_ms": 3197,
+          "x": 0,
+          "y": 7175
+        },
+        {
+          "relative_ms": 3347,
+          "x": 0,
+          "y": 7159
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 79,
+      "max_pre_cta_scroll_y": 5906,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "6mQJn5lN5-lD2SsaOjSSZtiT",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 51480,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 6513,
+      "clicks": [
+        {
+          "at_ms": 41030,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 41941,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 42977,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 51480,
+          "x": 339,
+          "y": 26,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 482,
+          "x": 0,
+          "y": 7408
+        },
+        {
+          "relative_ms": 632,
+          "x": 0,
+          "y": 7328
+        },
+        {
+          "relative_ms": 782,
+          "x": 0,
+          "y": 7323
+        },
+        {
+          "relative_ms": 1615,
+          "x": 0,
+          "y": 7369
+        },
+        {
+          "relative_ms": 3231,
+          "x": 0,
+          "y": 7195
+        },
+        {
+          "relative_ms": 3381,
+          "x": 0,
+          "y": 7168
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 90,
+      "max_pre_cta_scroll_y": 6290,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "7aLkNiZt11FnYWR9NUS9Eb6a",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 46445,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5608,
+      "clicks": [
+        {
+          "at_ms": 38326,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 39241,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 40087,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 46445,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 353,
+          "x": 0,
+          "y": 7499
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 71,
+      "max_pre_cta_scroll_y": 6023,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "843nLZ8YdOTyS8W6RsaoiXfD",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 49095,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 6822,
+      "clicks": [
+        {
+          "at_ms": 36798,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 38017,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 39061,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 49095,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 528,
+          "x": 0,
+          "y": 7375
+        },
+        {
+          "relative_ms": 679,
+          "x": 0,
+          "y": 7295
+        },
+        {
+          "relative_ms": 1894,
+          "x": 0,
+          "y": 7369
+        },
+        {
+          "relative_ms": 3411,
+          "x": 0,
+          "y": 7259
+        },
+        {
+          "relative_ms": 3577,
+          "x": 0,
+          "y": 7183
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 85,
+      "max_pre_cta_scroll_y": 6829,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "91nOASErltrxF0GONHnfSgjd",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 49641,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 6627,
+      "clicks": [
+        {
+          "at_ms": 38883,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 39883,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 40891,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 49641,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 437,
+          "x": 0,
+          "y": 7381
+        },
+        {
+          "relative_ms": 587,
+          "x": 0,
+          "y": 7362
+        },
+        {
+          "relative_ms": 1537,
+          "x": 0,
+          "y": 7369
+        },
+        {
+          "relative_ms": 3487,
+          "x": 0,
+          "y": 7283
+        },
+        {
+          "relative_ms": 3637,
+          "x": 0,
+          "y": 7250
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 88,
+      "max_pre_cta_scroll_y": 6151,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "99yVCaIZr9nNDkLdz7IusuTx",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 45993,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5899,
+      "clicks": [
+        {
+          "at_ms": 36446,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 37644,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 38533,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 45993,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 177,
+          "x": 0,
+          "y": 7426
+        },
+        {
+          "relative_ms": 343,
+          "x": 0,
+          "y": 7348
+        },
+        {
+          "relative_ms": 1410,
+          "x": 0,
+          "y": 7369
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 79,
+      "max_pre_cta_scroll_y": 5977,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "9E-Vpbn7DHhVgeUZOxDjnVr2",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 50797,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 4938,
+      "clicks": [
+        {
+          "at_ms": 39676,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 40799,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 42171,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 50797,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 299,
+          "x": 0,
+          "y": 7480
+        },
+        {
+          "relative_ms": 2350,
+          "x": 0,
+          "y": 7609
+        },
+        {
+          "relative_ms": 2500,
+          "x": 0,
+          "y": 7626
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 77,
+      "max_pre_cta_scroll_y": 5889,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "BUxI0yW23wFDwvOnPtudogVk",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 45287,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 4985,
+      "clicks": [
+        {
+          "at_ms": 34180,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 35363,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 36310,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 45286,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 371,
+          "x": 0,
+          "y": 7413
+        },
+        {
+          "relative_ms": 522,
+          "x": 0,
+          "y": 7351
+        },
+        {
+          "relative_ms": 1470,
+          "x": 0,
+          "y": 7369
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 73,
+      "max_pre_cta_scroll_y": 6692,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "CIHHZ0tZ3G4JnZDkFLx9VJNx",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 47431,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5851,
+      "clicks": [
+        {
+          "at_ms": 37446,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 38374,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 39331,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 47431,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 247,
+          "x": 0,
+          "y": 7428
+        },
+        {
+          "relative_ms": 397,
+          "x": 0,
+          "y": 7377
+        },
+        {
+          "relative_ms": 3414,
+          "x": 0,
+          "y": 7508
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 73,
+      "max_pre_cta_scroll_y": 6347,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "CPlKU1HxJOSTxJ0GpSv-yGRg",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 47331,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5712,
+      "clicks": [
+        {
+          "at_ms": 35205,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 36132,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 37387,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 47330,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 537,
+          "x": 0,
+          "y": 7394
+        },
+        {
+          "relative_ms": 688,
+          "x": 0,
+          "y": 7272
+        },
+        {
+          "relative_ms": 1387,
+          "x": 0,
+          "y": 7369
+        },
+        {
+          "relative_ms": 3337,
+          "x": 0,
+          "y": 7245
+        },
+        {
+          "relative_ms": 3487,
+          "x": 0,
+          "y": 7181
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 73,
+      "max_pre_cta_scroll_y": 6142,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "Cgb8ZhPIldEllpaSpvqwATLb",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 49505,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5193,
+      "clicks": [
+        {
+          "at_ms": 40078,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 40910,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 41935,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 49504,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 141,
+          "x": 0,
+          "y": 7451
+        },
+        {
+          "relative_ms": 291,
+          "x": 0,
+          "y": 7363
+        },
+        {
+          "relative_ms": 441,
+          "x": 0,
+          "y": 7281
+        },
+        {
+          "relative_ms": 1241,
+          "x": 0,
+          "y": 7369
+        },
+        {
+          "relative_ms": 2674,
+          "x": 0,
+          "y": 7457
+        },
+        {
+          "relative_ms": 2841,
+          "x": 0,
+          "y": 7620
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 83,
+      "max_pre_cta_scroll_y": 6725,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "DdAjFJ1kyiB5AmvyFyRkHO8z",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 49509,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5437,
+      "clicks": [
+        {
+          "at_ms": 38650,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 39836,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 41183,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 49508,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 475,
+          "x": 0,
+          "y": 7380
+        },
+        {
+          "relative_ms": 625,
+          "x": 0,
+          "y": 7360
+        },
+        {
+          "relative_ms": 1557,
+          "x": 0,
+          "y": 7369
+        },
+        {
+          "relative_ms": 2541,
+          "x": 0,
+          "y": 7258
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 84,
+      "max_pre_cta_scroll_y": 6982,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "EzxzfzvATNsJdWyHwhzV-BPu",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 50150,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 6607,
+      "clicks": [
+        {
+          "at_ms": 39575,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 40729,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 42075,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 50150,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 561,
+          "x": 0,
+          "y": 7447
+        },
+        {
+          "relative_ms": 3327,
+          "x": 0,
+          "y": 7613
+        },
+        {
+          "relative_ms": 3477,
+          "x": 0,
+          "y": 7624
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 83,
+      "max_pre_cta_scroll_y": 6200,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "FfC6g3E4gCMqa0YQvI9VRqdh",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 51067,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 4890,
+      "clicks": [
+        {
+          "at_ms": 39963,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 41169,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 42550,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 51067,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 353,
+          "x": 0,
+          "y": 7426
+        },
+        {
+          "relative_ms": 2386,
+          "x": 0,
+          "y": 7544
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 85,
+      "max_pre_cta_scroll_y": 6625,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "GJad5Q-Buxhv77ETfNm9mQL4",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 38092,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 6040,
+      "clicks": [
+        {
+          "at_ms": 28417,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 29405,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 30401,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 38092,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 489,
+          "x": 0,
+          "y": 7482
+        },
+        {
+          "relative_ms": 639,
+          "x": 0,
+          "y": 7298
+        },
+        {
+          "relative_ms": 1589,
+          "x": 0,
+          "y": 7369
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 73,
+      "max_pre_cta_scroll_y": 5836,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "Getr57olSL24ipXq4ou1bnei",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 44628,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5976,
+      "clicks": [
+        {
+          "at_ms": 35745,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 37042,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 38571,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 44628,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 213,
+          "x": 0,
+          "y": 7413
+        },
+        {
+          "relative_ms": 363,
+          "x": 0,
+          "y": 7268
+        },
+        {
+          "relative_ms": 1814,
+          "x": 0,
+          "y": 7369
+        },
+        {
+          "relative_ms": 2897,
+          "x": 0,
+          "y": 7238
+        },
+        {
+          "relative_ms": 3047,
+          "x": 0,
+          "y": 7218
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 73,
+      "max_pre_cta_scroll_y": 5810,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "JEIQmrt_iKaE0vhfI10SsN59",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 41640,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 6328,
+      "clicks": [
+        {
+          "at_ms": 30719,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 31705,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 32569,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 41639,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 182,
+          "x": 0,
+          "y": 7485
+        },
+        {
+          "relative_ms": 349,
+          "x": 0,
+          "y": 7399
+        },
+        {
+          "relative_ms": 499,
+          "x": 0,
+          "y": 7313
+        },
+        {
+          "relative_ms": 651,
+          "x": 0,
+          "y": 7249
+        },
+        {
+          "relative_ms": 1749,
+          "x": 0,
+          "y": 7369
+        },
+        {
+          "relative_ms": 3699,
+          "x": 0,
+          "y": 7475
+        },
+        {
+          "relative_ms": 3849,
+          "x": 0,
+          "y": 7562
+        },
+        {
+          "relative_ms": 3999,
+          "x": 0,
+          "y": 7602
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 83,
+      "max_pre_cta_scroll_y": 6720,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "Ju85uFXLt2su6_FWrf0_4Tib",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 51403,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 6162,
+      "clicks": [
+        {
+          "at_ms": 39137,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 40239,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 41542,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 51403,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 516,
+          "x": 0,
+          "y": 7428
+        },
+        {
+          "relative_ms": 666,
+          "x": 0,
+          "y": 7355
+        },
+        {
+          "relative_ms": 1615,
+          "x": 0,
+          "y": 7369
+        },
+        {
+          "relative_ms": 3283,
+          "x": 0,
+          "y": 7232
+        },
+        {
+          "relative_ms": 3449,
+          "x": 0,
+          "y": 7173
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 80,
+      "max_pre_cta_scroll_y": 6575,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "Jw9QP_J1C-pecitB8DB71jME",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 38976,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5614,
+      "clicks": [
+        {
+          "at_ms": 27889,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 29165,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 30049,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 38976,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 300,
+          "x": 0,
+          "y": 7444
+        },
+        {
+          "relative_ms": 451,
+          "x": 0,
+          "y": 7352
+        },
+        {
+          "relative_ms": 1383,
+          "x": 0,
+          "y": 7369
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 71,
+      "max_pre_cta_scroll_y": 5769,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "JzuNckMVqcrVShNxZaARcnQF",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 44778,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 6081,
+      "clicks": [
+        {
+          "at_ms": 33403,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 34361,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 35427,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 44777,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 637,
+          "x": 0,
+          "y": 7469
+        },
+        {
+          "relative_ms": 3420,
+          "x": 0,
+          "y": 7313
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 69,
+      "max_pre_cta_scroll_y": 6621,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "L1H5nbZGo_R0netKQC-qVrT_",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 49762,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5353,
+      "clicks": [
+        {
+          "at_ms": 42194,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 43256,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 44320,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 49761,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 360,
+          "x": 0,
+          "y": 7466
+        },
+        {
+          "relative_ms": 510,
+          "x": 0,
+          "y": 7428
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 74,
+      "max_pre_cta_scroll_y": 6967,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "L45sEG6yaj423xOmh6cfbOOJ",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 36316,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 6161,
+      "clicks": [
+        {
+          "at_ms": 25740,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 26806,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 27630,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 36316,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 406,
+          "x": 0,
+          "y": 7400
+        },
+        {
+          "relative_ms": 557,
+          "x": 0,
+          "y": 7375
+        },
+        {
+          "relative_ms": 3439,
+          "x": 0,
+          "y": 7198
+        },
+        {
+          "relative_ms": 3589,
+          "x": 0,
+          "y": 7101
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 71,
+      "max_pre_cta_scroll_y": 5913,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "LWP1pmEqRromidEdUGgWrISZ",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 49141,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5839,
+      "clicks": [
+        {
+          "at_ms": 38712,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 39893,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 40825,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 49141,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 287,
+          "x": 0,
+          "y": 7436
+        },
+        {
+          "relative_ms": 437,
+          "x": 0,
+          "y": 7354
+        },
+        {
+          "relative_ms": 587,
+          "x": 0,
+          "y": 7248
+        },
+        {
+          "relative_ms": 1604,
+          "x": 0,
+          "y": 7369
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 80,
+      "max_pre_cta_scroll_y": 5732,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "Lx5GMrvoaSOuluCtOwh0UUep",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 54699,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 7195,
+      "clicks": [
+        {
+          "at_ms": 45240,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 46264,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 47424,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 54698,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 523,
+          "x": 0,
+          "y": 7409
+        },
+        {
+          "relative_ms": 673,
+          "x": 0,
+          "y": 7266
+        },
+        {
+          "relative_ms": 1806,
+          "x": 0,
+          "y": 7369
+        },
+        {
+          "relative_ms": 4056,
+          "x": 0,
+          "y": 7474
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 75,
+      "max_pre_cta_scroll_y": 5877,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "MBkNPedZ7jZJiEAw1EdKHhQe",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 35716,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5788,
+      "clicks": [
+        {
+          "at_ms": 26630,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 27719,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 28756,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 35716,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 147,
+          "x": 0,
+          "y": 7397
+        },
+        {
+          "relative_ms": 297,
+          "x": 0,
+          "y": 7368
+        },
+        {
+          "relative_ms": 1147,
+          "x": 0,
+          "y": 7369
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 72,
+      "max_pre_cta_scroll_y": 6014,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "MDvrtHc4Z5aFdrAk6IVsWDbH",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 55185,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 6203,
+      "clicks": [
+        {
+          "at_ms": 47234,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 48516,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 49557,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 55185,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 266,
+          "x": 0,
+          "y": 7474
+        },
+        {
+          "relative_ms": 417,
+          "x": 0,
+          "y": 7367
+        },
+        {
+          "relative_ms": 1398,
+          "x": 0,
+          "y": 7369
+        },
+        {
+          "relative_ms": 3149,
+          "x": 0,
+          "y": 7478
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 90,
+      "max_pre_cta_scroll_y": 6661,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "MgjQAPl1_uL-OwHuEsutLzmd",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 43870,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5534,
+      "clicks": [
+        {
+          "at_ms": 33118,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 34476,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 35653,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 43869,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 229,
+          "x": 0,
+          "y": 7469
+        },
+        {
+          "relative_ms": 379,
+          "x": 0,
+          "y": 7334
+        },
+        {
+          "relative_ms": 529,
+          "x": 0,
+          "y": 7319
+        },
+        {
+          "relative_ms": 1546,
+          "x": 0,
+          "y": 7369
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 77,
+      "max_pre_cta_scroll_y": 6668,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "PIAbSp-vE0EuSUxSP5WLdFyn",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 53194,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 6901,
+      "clicks": [
+        {
+          "at_ms": 45217,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 45990,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 47009,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 53194,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 329,
+          "x": 0,
+          "y": 7522
+        },
+        {
+          "relative_ms": 3695,
+          "x": 0,
+          "y": 7436
+        },
+        {
+          "relative_ms": 3846,
+          "x": 0,
+          "y": 7313
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 80,
+      "max_pre_cta_scroll_y": 6053,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "Pq866v-dVmyTLInnMfHC8CRy",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 42649,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5320,
+      "clicks": [
+        {
+          "at_ms": 33022,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 34154,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 35211,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 42649,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 616,
+          "x": 0,
+          "y": 7500
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 74,
+      "max_pre_cta_scroll_y": 5881,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "QnHprghNYaAMynGilQARqwnd",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 45071,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 4554,
+      "clicks": [
+        {
+          "at_ms": 35653,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 36850,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 38152,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 45070,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 639,
+          "x": 0,
+          "y": 7482
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 75,
+      "max_pre_cta_scroll_y": 6512,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "RU1CMDSz79ht0uvZvWpH99xy",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 55035,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 6186,
+      "clicks": [
+        {
+          "at_ms": 44254,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 45480,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 46682,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 55034,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 587,
+          "x": 0,
+          "y": 7456
+        },
+        {
+          "relative_ms": 769,
+          "x": 0,
+          "y": 7453
+        },
+        {
+          "relative_ms": 3087,
+          "x": 0,
+          "y": 7366
+        },
+        {
+          "relative_ms": 3237,
+          "x": 0,
+          "y": 7261
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 81,
+      "max_pre_cta_scroll_y": 6598,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "Rch0zCZY0MvVz8wdSVFtkagX",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 41126,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5482,
+      "clicks": [
+        {
+          "at_ms": 29107,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 30470,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 31378,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 41125,
+          "x": 339,
+          "y": 26,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 604,
+          "x": 0,
+          "y": 7415
+        },
+        {
+          "relative_ms": 754,
+          "x": 0,
+          "y": 7352
+        },
+        {
+          "relative_ms": 1769,
+          "x": 0,
+          "y": 7369
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 69,
+      "max_pre_cta_scroll_y": 5946,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "Red0f9LWqeOunZhn1KUeAUlA",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 36620,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 6066,
+      "clicks": [
+        {
+          "at_ms": 26311,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 27632,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 28622,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 36619,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 635,
+          "x": 0,
+          "y": 7452
+        },
+        {
+          "relative_ms": 785,
+          "x": 0,
+          "y": 7383
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 74,
+      "max_pre_cta_scroll_y": 5949,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "Ucj_vVRhs_1QTtqt3996n4N7",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 38862,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5246,
+      "clicks": [
+        {
+          "at_ms": 30407,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 31465,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 32612,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 38862,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 245,
+          "x": 0,
+          "y": 7429
+        },
+        {
+          "relative_ms": 395,
+          "x": 0,
+          "y": 7421
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 70,
+      "max_pre_cta_scroll_y": 6859,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "W9nA1OK73bYQTzcK9zSEeIoT",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 50917,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 6221,
+      "clicks": [
+        {
+          "at_ms": 41692,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 42575,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 43488,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 50916,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 489,
+          "x": 0,
+          "y": 7406
+        },
+        {
+          "relative_ms": 640,
+          "x": 0,
+          "y": 7325
+        },
+        {
+          "relative_ms": 789,
+          "x": 0,
+          "y": 7258
+        },
+        {
+          "relative_ms": 1840,
+          "x": 0,
+          "y": 7369
+        },
+        {
+          "relative_ms": 3073,
+          "x": 0,
+          "y": 7261
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 80,
+      "max_pre_cta_scroll_y": 5979,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "WPrrWxbpZhSQbWhIS668_HiE",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 50757,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5758,
+      "clicks": [
+        {
+          "at_ms": 40697,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 41662,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 42788,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 50757,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 626,
+          "x": 0,
+          "y": 7432
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 79,
+      "max_pre_cta_scroll_y": 5769,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "WvriMSx4fbJnCd-7SKqzm3ES",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 48010,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5715,
+      "clicks": [
+        {
+          "at_ms": 39254,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 40136,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 41197,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 48010,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 238,
+          "x": 0,
+          "y": 7518
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 78,
+      "max_pre_cta_scroll_y": 5924,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "Y51g7sbdD_uJUJKGYdpi3ryL",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 49042,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 4853,
+      "clicks": [
+        {
+          "at_ms": 38026,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 38879,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 40155,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 49042,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 156,
+          "x": 0,
+          "y": 7399
+        },
+        {
+          "relative_ms": 306,
+          "x": 0,
+          "y": 7364
+        },
+        {
+          "relative_ms": 1305,
+          "x": 0,
+          "y": 7369
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 75,
+      "max_pre_cta_scroll_y": 7573,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "Z6dSDnzsY9T7-6H0F9sGI-QD",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 45563,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5783,
+      "clicks": [
+        {
+          "at_ms": 35527,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 36634,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 37717,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 45563,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 592,
+          "x": 0,
+          "y": 7487
+        },
+        {
+          "relative_ms": 758,
+          "x": 0,
+          "y": 7398
+        },
+        {
+          "relative_ms": 924,
+          "x": 0,
+          "y": 7247
+        },
+        {
+          "relative_ms": 2108,
+          "x": 0,
+          "y": 7369
+        },
+        {
+          "relative_ms": 3592,
+          "x": 0,
+          "y": 7504
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 74,
+      "max_pre_cta_scroll_y": 5917,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "_DHMWlabW7m3v5JDXghZ6toG",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 44986,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 6054,
+      "clicks": [
+        {
+          "at_ms": 32657,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 33961,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 34758,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 44986,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 290,
+          "x": 0,
+          "y": 7502
+        },
+        {
+          "relative_ms": 2973,
+          "x": 0,
+          "y": 7626
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 78,
+      "max_pre_cta_scroll_y": 6475,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "d-W8mPtrkcOh0L-NzuxtIj61",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 33346,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5248,
+      "clicks": [
+        {
+          "at_ms": 25147,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 26515,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 27936,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 33345,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 107,
+          "x": 0,
+          "y": 7443
+        },
+        {
+          "relative_ms": 257,
+          "x": 0,
+          "y": 7319
+        },
+        {
+          "relative_ms": 1207,
+          "x": 0,
+          "y": 7369
+        },
+        {
+          "relative_ms": 2307,
+          "x": 0,
+          "y": 7546
+        },
+        {
+          "relative_ms": 2473,
+          "x": 0,
+          "y": 7595
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 69,
+      "max_pre_cta_scroll_y": 7008,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "dsP6DfjFi_uAcp7qHWHiJqNg",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 51353,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 6118,
+      "clicks": [
+        {
+          "at_ms": 41429,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 42854,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 44094,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 51353,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 564,
+          "x": 0,
+          "y": 7493
+        },
+        {
+          "relative_ms": 714,
+          "x": 0,
+          "y": 7409
+        },
+        {
+          "relative_ms": 864,
+          "x": 0,
+          "y": 7397
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 80,
+      "max_pre_cta_scroll_y": 6342,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "eUBmSRlnWB6CrX5usPeuO1a8",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 44522,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5789,
+      "clicks": [
+        {
+          "at_ms": 32917,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 34098,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 35121,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 44522,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 508,
+          "x": 0,
+          "y": 7382
+        },
+        {
+          "relative_ms": 658,
+          "x": 0,
+          "y": 7280
+        },
+        {
+          "relative_ms": 1608,
+          "x": 0,
+          "y": 7369
+        },
+        {
+          "relative_ms": 3291,
+          "x": 0,
+          "y": 7260
+        },
+        {
+          "relative_ms": 3441,
+          "x": 0,
+          "y": 7185
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 84,
+      "max_pre_cta_scroll_y": 6149,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "eXDhQIf-iVgxiXC__v4k8fs1",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 48768,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 6207,
+      "clicks": [
+        {
+          "at_ms": 41844,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 42619,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 43630,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 48768,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 435,
+          "x": 0,
+          "y": 7400
+        },
+        {
+          "relative_ms": 584,
+          "x": 0,
+          "y": 7340
+        },
+        {
+          "relative_ms": 1650,
+          "x": 0,
+          "y": 7369
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 70,
+      "max_pre_cta_scroll_y": 6504,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "erx2zrn4BaKmwLakTEOiv0Ui",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 46554,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 6810,
+      "clicks": [
+        {
+          "at_ms": 38015,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 39415,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 40600,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 46554,
+          "x": 339,
+          "y": 26,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 432,
+          "x": 0,
+          "y": 7401
+        },
+        {
+          "relative_ms": 582,
+          "x": 0,
+          "y": 7366
+        },
+        {
+          "relative_ms": 1829,
+          "x": 0,
+          "y": 7369
+        },
+        {
+          "relative_ms": 3512,
+          "x": 0,
+          "y": 7451
+        },
+        {
+          "relative_ms": 3662,
+          "x": 0,
+          "y": 7481
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 81,
+      "max_pre_cta_scroll_y": 6101,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "iXIlKWUvXznWZcSqoNKHxhhF",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 40519,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5999,
+      "clicks": [
+        {
+          "at_ms": 29018,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 30286,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 31655,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 40519,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 615,
+          "x": 0,
+          "y": 7395
+        },
+        {
+          "relative_ms": 765,
+          "x": 0,
+          "y": 7383
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 70,
+      "max_pre_cta_scroll_y": 6161,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "kCxRy6EaDJTe2ONpD8rWsrd-",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 52032,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5691,
+      "clicks": [
+        {
+          "at_ms": 41690,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 42701,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 43740,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 52032,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 262,
+          "x": 0,
+          "y": 7474
+        },
+        {
+          "relative_ms": 412,
+          "x": 0,
+          "y": 7305
+        },
+        {
+          "relative_ms": 562,
+          "x": 0,
+          "y": 7290
+        },
+        {
+          "relative_ms": 1545,
+          "x": 0,
+          "y": 7369
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 85,
+      "max_pre_cta_scroll_y": 6658,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "kx6OWlD1bJ5BCHaa-ViAWkSQ",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 48867,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 6448,
+      "clicks": [
+        {
+          "at_ms": 39826,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 40997,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 42066,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 48867,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 496,
+          "x": 0,
+          "y": 7478
+        },
+        {
+          "relative_ms": 647,
+          "x": 0,
+          "y": 7434
+        },
+        {
+          "relative_ms": 3395,
+          "x": 0,
+          "y": 7592
+        },
+        {
+          "relative_ms": 3545,
+          "x": 0,
+          "y": 7626
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 74,
+      "max_pre_cta_scroll_y": 6117,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "lMcPWPPa6J3eYMuvBRUnFP7r",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 48121,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5869,
+      "clicks": [
+        {
+          "at_ms": 35498,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 36818,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 37858,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 48121,
+          "x": 339,
+          "y": 26,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 189,
+          "x": 0,
+          "y": 7485
+        },
+        {
+          "relative_ms": 3206,
+          "x": 0,
+          "y": 7623
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 74,
+      "max_pre_cta_scroll_y": 5784,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "lgbNHiAuBz70lWLmje7c1RGX",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 48208,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5589,
+      "clicks": [
+        {
+          "at_ms": 39304,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 40451,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 41720,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 48208,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 505,
+          "x": 0,
+          "y": 7435
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 75,
+      "max_pre_cta_scroll_y": 6420,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "n7yNXNiJxZKVeqhd3GoSrb63",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 43837,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 6542,
+      "clicks": [
+        {
+          "at_ms": 33685,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 34853,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 35872,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 43837,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 307,
+          "x": 0,
+          "y": 7411
+        },
+        {
+          "relative_ms": 456,
+          "x": 0,
+          "y": 7347
+        },
+        {
+          "relative_ms": 1456,
+          "x": 0,
+          "y": 7369
+        },
+        {
+          "relative_ms": 3656,
+          "x": 0,
+          "y": 7487
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 80,
+      "max_pre_cta_scroll_y": 6810,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "nt473rwC8KAOQ40fLaVAFA8a",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 49205,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5579,
+      "clicks": [
+        {
+          "at_ms": 39291,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 40294,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 41364,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 49205,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 192,
+          "x": 0,
+          "y": 7380
+        },
+        {
+          "relative_ms": 342,
+          "x": 0,
+          "y": 7280
+        },
+        {
+          "relative_ms": 1442,
+          "x": 0,
+          "y": 7369
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 81,
+      "max_pre_cta_scroll_y": 5737,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "oN_1janosaFBglrqd3f72vJz",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 49033,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5194,
+      "clicks": [
+        {
+          "at_ms": 39598,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 40610,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 41530,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 49033,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 317,
+          "x": 0,
+          "y": 7484
+        },
+        {
+          "relative_ms": 467,
+          "x": 0,
+          "y": 7394
+        },
+        {
+          "relative_ms": 617,
+          "x": 0,
+          "y": 7312
+        },
+        {
+          "relative_ms": 1715,
+          "x": 0,
+          "y": 7369
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 80,
+      "max_pre_cta_scroll_y": 6930,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "prLLJXtUIhuAYJLhb-SlsSLL",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 45669,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5753,
+      "clicks": [
+        {
+          "at_ms": 38013,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 38801,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 40105,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 45669,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 594,
+          "x": 0,
+          "y": 7501
+        },
+        {
+          "relative_ms": 3360,
+          "x": 0,
+          "y": 7626
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 79,
+      "max_pre_cta_scroll_y": 6462,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "q5Jjzv-4mVeGloVXbO-tdvFU",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 40695,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5397,
+      "clicks": [
+        {
+          "at_ms": 29846,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 30867,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 32015,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 40694,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 579,
+          "x": 0,
+          "y": 7423
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 77,
+      "max_pre_cta_scroll_y": 6579,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "qEhZrKCPFQe6OAe4o3s_oYXo",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 38431,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 6088,
+      "clicks": [
+        {
+          "at_ms": 30090,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 31179,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 32104,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 38431,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 378,
+          "x": 0,
+          "y": 7431
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 68,
+      "max_pre_cta_scroll_y": 6157,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "qnFCQ9fzajRORq1T3XiVHl_A",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 42072,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 6300,
+      "clicks": [
+        {
+          "at_ms": 32767,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 34119,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 35329,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 42072,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 254,
+          "x": 0,
+          "y": 7440
+        },
+        {
+          "relative_ms": 404,
+          "x": 0,
+          "y": 7347
+        },
+        {
+          "relative_ms": 554,
+          "x": 0,
+          "y": 7281
+        },
+        {
+          "relative_ms": 1420,
+          "x": 0,
+          "y": 7369
+        },
+        {
+          "relative_ms": 3286,
+          "x": 0,
+          "y": 7192
+        },
+        {
+          "relative_ms": 3436,
+          "x": 0,
+          "y": 7191
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 73,
+      "max_pre_cta_scroll_y": 6805,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "r0jn5xEVXCM_lXjzKWw6SgY_",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 45114,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5505,
+      "clicks": [
+        {
+          "at_ms": 36981,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 37755,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 39098,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 45114,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 205,
+          "x": 0,
+          "y": 7457
+        },
+        {
+          "relative_ms": 356,
+          "x": 0,
+          "y": 7449
+        },
+        {
+          "relative_ms": 2737,
+          "x": 0,
+          "y": 7316
+        },
+        {
+          "relative_ms": 2904,
+          "x": 0,
+          "y": 7306
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 81,
+      "max_pre_cta_scroll_y": 6019,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "rDY0A_h8zNQTUWwhLWvVkgcE",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 50626,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5435,
+      "clicks": [
+        {
+          "at_ms": 40673,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 41678,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 42757,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 50626,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 286,
+          "x": 0,
+          "y": 7504
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 79,
+      "max_pre_cta_scroll_y": 6712,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "v4bITsD1icRcQzPHFnL4vu6V",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 45323,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5481,
+      "clicks": [
+        {
+          "at_ms": 34330,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 35523,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 36830,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 45323,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 338,
+          "x": 0,
+          "y": 7456
+        },
+        {
+          "relative_ms": 2805,
+          "x": 0,
+          "y": 7364
+        },
+        {
+          "relative_ms": 2970,
+          "x": 0,
+          "y": 7254
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 78,
+      "max_pre_cta_scroll_y": 6191,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "vUrSjoHpEaARe7bhMDFOKIo3",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 43364,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 6249,
+      "clicks": [
+        {
+          "at_ms": 33152,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 34084,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 35211,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 43364,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 216,
+          "x": 0,
+          "y": 7482
+        },
+        {
+          "relative_ms": 3116,
+          "x": 0,
+          "y": 7594
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 72,
+      "max_pre_cta_scroll_y": 5759,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "vVENDOdtsxHJHRS91TEbdxc7",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 53621,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 6182,
+      "clicks": [
+        {
+          "at_ms": 41556,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 42431,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 43451,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 44521,
+          "x": 497,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 53621,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 191,
+          "x": 0,
+          "y": 7435
+        },
+        {
+          "relative_ms": 374,
+          "x": 0,
+          "y": 7304
+        },
+        {
+          "relative_ms": 525,
+          "x": 0,
+          "y": 7246
+        },
+        {
+          "relative_ms": 1558,
+          "x": 0,
+          "y": 7369
+        },
+        {
+          "relative_ms": 3274,
+          "x": 0,
+          "y": 7185
+        },
+        {
+          "relative_ms": 3425,
+          "x": 0,
+          "y": 7108
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 84,
+      "max_pre_cta_scroll_y": 6732,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "vXtj4oXdhPU_C5alZ-NZg44X",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 40676,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 6245,
+      "clicks": [
+        {
+          "at_ms": 31663,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 32669,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 33771,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 40675,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 286,
+          "x": 0,
+          "y": 7471
+        },
+        {
+          "relative_ms": 436,
+          "x": 0,
+          "y": 7426
+        },
+        {
+          "relative_ms": 3369,
+          "x": 0,
+          "y": 7337
+        },
+        {
+          "relative_ms": 3519,
+          "x": 0,
+          "y": 7300
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 77,
+      "max_pre_cta_scroll_y": 6853,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "xoFR4PRq11bctR6-LjOeBssh",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 43786,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5560,
+      "clicks": [
+        {
+          "at_ms": 33200,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 34615,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 35839,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 43786,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 488,
+          "x": 0,
+          "y": 7480
+        },
+        {
+          "relative_ms": 2704,
+          "x": 0,
+          "y": 7626
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 74,
+      "max_pre_cta_scroll_y": 5961,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "yKNaSSis9GdfqanmPt1WrFGp",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 43126,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 6030,
+      "clicks": [
+        {
+          "at_ms": 33255,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 34300,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 35777,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 37092,
+          "x": 497,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 43125,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 467,
+          "x": 0,
+          "y": 7527
+        },
+        {
+          "relative_ms": 3551,
+          "x": 0,
+          "y": 7626
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 71,
+      "max_pre_cta_scroll_y": 6483,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "ypp0jG60JKT3kXORyZzqm3eE",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 38481,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 5525,
+      "clicks": [
+        {
+          "at_ms": 29378,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 30605,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 31683,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 38480,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 441,
+          "x": 0,
+          "y": 7471
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 65,
+      "max_pre_cta_scroll_y": 6630,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    },
+    {
+      "session_id": "zNKcF-LoEPhOwvclkXhYqt-v",
+      "ended": true,
+      "viewport": [
+        1280,
+        720
+      ],
+      "cta_ms": 51340,
+      "cta_source": "hero_cta",
+      "cta_to_end_ms": 6149,
+      "clicks": [
+        {
+          "at_ms": 42260,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 43211,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 44163,
+          "x": 211,
+          "y": 0,
+          "tag": "html",
+          "name": "",
+          "classes": [],
+          "label": ""
+        },
+        {
+          "at_ms": 51340,
+          "x": 339,
+          "y": 360,
+          "tag": "button",
+          "name": "",
+          "classes": [
+            "btn",
+            "btn-register",
+            "hero-register"
+          ],
+          "label": "hero_cta"
+        }
+      ],
+      "post_cta_clicks": 0,
+      "post_cta_mousemove_batches": 0,
+      "rrweb_input_events": 0,
+      "rrweb_post_cta_scrolls": [
+        {
+          "relative_ms": 2768,
+          "x": 0,
+          "y": 7264
+        },
+        {
+          "relative_ms": 2934,
+          "x": 0,
+          "y": 7216
+        }
+      ],
+      "rrweb_dom_snapshot_count": 1,
+      "rrweb_event_count": 82,
+      "max_pre_cta_scroll_y": 6786,
+      "field_focus_steps": [
+        "name"
+      ],
+      "form_invalid_count": 0,
+      "form_submit_count": 0,
+      "custom_error_count": 0
+    }
+  ]
+}

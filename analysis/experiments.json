@@ -541,7 +541,7 @@
     },
     {
       "id": "e03_hero_cta",
-      "status": "ready_for_deploy",
+      "status": "measured",
       "hypothesis": "Offering registration and the actual starting price in hero lets ready visitors act before reading the long page.",
       "evidence": "E02: 80 CTA/view sessions, 10 submissions and confirmed conversions; 70 sessions did not focus subsequent fields. Cause remains uncertain.",
       "changes": [
@@ -586,9 +586,222 @@
         "protected_contract": "passed: form/action, four required fields, visit script, API and SQL unchanged"
       },
       "deployment_check": {
-        "published_variant": "e02_compact_form",
-        "e03_exposure_count": 0,
-        "status": "Awaiting manual publication by user"
+        "published_variant": "e03_hero_cta",
+        "e03_exposure_count": 11,
+        "status": "Published manually by user, confirmed from live JS"
+      },
+      "results": {
+        "simulator": {
+          "visits": 100,
+          "orders": 16,
+          "errors": 0,
+          "duration_seconds": 544.4,
+          "conversion": 0.16
+        },
+        "server": {
+          "visits_count": 101,
+          "orders_count": 16,
+          "generated_at": "2026-10-23T19:40:06+00:00"
+        },
+        "tracker_report": "analysis/e03-final.json",
+        "session_ids": [
+          "-8fHbbA6iM6Ro6SsM2MOWkwk",
+          "-agMYq0ksx8_F2z9Vqqsbab_",
+          "-auK02w0F4lB_yV271VTeZTw",
+          "-lFeKII5RwRnF4_m2Yy-V9fN",
+          "0GshuzOH5FT37RNf52NdAmRq",
+          "0fIfp7kNDyPM_aeuQAy1dsv9",
+          "2SCDDDyLctM_knye43FaTg7t",
+          "2Y6NJVpNhTozlCPZ2OoOyxaE",
+          "4siLUusCW_VbhjQQxy_8-KG5",
+          "5sWj5ioRriw5whT_KkEYEoza",
+          "6HvNr5NTaRshQkCFf4RK9OtP",
+          "6mQJn5lN5-lD2SsaOjSSZtiT",
+          "7aLkNiZt11FnYWR9NUS9Eb6a",
+          "843nLZ8YdOTyS8W6RsaoiXfD",
+          "91nOASErltrxF0GONHnfSgjd",
+          "99yVCaIZr9nNDkLdz7IusuTx",
+          "9E-Vpbn7DHhVgeUZOxDjnVr2",
+          "BFj_XlxuqYGQbqguTm4OkImq",
+          "BUxI0yW23wFDwvOnPtudogVk",
+          "BgnpToKi9GUDmELsir0BqY90",
+          "BoF8vWF2s4gPG2VtsBus2WRr",
+          "CIHHZ0tZ3G4JnZDkFLx9VJNx",
+          "CPlKU1HxJOSTxJ0GpSv-yGRg",
+          "Cgb8ZhPIldEllpaSpvqwATLb",
+          "DdAjFJ1kyiB5AmvyFyRkHO8z",
+          "E36Q8cgA1ElCOGb4z0Wm5ajx",
+          "EKYi9zNbuzhVGQl2hTqkdvm9",
+          "EzxzfzvATNsJdWyHwhzV-BPu",
+          "FfC6g3E4gCMqa0YQvI9VRqdh",
+          "G8YinVjHQTSO3l_9e-maPJn2",
+          "GJad5Q-Buxhv77ETfNm9mQL4",
+          "Getr57olSL24ipXq4ou1bnei",
+          "Giscz6jMnQ3pkwlbVSk8sypH",
+          "HbeSwML9kkZHDUBM-aXI7Y6b",
+          "IMuy81WDLn3s9V0-MouAlynb",
+          "JEIQmrt_iKaE0vhfI10SsN59",
+          "JU-ug8CcxlK_MmweGiSD-7XI",
+          "Ju85uFXLt2su6_FWrf0_4Tib",
+          "Jw9QP_J1C-pecitB8DB71jME",
+          "JzuNckMVqcrVShNxZaARcnQF",
+          "L1H5nbZGo_R0netKQC-qVrT_",
+          "L45sEG6yaj423xOmh6cfbOOJ",
+          "LWP1pmEqRromidEdUGgWrISZ",
+          "Lx5GMrvoaSOuluCtOwh0UUep",
+          "MBkNPedZ7jZJiEAw1EdKHhQe",
+          "MDvrtHc4Z5aFdrAk6IVsWDbH",
+          "MgjQAPl1_uL-OwHuEsutLzmd",
+          "OyUpf_xz_BKU9web3yO9B6T0",
+          "PIAbSp-vE0EuSUxSP5WLdFyn",
+          "P_uh9zVEGJTzjpUqMWkPIQ_x",
+          "Pq866v-dVmyTLInnMfHC8CRy",
+          "QnHprghNYaAMynGilQARqwnd",
+          "RU1CMDSz79ht0uvZvWpH99xy",
+          "Rch0zCZY0MvVz8wdSVFtkagX",
+          "Red0f9LWqeOunZhn1KUeAUlA",
+          "Ucj_vVRhs_1QTtqt3996n4N7",
+          "W9nA1OK73bYQTzcK9zSEeIoT",
+          "WPrrWxbpZhSQbWhIS668_HiE",
+          "WvriMSx4fbJnCd-7SKqzm3ES",
+          "Y51g7sbdD_uJUJKGYdpi3ryL",
+          "Z2_cjVLXgNhzCHACzXVp99KT",
+          "Z6dSDnzsY9T7-6H0F9sGI-QD",
+          "ZI0TdqhENEP2IS5yfxJ4fM-J",
+          "ZmZBvxJ02pXVdTp6BR7AOkT9",
+          "_DHMWlabW7m3v5JDXghZ6toG",
+          "_IlfjBOV0PU0qeKaHUxLPE_h",
+          "bJXKo_ecIIZ5PTfe380R8dcK",
+          "bKLLp8AhTnG1BrCu1b4Ijbai",
+          "d-W8mPtrkcOh0L-NzuxtIj61",
+          "dsP6DfjFi_uAcp7qHWHiJqNg",
+          "eUBmSRlnWB6CrX5usPeuO1a8",
+          "eXDhQIf-iVgxiXC__v4k8fs1",
+          "erx2zrn4BaKmwLakTEOiv0Ui",
+          "hXRf1pvBvzM_yxouuT8kIBU1",
+          "iXIlKWUvXznWZcSqoNKHxhhF",
+          "kCxRy6EaDJTe2ONpD8rWsrd-",
+          "kgwBMHYmzroi_NpN_yX6fePL",
+          "kx6OWlD1bJ5BCHaa-ViAWkSQ",
+          "lMcPWPPa6J3eYMuvBRUnFP7r",
+          "lgbNHiAuBz70lWLmje7c1RGX",
+          "n7yNXNiJxZKVeqhd3GoSrb63",
+          "nt473rwC8KAOQ40fLaVAFA8a",
+          "oN_1janosaFBglrqd3f72vJz",
+          "prLLJXtUIhuAYJLhb-SlsSLL",
+          "q5Jjzv-4mVeGloVXbO-tdvFU",
+          "qEhZrKCPFQe6OAe4o3s_oYXo",
+          "qnFCQ9fzajRORq1T3XiVHl_A",
+          "r0jn5xEVXCM_lXjzKWw6SgY_",
+          "rDY0A_h8zNQTUWwhLWvVkgcE",
+          "tNM6DffN-ya5ljUgeH-CRVHj",
+          "tiewbKINiy3m4oBJozqbf51e",
+          "uaqKtYxY1mQAmSYTg72hCboU",
+          "v4bITsD1icRcQzPHFnL4vu6V",
+          "v9TIjTv0A9dmQD32e7uYovyl",
+          "vUrSjoHpEaARe7bhMDFOKIo3",
+          "vVENDOdtsxHJHRS91TEbdxc7",
+          "vXtj4oXdhPU_C5alZ-NZg44X",
+          "xoFR4PRq11bctR6-LjOeBssh",
+          "yKNaSSis9GdfqanmPt1WrFGp",
+          "ypp0jG60JKT3kXORyZzqm3eE",
+          "zNKcF-LoEPhOwvclkXhYqt-v"
+        ],
+        "confirmed_conversion_session_ids": [
+          "-agMYq0ksx8_F2z9Vqqsbab_",
+          "-lFeKII5RwRnF4_m2Yy-V9fN",
+          "BgnpToKi9GUDmELsir0BqY90",
+          "E36Q8cgA1ElCOGb4z0Wm5ajx",
+          "G8YinVjHQTSO3l_9e-maPJn2",
+          "HbeSwML9kkZHDUBM-aXI7Y6b",
+          "IMuy81WDLn3s9V0-MouAlynb",
+          "JU-ug8CcxlK_MmweGiSD-7XI",
+          "P_uh9zVEGJTzjpUqMWkPIQ_x",
+          "Z2_cjVLXgNhzCHACzXVp99KT",
+          "ZmZBvxJ02pXVdTp6BR7AOkT9",
+          "bJXKo_ecIIZ5PTfe380R8dcK",
+          "hXRf1pvBvzM_yxouuT8kIBU1",
+          "kgwBMHYmzroi_NpN_yX6fePL",
+          "tiewbKINiy3m4oBJozqbf51e",
+          "v9TIjTv0A9dmQD32e7uYovyl"
+        ],
+        "interpretation": "Early CTA iteration records 16% versus prior 10%; sequential runs do not establish causal lift. Goal of 50% not met.",
+        "limitations": [
+          "Page sessions are not unique visitors or simulator visits.",
+          "Name focus is automatic and is not evidence of typing.",
+          "An active session count does not prove the simulator job is running.",
+          "Conversions are attributed to the last recorded CTA, not causal influence."
+        ]
+      }
+    },
+    {
+      "id": "e04_concise_program",
+      "status": "ready_for_deploy",
+      "hypothesis": "Long module descriptions contribute to friction before the decision to start the form. Concise descriptions may increase genuine input starts and confirmed orders.",
+      "confidence": "medium-low; agreed priority across four reviews, cause unproven",
+      "evidence_reports": [
+        "analysis/review-success.json",
+        "analysis/review-abandon.json",
+        "analysis/review-early.json",
+        "analysis/review-independent.json"
+      ],
+      "changes": [
+        "Only six existing program-module descriptions shortened; headings, timetable and main learning outcomes retained",
+        "Exposure variant changed to e04_concise_program"
+      ],
+      "unchanged": [
+        "All section order and simulator selectors",
+        "Hero CTA, prices and registration form",
+        "API and SQL",
+        "Card cursor/hover appearance"
+      ],
+      "text_word_count": {
+        "old_module_paragraphs": 590,
+        "new_module_paragraphs": 202
+      },
+      "primary_metric": "Simulator confirmed orders / 100 visits, target >=50%",
+      "diagnostics": [
+        "True rrweb input-start sessions / CTA sessions",
+        "First input -> confirmed success",
+        "Time and scroll before CTA"
+      ],
+      "prediction": "More sessions begin actual input; input-start-to-success remains high. Shorter scrolling alone is not success.",
+      "falsifier": "Pre-CTA time or distance declines but genuine input-start fraction and conversion do not improve.",
+      "request": "Manually deploy e04, run one isolated batch of100 visits, report results and timing.",
+      "limitations": [
+        "Sequential batches do not establish causality",
+        "No guarantee this change reaches50%"
+      ],
+      "validation": {
+        "syntax": "node --check js/main.js passed",
+        "diff": "git diff --check passed",
+        "scope": "Only six HTML paragraph bodies and JS variant changed in site code; API/SQL/CSS unchanged",
+        "chrome_desktop": {
+          "viewport": [
+            1280,
+            720
+          ],
+          "program_list_height_px": 1207.125,
+          "hero_and_form_submit_visible": true,
+          "module_count": 6,
+          "required_fields": [
+            "name",
+            "phone",
+            "email",
+            "purpose"
+          ],
+          "focused_field": "name",
+          "horizontal_overflow": false
+        },
+        "chrome_mobile": {
+          "viewport": [
+            390,
+            844
+          ],
+          "hero_and_form_submit_visible": true,
+          "horizontal_overflow": false
+        },
+        "method": "Local preview with external tracker and visit script omitted; no production visits or applications generated"
       }
     }
   ]

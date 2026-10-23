@@ -1,0 +1,114 @@
+{
+  "experiment": "e03_hero_cta",
+  "role": "Fourth independent audit; first conclusions formed before reading other reports",
+  "coverage": {
+    "sessions": 101,
+    "successful_sessions": 16,
+    "cta_without_conversion": 74,
+    "without_cta": 11,
+    "all_viewports": [
+      1280,
+      720
+    ],
+    "snapshot_contract_checked_sessions": 101,
+    "rrweb_event_count": 7905
+  },
+  "observations": [
+    {
+      "finding": "Every successful session has exactly four rrweb input events in order name, phone, email, purpose; all 85 unsuccessful sessions have zero input events.",
+      "implication": "Failures are before typing; there is no evidence of errors completing individual fields.",
+      "confidence": "high"
+    },
+    {
+      "finding": "CTA median timestamp is 42.1105 seconds for successful sessions, 46.7525 seconds for CTA failures. Success range36.814–56.805 seconds; failure33.346–55.185 seconds.",
+      "implication": "Distributions overlap; shorter journey is not established as the mechanism of E03 improvement.",
+      "confidence": "high"
+    },
+    {
+      "finding": "All101 DOM snapshots contain the same six module word counts [108,106,111,105,100,104], four CTAs, four required fields and expected absolute api/submit.php action. No form_invalid events occur.",
+      "implication": "Version/field-contract differences and recorded native validation errors do not explain outcomes in this batch.",
+      "confidence": "high"
+    },
+    {
+      "finding": "Successful -agMYq0ksx8_F2z9Vqqsbab_ scrolls to y6113, then y237, then y7573 around CTA; failed -8fHbbA6iM6Ro6SsM2MOWkwk scrolls to6688, then237, then7573.",
+      "implication": "The hero source indicates DOM button identity, not early decision or first-screen conversion.",
+      "confidence": "high"
+    },
+    {
+      "finding": "Initial DOM contains634 words in the six program modules. Local Chrome iframe with exact1280x720 viewport measures program-list1719px and full program-section2081px, page8371px.",
+      "implication": "Program takes roughly2.4 viewport heights plus intro/padding; reducing reading volume is testable, but consumption/causality remains unknown.",
+      "confidence": "medium",
+      "validation_limit": "Local reconstructed current HTML/CSS, not exact replay screenshot; top-level Chrome viewport resize did not take effect, so iframe viewport was used and explicitly verified."
+    },
+    {
+      "finding": "Program/feature/injury cards use pointer cursor and hover translation despite no corresponding action listeners in main.js. One no-CTA session has repeated card-target clicks at0,0.",
+      "implication": "False affordance is a genuine code issue; the coordinates are not sufficient evidence that human confusion caused this loss.",
+      "confidence": "high on code, low on conversion effect"
+    }
+  ],
+  "detailed_sample_ids": {
+    "success": [
+      "-agMYq0ksx8_F2z9Vqqsbab_",
+      "-lFeKII5RwRnF4_m2Yy-V9fN",
+      "BgnpToKi9GUDmELsir0BqY90"
+    ],
+    "cta_failure": [
+      "-8fHbbA6iM6Ro6SsM2MOWkwk",
+      "-auK02w0F4lB_yV271VTeZTw",
+      "0fIfp7kNDyPM_aeuQAy1dsv9"
+    ],
+    "no_cta": [
+      "0GshuzOH5FT37RNf52NdAmRq",
+      "BFj_XlxuqYGQbqguTm4OkImq",
+      "BoF8vWF2s4gPG2VtsBus2WRr"
+    ]
+  },
+  "alternative_explanations": [
+    "Sequential batches may differ by scenario/persona mix or random outcomes. 10%→16% is not randomized causal evidence.",
+    "The repeated deep scroll then jump to the first CTA is consistent with scripted selection. This does not prove intent or a specific simulator scoring rule.",
+    "Decision not to begin filling can reflect perceived burden, trust, value, time or predetermined scenario behavior; event stream alone cannot separate these.",
+    "Required field count is fixed by challenge and zero unsuccessful input does not justify disabling validation or auto-filling values."
+  ],
+  "experiments_ranked": [
+    {
+      "priority": 1,
+      "name": "Short program copy",
+      "change": "Rewrite each of six existing modules to30–45 outcome-focused words, keeping schedule, module count/classes and section order. No accordions or hidden text.",
+      "hypothesis": "Long descriptive modules increase perceived reading cost before registration.",
+      "prediction": "More sessions start genuine input after CTA and complete an order; if physical reading path matters, less pre-CTA time/depth.",
+      "primary_metric": "Simulator confirmed orders /100 visits",
+      "diagnostics": [
+        "Unique rrweb input sessions / CTA sessions",
+        "CTA time and program-scroll trace",
+        "Compare same sample patterns across batches"
+      ],
+      "confidence": "medium-to-low causal; strongest permitted content candidate"
+    },
+    {
+      "priority": 2,
+      "name": "Remove false affordances",
+      "change": "Set cursor default and remove hover lift only for non-action program/feature/injury cards, preserving elements/classes.",
+      "hypothesis": "Non-interactive cards invite wasted action and reduce clarity.",
+      "prediction": "Fewer in-viewport non-action clicks, lower exit rate before CTA, higher confirmed conversion.",
+      "diagnostic_guard": "Do not count offscreen or programmatic0,0/html clicks as behavioral confusion.",
+      "confidence": "low conversion effect; code defect clear"
+    },
+    {
+      "priority": 3,
+      "name": "Decision clarity at form",
+      "change": "Within registration section show a concise recap of existing course price/format and confirmation process, and make submit visually primary. Keep four mandatory fields and all submission logic intact.",
+      "hypothesis": "Visitors reach a generic lead form without sufficient context to decide to begin.",
+      "prediction": "Higher true first-input rate after registration_view; field completion rate may remain similar.",
+      "confidence": "low-to-medium; follows observed pre-input loss but cannot separate motive",
+      "guard": "Use only existing truthful details; do not promise no payment, no spam or a new date without business confirmation."
+    }
+  ],
+  "quality_limits": [
+    "101 tracker page sessions versus100 simulator visits; extra session attribution is unavailable.",
+    "All views1280x720; no evidence about real mobile behavior.",
+    "Focus name is automatic, not user engagement; input events and physical field clicks are stronger start signals.",
+    "A DOM snapshot plus event stream is not a video of intention.",
+    "Fixed15August2026 course date predates current23October2026 environment date; actual next course schedule is unknown. Correct only from true business data, never invent future date.",
+    "Recorded action client coordinates can be clipped; use raw rrweb positions/hit targets when judging offscreen clicks."
+  ]
+}
