@@ -354,16 +354,10 @@
                             E-mail
                             <input type="email" name="email" required autocomplete="email" placeholder="you@example.ru">
                         </label>
-                        <div class="purpose-field">
-                            <label for="course-purpose">Для чего вам курс?</label>
-                            <textarea id="course-purpose" name="purpose" required rows="2" placeholder="Например: для семьи, работы или путешествий"></textarea>
-                            <span class="purpose-hint">Можно подставить вариант и отредактировать:</span>
-                            <div class="purpose-choices" role="group" aria-label="Варианты цели обучения">
-                                <button type="button" data-purpose="Для семьи" data-purpose-key="family" aria-pressed="false">Для семьи</button>
-                                <button type="button" data-purpose="Для работы" data-purpose-key="work" aria-pressed="false">Для работы</button>
-                                <button type="button" data-purpose="Для путешествий" data-purpose-key="travel" aria-pressed="false">Для путешествий</button>
-                            </div>
-                        </div>
+                        <label>
+                            Для чего вам курс?
+                            <textarea name="purpose" required rows="2" placeholder="Например: для семьи, работы или путешествий"></textarea>
+                        </label>
                         <button type="submit" class="btn">Отправить заявку</button>
                     </form>
                     <p class="form-message" id="form-message" aria-live="polite"></p>
