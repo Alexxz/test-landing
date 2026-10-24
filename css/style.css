@@ -213,9 +213,8 @@ img {
 
 .emotional-photo img {
     width: 100%;
-    height: min(40vh, 320px);
-    object-fit: contain;
-    background: var(--bg-soft);
+    height: min(70vh, 560px);
+    object-fit: cover;
 }
 
 .instructors-grid {
@@ -437,6 +436,13 @@ img {
 /* Experiment e03: offer registration before the long course description. */
 .hero-action {
     margin: 24px 0 32px;
+}
+
+.hero-logistics {
+    margin: 0 0 8px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--heading);
 }
 
 .hero-price {

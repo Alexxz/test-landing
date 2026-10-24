@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'e20_compact_training_photo';
+    const variant = 'e21_decision_facts_at_cta';
     const pendingEvents = [];
     let exposed = false;
     const track = (name, properties = {}) => {

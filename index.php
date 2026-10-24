@@ -19,6 +19,7 @@
                 Группа до 14 человек.
             </p>
             <div class="hero-action">
+                <p class="hero-logistics">15 декабря 2026 · 10:00–18:00 · Москва</p>
                 <p class="hero-price">Полный день обучения — от <strong>4 900 ₽</strong></p>
                 <button type="button" class="btn btn-register hero-register" data-track-label="hero_cta">Записаться на курс</button>
                 <p class="hero-action-note">Оставьте заявку — мы подтвердим место и ответим на вопросы.</p>
