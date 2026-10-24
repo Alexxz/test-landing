@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'e11_legal_clarity';
+    const variant = 'e12_progressive_form';
     const pendingEvents = [];
     let exposed = false;
     const track = (name, properties = {}) => {
@@ -115,6 +115,48 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
+    const contactGroup = form.querySelector('.form-contacts');
+    const detailsGroup = form.querySelector('.form-details');
+    const progressSubmit = form.querySelector('button[type="submit"]');
+    const progressMessage = document.getElementById('form-progress');
+    let refreshQualifiedView = () => {};
+    const revealDetails = (source) => {
+        if (!detailsGroup?.hidden) return;
+        detailsGroup.hidden = false;
+        progressSubmit.hidden = false;
+        progressMessage.textContent = 'Шаг 2 из 2';
+        track('registration_details_revealed', { source, step: 'details' });
+        refreshQualifiedView();
+    };
+    if (contactGroup && detailsGroup && progressSubmit && progressMessage) {
+        const resetProgress = () => {
+            detailsGroup.hidden = true;
+            progressSubmit.hidden = true;
+            progressMessage.textContent = 'Шаг 1 из 2: контакты';
+        };
+        const checkContacts = (source) => {
+            const ready = ['name', 'phone'].every((name) => String(form.elements.namedItem(name)?.value || '').trim());
+            if (ready) revealDetails(source);
+        };
+        resetProgress();
+        checkContacts('restored_contacts');
+        form.addEventListener('input', () => checkContacts('contacts_input'));
+        form.addEventListener('change', () => checkContacts('contacts_change'));
+        // Reveal controls before native validation tries to focus a hidden field.
+        form.addEventListener('invalid', () => revealDetails('validation'), true);
+        form.addEventListener('reset', resetProgress);
+        window.addEventListener('pageshow', () => checkContacts('restored_contacts'));
+        if ('IntersectionObserver' in window) {
+            const contactsObserver = new IntersectionObserver((entries) => {
+                if (entries.some((entry) => entry.isIntersecting && entry.intersectionRatio >= 0.5)) {
+                    track('registration_contacts_view', { step: 'half_contacts' });
+                    contactsObserver.disconnect();
+                }
+            }, { threshold: [0, 0.5] });
+            contactsObserver.observe(contactGroup);
+        }
+    }
+
     if ('IntersectionObserver' in window) {
         const observer = new IntersectionObserver((entries) => {
             if (entries.some((entry) => entry.isIntersecting)) {
@@ -140,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
             clearTimeout(viewTimer);
             if (qualified || !halfVisible || document.visibilityState !== 'visible') return;
             viewTimer = setTimeout(() => {
-                if (document.visibilityState === 'visible' && visibleFraction() >= 0.5) {
+                if (document.visibilityState === 'visible' && !detailsGroup?.hidden && visibleFraction() >= 0.5) {
                     qualified = true;
                     track('registration_view_qualified', { step: 'half_form_1s' });
                     viewObserver.disconnect();
@@ -152,6 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
             halfVisible = entries.some((entry) => entry.isIntersecting && entry.intersectionRatio >= 0.5);
             checkView();
         }, { threshold: [0, 0.5] });
+        refreshQualifiedView = checkView;
         viewObserver.observe(form);
         document.addEventListener('visibilitychange', checkView);
         window.addEventListener('pagehide', () => clearTimeout(viewTimer));

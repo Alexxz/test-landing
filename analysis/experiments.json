@@ -1653,7 +1653,7 @@
     },
     {
       "id": "e11_legal_clarity",
-      "status": "ready_for_deploy",
+      "status": "measured_retained_editorial_correction",
       "baseline": "E10 control:61/200=30.5%, exact E07 interface",
       "hypothesis": "Neutral curriculum-focused legal copy may reduce perceived threat or distrust before the decision to begin registration.",
       "confidence": "low: fear is not observed in the recordings; existing categorical reassurance is unsupported in the page.",
@@ -1702,6 +1702,82 @@
           "Floating CTA hides at registration"
         ],
         "limitations": "Chromium emulation, no physical Safari/keyboard validation. No production visits or submissions generated."
+      },
+      "results": {
+        "simulator": {
+          "visits": 100,
+          "orders": 27,
+          "errors": 0,
+          "duration_seconds": 526.0,
+          "conversion": 0.27
+        },
+        "tracker_report": "analysis/e11-final.json",
+        "interpretation": "No demonstrated lift versus control30.5%. Neutral syllabus description retained as an editorial correction, not as a proven conversion improvement."
+      }
+    },
+    {
+      "id": "e12_progressive_form",
+      "status": "ready_for_deploy",
+      "baseline": "E11 neutral legal copy retained (27%); reference E10 control61/200=30.5%",
+      "hypothesis": "Showing contacts first, with remaining required fields revealed after contact entry, reduces perceived initial effort and may increase genuine first input and confirmed orders.",
+      "confidence": "moderate rationale, conversion effect unproven; early abandonment does not reveal motivation.",
+      "changes": [
+        "Group existing name/phone as contacts step",
+        "Reveal existing email/purpose and submit after both contact values become nonempty",
+        "Keep upfront4-field explanation and visible2-step status",
+        "Reveal all fields on native validation before browser focuses an invalid field",
+        "No-JS fallback shows all4fields and submit",
+        "Variant e12_progressive_form"
+      ],
+      "contract": [
+        "All4existing field elements, attributes/types/names/required flags unchanged",
+        "Same formid/action and backend/API/SQL",
+        "No data auto-filled or invented",
+        "No automatic submission or synthetic input events",
+        "Existing fill order name,phone,email,purpose preserved without extra next-button click"
+      ],
+      "measurement": [
+        "registration_contacts_view means>=50% contacts area geometrically visible, no reading inference",
+        "registration_details_revealed includes source contacts input/change/restored/nativevalidation",
+        "registration_view_qualified remains full-form-only: allfields revealed and>=50%form visible1s",
+        "Primary input-start and server conversion criteria unchanged"
+      ],
+      "primary_metric": "Confirmed orders /100 simulator visits; target>=50%",
+      "diagnostics": [
+        "Visits -> first real input -> details revealed -> confirmed success",
+        "Watch partial starts and native validation failures introduced by progressive disclosure",
+        "Do not compare initial collapsed-form legacy view counts with historical full-form visibility"
+      ],
+      "prediction": "More visitors begin entry, with enough retained completions to raise confirmed conversion. Increased starts alone are not success.",
+      "falsifier": "Starts increase but orders do not, or hidden-field/navigation/validation problems appear.",
+      "request": "Manually deploy E12 and run one100-visit batch. Report orders/errors/timing; verify official simulator compatibility in this run.",
+      "validation": {
+        "report": "analysis/e12-validation.json",
+        "contract": "Form id/action and all field elements/attributes/types/names/required flags match E11; API/SQL unchanged",
+        "syntax": "node --check js/main.js passed",
+        "chrome_viewports": [
+          "1280x720",
+          "320x568",
+          "390x844",
+          "667x375",
+          "768x1024"
+        ],
+        "checks": [
+          "Initial visible fields=name,phone; all4required remain in DOM",
+          "Normal name->phone->email->purpose sequence reveals fields without extra navigation",
+          "First input stays false after auto focus; full-form-qualified stays false while details hidden",
+          "All four actual values included in mocked FormData",
+          "Invalid email blocks request; error retains data; retry/success/reset work",
+          "Blank native submission reveals required hidden controls before validation focus",
+          "Real Enter from phone with missing email focuses email and sends0requests",
+          "Without application JavaScript all4fields and submit visible",
+          "No horizontal overflow; all expanded controls unobstructed"
+        ],
+        "limitations": [
+          "Official simulator not run by agent; compatibility confirmed by local ordinary fill order only.",
+          "Chromium emulation, not physical Safari or keyboard hardware.",
+          "API responses mocked and production counters omitted; no production applications generated."
+        ]
       }
     }
   ]

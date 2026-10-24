@@ -483,3 +483,35 @@ img {
         max-width: none;
     }
 }
+
+/* e12: progressively disclose the same four required fields. */
+.form-contacts,
+.form-details {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px 18px;
+}
+
+.form-details[hidden],
+.form-grid button[type="submit"][hidden] {
+    display: none;
+}
+
+.form-progress {
+    margin: 0 0 12px;
+    color: var(--heading);
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.form-progress:empty {
+    display: none;
+}
+
+@media (max-width: 560px) {
+    .form-contacts,
+    .form-details {
+        grid-template-columns: 1fr;
+    }
+}

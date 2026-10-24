@@ -1,0 +1,367 @@
+[
+  {
+    "name": "desktop",
+    "pageId": 65,
+    "viewport": [
+      1280,
+      720
+    ],
+    "initial": {
+      "visibleFields": [
+        "name",
+        "phone"
+      ],
+      "requiredFields": [
+        "name",
+        "phone",
+        "email",
+        "purpose"
+      ],
+      "submitHidden": true,
+      "inputStartWithoutTyping": false,
+      "fullFormQualifiedWhileCollapsed": false
+    },
+    "afterNameHidden": true,
+    "afterContacts": {
+      "allFieldsVisible": true,
+      "submitVisible": true,
+      "detailsEvent": true
+    },
+    "fullViewAfterReveal": true,
+    "invalidEmailBlocked": true,
+    "errorRetainsValues": true,
+    "success": {
+      "message": true,
+      "recorded": true,
+      "valuesReset": true,
+      "collapsedAfterReset": true,
+      "postedKeys": [
+        "name",
+        "phone",
+        "email",
+        "purpose"
+      ]
+    },
+    "emptyAttempt": {
+      "blocked": true,
+      "hiddenFieldsRevealed": true,
+      "allControlsVisible": true
+    },
+    "controls": [
+      {
+        "name": "name",
+        "unobstructed": true
+      },
+      {
+        "name": "phone",
+        "unobstructed": true
+      },
+      {
+        "name": "email",
+        "unobstructed": true
+      },
+      {
+        "name": "purpose",
+        "unobstructed": true
+      },
+      {
+        "name": "submit",
+        "unobstructed": true
+      }
+    ],
+    "overflow": false,
+    "mockedRequests": 2
+  },
+  {
+    "name": "small_phone",
+    "pageId": 66,
+    "viewport": [
+      320,
+      568
+    ],
+    "initial": {
+      "visibleFields": [
+        "name",
+        "phone"
+      ],
+      "requiredFields": [
+        "name",
+        "phone",
+        "email",
+        "purpose"
+      ],
+      "submitHidden": true,
+      "inputStartWithoutTyping": false,
+      "fullFormQualifiedWhileCollapsed": false
+    },
+    "afterNameHidden": true,
+    "afterContacts": {
+      "allFieldsVisible": true,
+      "submitVisible": true,
+      "detailsEvent": true
+    },
+    "fullViewAfterReveal": true,
+    "invalidEmailBlocked": true,
+    "errorRetainsValues": true,
+    "success": {
+      "message": true,
+      "recorded": true,
+      "valuesReset": true,
+      "collapsedAfterReset": true,
+      "postedKeys": [
+        "name",
+        "phone",
+        "email",
+        "purpose"
+      ]
+    },
+    "emptyAttempt": {
+      "blocked": true,
+      "hiddenFieldsRevealed": true,
+      "allControlsVisible": true
+    },
+    "controls": [
+      {
+        "name": "name",
+        "unobstructed": true
+      },
+      {
+        "name": "phone",
+        "unobstructed": true
+      },
+      {
+        "name": "email",
+        "unobstructed": true
+      },
+      {
+        "name": "purpose",
+        "unobstructed": true
+      },
+      {
+        "name": "submit",
+        "unobstructed": true
+      }
+    ],
+    "overflow": false,
+    "mockedRequests": 2
+  },
+  {
+    "name": "phone",
+    "pageId": 67,
+    "viewport": [
+      390,
+      844
+    ],
+    "initial": {
+      "visibleFields": [
+        "name",
+        "phone"
+      ],
+      "requiredFields": [
+        "name",
+        "phone",
+        "email",
+        "purpose"
+      ],
+      "submitHidden": true,
+      "inputStartWithoutTyping": false,
+      "fullFormQualifiedWhileCollapsed": false
+    },
+    "afterNameHidden": true,
+    "afterContacts": {
+      "allFieldsVisible": true,
+      "submitVisible": true,
+      "detailsEvent": true
+    },
+    "fullViewAfterReveal": true,
+    "invalidEmailBlocked": true,
+    "errorRetainsValues": true,
+    "success": {
+      "message": true,
+      "recorded": true,
+      "valuesReset": true,
+      "collapsedAfterReset": true,
+      "postedKeys": [
+        "name",
+        "phone",
+        "email",
+        "purpose"
+      ]
+    },
+    "emptyAttempt": {
+      "blocked": true,
+      "hiddenFieldsRevealed": true,
+      "allControlsVisible": true
+    },
+    "controls": [
+      {
+        "name": "name",
+        "unobstructed": true
+      },
+      {
+        "name": "phone",
+        "unobstructed": true
+      },
+      {
+        "name": "email",
+        "unobstructed": true
+      },
+      {
+        "name": "purpose",
+        "unobstructed": true
+      },
+      {
+        "name": "submit",
+        "unobstructed": true
+      }
+    ],
+    "overflow": false,
+    "mockedRequests": 2
+  },
+  {
+    "name": "phone_landscape",
+    "pageId": 68,
+    "viewport": [
+      667,
+      375
+    ],
+    "initial": {
+      "visibleFields": [
+        "name",
+        "phone"
+      ],
+      "requiredFields": [
+        "name",
+        "phone",
+        "email",
+        "purpose"
+      ],
+      "submitHidden": true,
+      "inputStartWithoutTyping": false,
+      "fullFormQualifiedWhileCollapsed": false
+    },
+    "afterNameHidden": true,
+    "afterContacts": {
+      "allFieldsVisible": true,
+      "submitVisible": true,
+      "detailsEvent": true
+    },
+    "fullViewAfterReveal": true,
+    "invalidEmailBlocked": true,
+    "errorRetainsValues": true,
+    "success": {
+      "message": true,
+      "recorded": true,
+      "valuesReset": true,
+      "collapsedAfterReset": true,
+      "postedKeys": [
+        "name",
+        "phone",
+        "email",
+        "purpose"
+      ]
+    },
+    "emptyAttempt": {
+      "blocked": true,
+      "hiddenFieldsRevealed": true,
+      "allControlsVisible": true
+    },
+    "controls": [
+      {
+        "name": "name",
+        "unobstructed": true
+      },
+      {
+        "name": "phone",
+        "unobstructed": true
+      },
+      {
+        "name": "email",
+        "unobstructed": true
+      },
+      {
+        "name": "purpose",
+        "unobstructed": true
+      },
+      {
+        "name": "submit",
+        "unobstructed": true
+      }
+    ],
+    "overflow": false,
+    "mockedRequests": 2
+  },
+  {
+    "name": "tablet",
+    "pageId": 69,
+    "viewport": [
+      768,
+      1024
+    ],
+    "initial": {
+      "visibleFields": [
+        "name",
+        "phone"
+      ],
+      "requiredFields": [
+        "name",
+        "phone",
+        "email",
+        "purpose"
+      ],
+      "submitHidden": true,
+      "inputStartWithoutTyping": false,
+      "fullFormQualifiedWhileCollapsed": false
+    },
+    "afterNameHidden": true,
+    "afterContacts": {
+      "allFieldsVisible": true,
+      "submitVisible": true,
+      "detailsEvent": true
+    },
+    "fullViewAfterReveal": true,
+    "invalidEmailBlocked": true,
+    "errorRetainsValues": true,
+    "success": {
+      "message": true,
+      "recorded": true,
+      "valuesReset": true,
+      "collapsedAfterReset": true,
+      "postedKeys": [
+        "name",
+        "phone",
+        "email",
+        "purpose"
+      ]
+    },
+    "emptyAttempt": {
+      "blocked": true,
+      "hiddenFieldsRevealed": true,
+      "allControlsVisible": true
+    },
+    "controls": [
+      {
+        "name": "name",
+        "unobstructed": true
+      },
+      {
+        "name": "phone",
+        "unobstructed": true
+      },
+      {
+        "name": "email",
+        "unobstructed": true
+      },
+      {
+        "name": "purpose",
+        "unobstructed": true
+      },
+      {
+        "name": "submit",
+        "unobstructed": true
+      }
+    ],
+    "overflow": false,
+    "mockedRequests": 2
+  }
+]
