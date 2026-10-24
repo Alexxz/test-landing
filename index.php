@@ -296,12 +296,17 @@
             <div class="container">
                 <h2 class="section-title">Тарифы</h2>
                 <p class="section-lead">
-                    Выберите формат участия. Во все тарифы входят материалы, сертификат и доступ к памятке после курса.
+                    Сравните состав тарифов и выберите подходящий формат участия.
                 </p>
+                <div class="pricing-common">
+                    <strong>В каждом тарифе</strong>
+                    <span>Материалы · Сертификат · Доступ к памятке после курса</span>
+                </div>
                 <div class="pricing-grid">
                     <article class="pricing-card">
                         <h3>Базовый</h3>
                         <div class="price">4 900 ₽</div>
+                        <p class="pricing-caption">Основной курс</p>
                         <ul class="pricing-list">
                             <li>Участие в полном однодневном курсе</li>
                             <li>Сертификат и памятка</li>
@@ -312,8 +317,10 @@
                     <article class="pricing-card featured">
                         <h3>Расширенный</h3>
                         <div class="price">7 900 ₽</div>
+                        <p class="pricing-caption">Базовый курс и дополнительная практика</p>
                         <ul class="pricing-list">
-                            <li>Всё из базового тарифа</li>
+                            <li>Участие в полном однодневном курсе</li>
+                            <li>Сертификат, памятка и кофе-брейки</li>
                             <li>Набор перевязочных материалов</li>
                             <li>Дополнительный практический блок</li>
                         </ul>
@@ -322,6 +329,7 @@
                     <article class="pricing-card">
                         <h3>Корпоративный</h3>
                         <div class="price">12 900 ₽</div>
+                        <p class="pricing-caption">Разбор рабочих ситуаций и документы для работодателя</p>
                         <ul class="pricing-list">
                             <li>Индивидуальный разбор рисков профессии</li>
                             <li>Консультация для HR или руководителя</li>

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'e17_registration_value_recap';
+    const variant = 'e18_pricing_comparison';
     const pendingEvents = [];
     let exposed = false;
     const track = (name, properties = {}) => {
