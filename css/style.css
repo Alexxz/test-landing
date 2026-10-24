@@ -353,7 +353,7 @@ img {
 .form-grid textarea {
     width: 100%;
     padding: 14px 16px;
-    border: 1px solid #64748b;
+    border: 1px solid #d8d2cb;
     border-radius: 12px;
     font: inherit;
     background: #fff;
@@ -482,16 +482,4 @@ img {
         width: calc(100% - 32px);
         max-width: none;
     }
-}
-
-/* e08: distinguish actionable registration controls from the panel. */
-.form-grid input:focus,
-.form-grid textarea:focus {
-    outline: 3px solid #194f68;
-    outline-offset: 2px;
-}
-
-.form-grid button[type="submit"] {
-    background: #194f68;
-    color: #fff;
 }

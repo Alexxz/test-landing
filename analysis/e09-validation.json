@@ -1,0 +1,326 @@
+[
+  {
+    "name": "desktop",
+    "visual": {
+      "viewport": [
+        1280,
+        720
+      ],
+      "featuredTitle": "Базовый",
+      "featuredCount": 1,
+      "prices": [
+        "4 900 ₽",
+        "7 900 ₽",
+        "12 900 ₽"
+      ],
+      "sourceCorrect": true,
+      "noFakeInput": true,
+      "overflow": false,
+      "fieldBorder": "rgb(216, 210, 203)",
+      "copyMetadata": [
+        {
+          "name": "copy_attempt",
+          "properties": {
+            "variant": "e09_base_plan",
+            "source": "program",
+            "step": "selection"
+          }
+        }
+      ],
+      "privateCopyIgnored": true,
+      "floatingHiddenBeforeObserverFrame": true
+    },
+    "functional": {
+      "viewport": [
+        1280,
+        720
+      ],
+      "touch": 0,
+      "reachable": [
+        {
+          "name": "name",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "phone",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "email",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "purpose",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "submit",
+          "withinViewport": true,
+          "unobstructed": true
+        }
+      ],
+      "missingBlocked": true,
+      "invalidEmailBlocked": true,
+      "errorState": {
+        "shown": true,
+        "valuesPreserved": true,
+        "buttonEnabled": true
+      },
+      "successState": {
+        "shown": true,
+        "formReset": true,
+        "buttonEnabled": true,
+        "conversionRecorded": true
+      },
+      "mockedRequests": 2,
+      "network": "Mocked form responses; no API submission"
+    }
+  },
+  {
+    "name": "small_phone",
+    "visual": {
+      "viewport": [
+        320,
+        568
+      ],
+      "featuredTitle": "Базовый",
+      "featuredCount": 1,
+      "prices": [
+        "4 900 ₽",
+        "7 900 ₽",
+        "12 900 ₽"
+      ],
+      "sourceCorrect": true,
+      "noFakeInput": true,
+      "overflow": false,
+      "fieldBorder": "rgb(216, 210, 203)",
+      "copyMetadata": [
+        {
+          "name": "copy_attempt",
+          "properties": {
+            "variant": "e09_base_plan",
+            "source": "program",
+            "step": "selection"
+          }
+        }
+      ],
+      "privateCopyIgnored": true,
+      "floatingHiddenBeforeObserverFrame": false
+    },
+    "functional": {
+      "viewport": [
+        320,
+        568
+      ],
+      "touch": 1,
+      "reachable": [
+        {
+          "name": "name",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "phone",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "email",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "purpose",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "submit",
+          "withinViewport": true,
+          "unobstructed": true
+        }
+      ],
+      "missingBlocked": true,
+      "invalidEmailBlocked": true,
+      "errorState": {
+        "shown": true,
+        "valuesPreserved": true,
+        "buttonEnabled": true
+      },
+      "successState": {
+        "shown": true,
+        "formReset": true,
+        "buttonEnabled": true,
+        "conversionRecorded": true
+      },
+      "mockedRequests": 2,
+      "network": "Mocked form responses; no API submission"
+    }
+  },
+  {
+    "name": "phone",
+    "visual": {
+      "viewport": [
+        390,
+        844
+      ],
+      "featuredTitle": "Базовый",
+      "featuredCount": 1,
+      "prices": [
+        "4 900 ₽",
+        "7 900 ₽",
+        "12 900 ₽"
+      ],
+      "sourceCorrect": true,
+      "noFakeInput": true,
+      "overflow": false,
+      "fieldBorder": "rgb(216, 210, 203)",
+      "copyMetadata": [
+        {
+          "name": "copy_attempt",
+          "properties": {
+            "variant": "e09_base_plan",
+            "source": "program",
+            "step": "selection"
+          }
+        }
+      ],
+      "privateCopyIgnored": true,
+      "floatingHiddenBeforeObserverFrame": true
+    },
+    "functional": {
+      "viewport": [
+        390,
+        844
+      ],
+      "touch": 1,
+      "reachable": [
+        {
+          "name": "name",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "phone",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "email",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "purpose",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "submit",
+          "withinViewport": true,
+          "unobstructed": true
+        }
+      ],
+      "missingBlocked": true,
+      "invalidEmailBlocked": true,
+      "errorState": {
+        "shown": true,
+        "valuesPreserved": true,
+        "buttonEnabled": true
+      },
+      "successState": {
+        "shown": true,
+        "formReset": true,
+        "buttonEnabled": true,
+        "conversionRecorded": true
+      },
+      "mockedRequests": 2,
+      "network": "Mocked form responses; no API submission"
+    }
+  },
+  {
+    "name": "tablet",
+    "visual": {
+      "viewport": [
+        768,
+        1024
+      ],
+      "featuredTitle": "Базовый",
+      "featuredCount": 1,
+      "prices": [
+        "4 900 ₽",
+        "7 900 ₽",
+        "12 900 ₽"
+      ],
+      "sourceCorrect": true,
+      "noFakeInput": true,
+      "overflow": false,
+      "fieldBorder": "rgb(216, 210, 203)",
+      "copyMetadata": [
+        {
+          "name": "copy_attempt",
+          "properties": {
+            "variant": "e09_base_plan",
+            "source": "program",
+            "step": "selection"
+          }
+        }
+      ],
+      "privateCopyIgnored": true,
+      "floatingHiddenBeforeObserverFrame": true
+    },
+    "functional": {
+      "viewport": [
+        768,
+        1024
+      ],
+      "touch": 1,
+      "reachable": [
+        {
+          "name": "name",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "phone",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "email",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "purpose",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "submit",
+          "withinViewport": true,
+          "unobstructed": true
+        }
+      ],
+      "missingBlocked": true,
+      "invalidEmailBlocked": true,
+      "errorState": {
+        "shown": true,
+        "valuesPreserved": true,
+        "buttonEnabled": true
+      },
+      "successState": {
+        "shown": true,
+        "formReset": true,
+        "buttonEnabled": true,
+        "conversionRecorded": true
+      },
+      "mockedRequests": 2,
+      "network": "Mocked form responses; no API submission"
+    }
+  }
+]

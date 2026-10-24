@@ -299,7 +299,7 @@
                     Выберите формат участия. Во все тарифы входят материалы, сертификат и доступ к памятке после курса.
                 </p>
                 <div class="pricing-grid">
-                    <article class="pricing-card">
+                    <article class="pricing-card featured">
                         <h3>Базовый</h3>
                         <div class="price">4 900 ₽</div>
                         <ul class="pricing-list">
@@ -309,7 +309,7 @@
                         </ul>
                         <button type="button" class="btn btn-register">Записаться</button>
                     </article>
-                    <article class="pricing-card featured">
+                    <article class="pricing-card">
                         <h3>Расширенный</h3>
                         <div class="price">7 900 ₽</div>
                         <ul class="pricing-list">

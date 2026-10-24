@@ -1180,7 +1180,7 @@
     },
     {
       "id": "e08_form_affordance",
-      "status": "ready_for_deploy",
+      "status": "measured_and_reverted",
       "baseline": "e07_floating_cta31%",
       "hypothesis": "Stronger visual distinction of actual form controls may make beginning registration clearer and increase true input starts.",
       "confidence": "low-to-moderate: field boundaries on white panel are visually weak; intent and perception are not observed.",
@@ -1231,6 +1231,107 @@
           "Mocked server error retains data; retry and success reset work"
         ],
         "limitations": "Chromium emulation; no physical Safari or on-screen keyboard validation; no production visits/applications generated"
+      },
+      "results": {
+        "simulator": {
+          "visits": 100,
+          "orders": 24,
+          "errors": 0,
+          "duration_seconds": 541.4,
+          "conversion": 0.24
+        },
+        "tracker_report": "analysis/e08-final.json",
+        "interpretation": "Visual treatment did not demonstrate benefit; revert to E07 styling.31 versus24 sequential conversions does not prove causality.",
+        "full_session_review": "analysis/e08-session-review.json",
+        "completed_cohort_summary": {
+          "success": {
+            "sessions": 24,
+            "input_sessions": 24,
+            "qualified_view_sessions": 24,
+            "invalid": 0,
+            "submit_errors": 0,
+            "post_cta_clicks": 120
+          },
+          "cta_abandon": {
+            "sessions": 76,
+            "input_sessions": 0,
+            "qualified_view_sessions": 76,
+            "invalid": 0,
+            "submit_errors": 0,
+            "post_cta_clicks": 0
+          },
+          "no_cta": {
+            "sessions": 1,
+            "input_sessions": 0,
+            "qualified_view_sessions": 0,
+            "invalid": 0,
+            "submit_errors": 0,
+            "post_cta_clicks": 0
+          }
+        },
+        "active_excluded": [
+          {
+            "session_id": "95pB-Emx57WGzQ2L1-gNJsrn",
+            "reason": "Active at export, outside completed-cohort analysis",
+            "started_at": 1792850350117
+          }
+        ]
+      }
+    },
+    {
+      "id": "e09_base_plan",
+      "status": "ready_for_deploy",
+      "baseline": "e07_floating_cta31%; E08 form styling reverted exactly",
+      "hypothesis": "Highlighting the base4900RUB plan, consistent with the hero starting price, may reduce perceived price mismatch and increase actual form starts.",
+      "confidence": "low: visual mismatch exists, but price objections are not recorded.",
+      "evidence": [
+        "analysis/e07-proposal-behavior.json",
+        "analysis/e08-session-review.json"
+      ],
+      "changes": [
+        "Move existing featured class from Расширенный7900 to Базовый4900",
+        "Variant e09_base_plan",
+        "Add copy_attempt metadata to existing tracker: source region and selection presence only; ignore form/private areas. No clipboard or selected text read."
+      ],
+      "unchanged": [
+        "All prices, plan text, order and buttons",
+        "Form fields, copy, layout and E07 colors",
+        "Program, event date and floating CTA",
+        "API and SQL"
+      ],
+      "primary_metric": "Simulator confirmed orders /100visits; compare E07 31%; target>=50%",
+      "diagnostics": [
+        "registration_view_qualified -> registration_input_start -> conversion_success",
+        "CTA source pricing_cta_1/2/3 vs hero/floating",
+        "Keep active/manual extra visits separate from completed simulator time window"
+      ],
+      "prediction": "Actual input starts and confirmed conversion increase. More clicks on highlighted plan alone do not validate the hypothesis.",
+      "falsifier": "Only plan CTA distribution changes without more actual input starts/conversions.",
+      "request": "Manually deploy E09 and run one isolated100-visit batch; report results and timing.",
+      "measurement_notes": [
+        "Historical copying is unknown: SDK did not record copy events.",
+        "E05/E07/E08 have no selection/selection_attempt events; sparse(0,0) program clicks in one extra page load per cohort do not establish human intent.",
+        "New copy_attempt means an observed copy event, not successful clipboard write."
+      ],
+      "validation": {
+        "report": "analysis/e09-validation.json",
+        "syntax": "node --check js/main.js passed",
+        "scope": "HTML differs from E07 only in two featured classes; CSS exactly E07; API/SQL unchanged",
+        "chrome_viewports": [
+          "1280x720",
+          "320x568",
+          "390x844",
+          "768x1024"
+        ],
+        "checks": [
+          "Only base4900 plan highlighted; all prices unchanged",
+          "Base CTA records pricing_cta_1 and routes to existing form",
+          "All required controls reachable; no horizontal overflow",
+          "Focus does not produce input-start",
+          "Mocked validation/error retention/retry/success work",
+          "Copy outside form records only source/selection presence; clipboardData getter never read; copy inside phone ignored"
+        ],
+        "limitations": "Chromium emulation, not physical Safari. No production visits or submissions generated."
       }
     }
   ]

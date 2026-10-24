@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'e08_form_affordance';
+    const variant = 'e09_base_plan';
     const pendingEvents = [];
     let exposed = false;
     const track = (name, properties = {}) => {
@@ -25,6 +25,26 @@ document.addEventListener('DOMContentLoaded', () => {
     flushTracking();
     const trackingTimer = setInterval(flushTracking, 250);
     window.addEventListener('pagehide', () => clearInterval(trackingTimer), { once: true });
+
+    // Observe copy intent without reading clipboard data or selected text.
+    document.addEventListener('copy', (event) => {
+        const selection = window.getSelection?.();
+        const elementOf = (node) => node instanceof Element ? node : node?.parentElement;
+        const target = elementOf(event.target);
+        const anchor = elementOf(selection?.anchorNode);
+        const focus = elementOf(selection?.focusNode);
+        const privateArea = (node) => node?.closest('input,textarea,select,[contenteditable],[data-tracker-mask],[data-tracker-block],#registration-form');
+        if (privateArea(target) || privateArea(anchor) || privateArea(focus)) return;
+        const node = selection && !selection.isCollapsed ? anchor : target;
+        const regions = [
+            ['.hero', 'hero'], ['.program-list', 'program'],
+            ['.features-grid', 'about'], ['.injury-grid', 'injuries'],
+            ['.legal-section', 'legal'], ['.instructors-grid', 'instructors'],
+            ['.pricing-section', 'pricing'], ['.site-footer', 'footer'],
+        ];
+        const source = regions.find(([selector]) => node?.closest(selector))?.[1] || 'page';
+        track('copy_attempt', { source, step: selection && !selection.isCollapsed ? 'selection' : 'no_selection' });
+    });
 
     const registrationSection = document.getElementById('registration');
     const form = document.getElementById('registration-form');
