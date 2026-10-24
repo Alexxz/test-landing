@@ -259,9 +259,9 @@
                 </p>
                 <div class="instructors-grid">
                     <article class="instructor-card">
+                        <div class="instructor-photo">АК</div>
                         <h3>Алексей Кравцов</h3>
                         <p class="instructor-title">Врач скорой медицинской помощи, стаж 14 лет</p>
-                        <div class="instructor-photo">АК</div>
                         <ul class="credentials">
                             <li>Более 8 000 выездов бригады скорой помощи</li>
                             <li>Сертификат European Resuscitation Council BLS</li>
@@ -269,9 +269,9 @@
                         </ul>
                     </article>
                     <article class="instructor-card">
+                        <div class="instructor-photo">МС</div>
                         <h3>Марина Соколова</h3>
                         <p class="instructor-title">Инструктор РКК, фельдшер, стаж 11 лет</p>
-                        <div class="instructor-photo">МС</div>
                         <ul class="credentials">
                             <li>Обучила более 1 200 слушателей базовой первой помощи</li>
                             <li>Член региональной команды инструкторов РКК</li>
@@ -279,9 +279,9 @@
                         </ul>
                     </article>
                     <article class="instructor-card">
+                        <div class="instructor-photo">ДН</div>
                         <h3>Дмитрий Новиков</h3>
                         <p class="instructor-title">Парамедик, наставник учебного центра</p>
-                        <div class="instructor-photo">ДН</div>
                         <ul class="credentials">
                             <li>Сертификат ERC First Aid Provider</li>
                             <li>Опыт работы в корпоративных программах безопасности</li>

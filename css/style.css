@@ -226,13 +226,13 @@ img {
 }
 
 .instructor-photo {
-    width: 56px;
-    height: 56px;
+    width: 120px;
+    height: 120px;
     margin: 0 auto 18px;
     border-radius: 50%;
     display: grid;
     place-items: center;
-    font-size: 1.2rem;
+    font-size: 2.4rem;
     font-weight: 700;
     color: var(--heading);
     background: var(--blue);
@@ -242,8 +242,7 @@ img {
 .instructor-card:nth-child(3) .instructor-photo { background: var(--peach); }
 
 .instructor-title {
-    color: var(--heading);
-    font-weight: 600;
+    color: #6c757d;
     font-size: 0.95rem;
     margin-bottom: 14px;
 }
