@@ -226,13 +226,13 @@ img {
 }
 
 .instructor-photo {
-    width: 120px;
-    height: 120px;
+    width: 56px;
+    height: 56px;
     margin: 0 auto 18px;
     border-radius: 50%;
     display: grid;
     place-items: center;
-    font-size: 2.4rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: var(--heading);
     background: var(--blue);
@@ -242,7 +242,8 @@ img {
 .instructor-card:nth-child(3) .instructor-photo { background: var(--peach); }
 
 .instructor-title {
-    color: #6c757d;
+    color: var(--heading);
+    font-weight: 600;
     font-size: 0.95rem;
     margin-bottom: 14px;
 }
@@ -436,13 +437,6 @@ img {
 /* Experiment e03: offer registration before the long course description. */
 .hero-action {
     margin: 24px 0 32px;
-}
-
-.hero-logistics {
-    margin: 0 0 8px;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: var(--heading);
 }
 
 .hero-price {
