@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'e10_control_e07';
+    const variant = 'e11_legal_clarity';
     const pendingEvents = [];
     let exposed = false;
     const track = (name, properties = {}) => {
@@ -45,6 +45,17 @@ document.addEventListener('DOMContentLoaded', () => {
         const source = regions.find(([selector]) => node?.closest(selector))?.[1] || 'page';
         track('copy_attempt', { source, step: selection && !selection.isCollapsed ? 'selection' : 'no_selection' });
     });
+
+    const legalSection = document.querySelector('.legal-section');
+    if (legalSection && 'IntersectionObserver' in window) {
+        const legalObserver = new IntersectionObserver((entries) => {
+            if (entries.some((entry) => entry.isIntersecting && entry.intersectionRatio >= 0.25)) {
+                track('legal_section_view', { source: 'legal', step: 'quarter_visible' });
+                legalObserver.disconnect();
+            }
+        }, { threshold: [0, 0.25] });
+        legalObserver.observe(legalSection);
+    }
 
     const registrationSection = document.getElementById('registration');
     const form = document.getElementById('registration-form');
