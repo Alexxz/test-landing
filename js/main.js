@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'e13_clear_offer';
+    const variant = 'e14_context_ctas';
     const pendingEvents = [];
     let exposed = false;
     const track = (name, properties = {}) => {
@@ -82,6 +82,18 @@ document.addEventListener('DOMContentLoaded', () => {
             track('registration_arrival', { source: button.dataset.trackLabel });
         });
     });
+
+    if ('IntersectionObserver' in window) {
+        const sectionCtaObserver = new IntersectionObserver((entries) => {
+            for (const entry of entries) {
+                if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+                    track('section_cta_view', { source: entry.target.dataset.trackLabel });
+                    sectionCtaObserver.unobserve(entry.target);
+                }
+            }
+        }, { threshold: [0, 0.5] });
+        document.querySelectorAll('.section-register').forEach((button) => sectionCtaObserver.observe(button));
+    }
 
     const floatingButton = document.querySelector('.floating-register');
     const heroButton = document.querySelector('.hero-register');

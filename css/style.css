@@ -475,7 +475,20 @@ img {
     display: none;
 }
 
+/* e14: a real registration action after each content section. */
+.section-register {
+    width: auto;
+    min-height: 52px;
+    margin-top: 24px;
+    background: #194f68;
+    color: #fff;
+}
+
 @media (max-width: 560px) {
+    .section-register {
+        width: 100%;
+    }
+
     .floating-register {
         left: 16px;
         right: 16px;

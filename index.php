@@ -71,6 +71,7 @@
                         <p>До 14 человек в группе, чтобы каждый успел отработать все ключевые навыки несколько раз.</p>
                     </article>
                 </div>
+                <button type="button" class="btn btn-register section-register" data-track-label="about_cta">Записаться на курс</button>
             </div>
         </section>
 
@@ -175,6 +176,7 @@
                         </p>
                     </article>
                 </div>
+                <button type="button" class="btn btn-register section-register" data-track-label="program_cta">Записаться на курс</button>
             </div>
         </section>
 
@@ -211,6 +213,7 @@
                         <p>Подозрение на травму шеи и спины, когда нельзя менять положение, фиксация головы и ожидание медиков.</p>
                     </article>
                 </div>
+                <button type="button" class="btn btn-register section-register" data-track-label="injuries_cta">Записаться на курс</button>
             </div>
         </section>
 
@@ -244,6 +247,7 @@
                         а также какие обстоятельства происшествия важно зафиксировать.
                     </p>
                 </div>
+                <button type="button" class="btn btn-register section-register" data-track-label="legal_cta">Записаться на курс</button>
             </div>
         </section>
 
@@ -289,6 +293,7 @@
                         </ul>
                     </article>
                 </div>
+                <button type="button" class="btn btn-register section-register" data-track-label="instructors_cta">Записаться на курс</button>
             </div>
         </section>
 
