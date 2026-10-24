@@ -12,12 +12,11 @@
     <header class="hero">
         <div class="container hero-content">
             <span class="hero-badge">Офлайн-курс · 15 декабря 2026</span>
-            <h1>Первая помощь: практический курс для каждого</h1>
+            <h1>Первая помощь для семьи, работы и поездок</h1>
             <p class="hero-text">
-                Научитесь действовать уверенно в экстренной ситуации: остановить кровотечение,
-                провести сердечно-легочную реанимацию, помочь при травмах и ожогах до приезда
-                медиков. Курс построен на практике с инструкторами, которые каждый день работают
-                с реальными вызовами.
+                Очный курс в Москве. На манекенах и в парах отработаете сердечно-лёгочную
+                реанимацию для взрослых, остановку кровотечения и помощь при травмах.
+                Группа до 14 человек.
             </p>
             <div class="hero-action">
                 <p class="hero-price">Полный день обучения — от <strong>4 900 ₽</strong></p>
@@ -341,28 +340,23 @@
                     <p class="section-lead">
                         Заполните 4 поля — мы свяжемся с вами, подтвердим место и ответим на вопросы.
                     </p>
-                    <p class="form-progress" id="form-progress" aria-live="polite"></p>
                     <form class="form-grid" id="registration-form" action="api/submit.php" method="post">
-                        <div class="form-contacts">
-                            <label>
-                                Имя
-                                <input type="text" name="name" required autocomplete="name" placeholder="Как к вам обращаться">
-                            </label>
-                            <label>
-                                Телефон
-                                <input type="tel" name="phone" required autocomplete="tel" placeholder="+7 999 123-45-67">
-                            </label>
-                        </div>
-                        <div class="form-details">
-                            <label>
-                                E-mail
-                                <input type="email" name="email" required autocomplete="email" placeholder="you@example.ru">
-                            </label>
-                            <label>
-                                Для чего вам курс?
-                                <textarea name="purpose" required rows="2" placeholder="Например: для семьи, работы или путешествий"></textarea>
-                            </label>
-                        </div>
+                        <label>
+                            Имя
+                            <input type="text" name="name" required autocomplete="name" placeholder="Как к вам обращаться">
+                        </label>
+                        <label>
+                            Телефон
+                            <input type="tel" name="phone" required autocomplete="tel" placeholder="+7 999 123-45-67">
+                        </label>
+                        <label>
+                            E-mail
+                            <input type="email" name="email" required autocomplete="email" placeholder="you@example.ru">
+                        </label>
+                        <label>
+                            Для чего вам курс?
+                            <textarea name="purpose" required rows="2" placeholder="Например: для семьи, работы или путешествий"></textarea>
+                        </label>
                         <button type="submit" class="btn">Отправить заявку</button>
                     </form>
                     <p class="form-message" id="form-message" aria-live="polite"></p>

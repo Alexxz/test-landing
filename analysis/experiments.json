@@ -1717,7 +1717,7 @@
     },
     {
       "id": "e12_progressive_form",
-      "status": "ready_for_deploy",
+      "status": "measured_and_reverted",
       "baseline": "E11 neutral legal copy retained (27%); reference E10 control61/200=30.5%",
       "hypothesis": "Showing contacts first, with remaining required fields revealed after contact entry, reduces perceived initial effort and may increase genuine first input and confirmed orders.",
       "confidence": "moderate rationale, conversion effect unproven; early abandonment does not reveal motivation.",
@@ -1778,6 +1778,72 @@
           "Chromium emulation, not physical Safari or keyboard hardware.",
           "API responses mocked and production counters omitted; no production applications generated."
         ]
+      },
+      "results": {
+        "simulator": {
+          "visits": 100,
+          "orders": 22,
+          "errors": 0,
+          "duration_seconds": 525.5,
+          "conversion": 0.22
+        },
+        "tracker_report": "analysis/e12-final.json",
+        "interpretation": "Progressive disclosure did not demonstrate benefit versus E11 27% or control30.5%; restore the single-stage form. Single sequential batch does not establish causality.",
+        "funnel": {
+          "contacts_views": 100,
+          "first_input": 22,
+          "details_revealed_from_contacts_input": 22,
+          "confirmed_success": 22
+        },
+        "conclusion": "No loss after first input or between steps, but first-input fraction did not improve."
+      }
+    },
+    {
+      "id": "e13_clear_offer",
+      "status": "ready_for_deploy",
+      "baseline": "Single-stage E11 interface restored; E11 27%, E10 reference control30.5%",
+      "hypothesis": "A concise first-screen offer connecting course use cases with format, actual practice and group size may improve relevance/understanding before deciding to register.",
+      "confidence": "low: data do not establish why visitors decline to begin input.",
+      "changes": [
+        "Restore single-stage4-required-field form and its tracking from E11",
+        "Hero heading names family/work/travel contexts already present in course copy",
+        "Hero paragraph states Moscow, adult resuscitation, training on mannequins/in pairs and group size14",
+        "Variant e13_clear_offer"
+      ],
+      "invariants": [
+        "All statements already supported by original course content",
+        "Only H1 and hero paragraph differ from E11 HTML",
+        "CSS exactly E11; all4fields visible from start",
+        "Prices/date/address/legal copy/section order/CTA placement unchanged",
+        "API/SQL untouched"
+      ],
+      "primary_metric": "Confirmed orders /100simulator visits; compare restored single-stage reference30.5%, target>=50%",
+      "diagnostics": [
+        "First CTA time and source",
+        "registration_view_qualified -> registration_input_start -> conversion_success",
+        "Viewport-specific CTA visibility; do not infer mobile conversion from desktop-only simulator"
+      ],
+      "prediction": "More genuine input starts and confirmed orders after clearer offer; clicks or shorter page alone are not success.",
+      "falsifier": "No increase in actual input starts or confirmed conversion in comparable runs.",
+      "request": "Manually deploy E13 and run one100-visit batch; report result and start/end times.",
+      "validation": {
+        "report": "analysis/e13-validation.json",
+        "scope": "Exact E11 single-stage implementation restored; only H1/hero text and variant changed from E11; API/SQL untouched",
+        "syntax": "node --check js/main.js passed",
+        "chrome_viewports": [
+          "1280x720",
+          "320x568",
+          "360x640",
+          "390x844",
+          "768x1024"
+        ],
+        "checks": [
+          "All4required controls visible initially and reachable",
+          "No horizontal overflow",
+          "Hero CTA visible initially at360x640 and above;320x568 still uses existing floating CTA",
+          "Mocked missing/invalid validation, error retention, retry and success pass"
+        ],
+        "limitations": "Chromium emulation, not physical Safari/keyboard testing; no production data generated."
       }
     }
   ]
