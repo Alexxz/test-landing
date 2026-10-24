@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'e18_pricing_comparison';
+    const variant = 'e19_user_selected_purpose';
     const pendingEvents = [];
     let exposed = false;
     const track = (name, properties = {}) => {
@@ -156,6 +156,22 @@ document.addEventListener('DOMContentLoaded', () => {
         document.addEventListener('visibilitychange', checkView);
         window.addEventListener('pagehide', () => clearTimeout(viewTimer));
     }
+
+    const purpose = form.querySelector('[name="purpose"]');
+    const purposeChoices = form.querySelectorAll('[data-purpose]');
+    const clearPurposeChoice = () => purposeChoices.forEach((button) => button.setAttribute('aria-pressed', 'false'));
+    purposeChoices.forEach((button) => {
+        button.addEventListener('click', () => {
+            purpose.value = button.dataset.purpose;
+            clearPurposeChoice();
+            button.setAttribute('aria-pressed', 'true');
+            track('purpose_choice', { step: 'purpose', source: button.dataset.purposeKey });
+            // A deliberate choice is recorded separately from typing.
+            purpose.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+    });
+    purpose?.addEventListener('input', clearPurposeChoice);
+    form.addEventListener('reset', clearPurposeChoice);
 
     let inputStarted = false;
     form.addEventListener('input', (event) => {

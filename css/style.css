@@ -328,22 +328,6 @@ img {
     background: var(--bg-soft);
 }
 
-.pricing-common {
-    display: grid;
-    gap: 6px;
-    margin: 0 0 24px;
-    padding: 18px 22px;
-    border-radius: 12px;
-    background: var(--bg-soft);
-    color: var(--heading);
-}
-
-.pricing-caption {
-    font-weight: 600;
-    line-height: 1.5;
-    margin: 0 0 18px;
-}
-
 .registration-panel {
     max-width: 760px;
     margin: 0 auto;
@@ -437,6 +421,39 @@ img {
 
 .form-grid textarea {
     min-height: 80px;
+}
+
+.purpose-field {
+    display: grid;
+    gap: 8px;
+}
+
+.purpose-hint {
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+.purpose-choices {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.purpose-choices button {
+    min-height: 44px;
+    border: 1px solid #70828b;
+    border-radius: 12px;
+    padding: 6px 10px;
+    background: white;
+    color: var(--heading);
+    font: inherit;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.purpose-choices button[aria-pressed="true"] {
+    background: var(--bg-soft);
+    border-color: var(--heading);
 }
 
 .form-grid button[type="submit"] {

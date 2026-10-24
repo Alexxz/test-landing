@@ -296,17 +296,12 @@
             <div class="container">
                 <h2 class="section-title">Тарифы</h2>
                 <p class="section-lead">
-                    Сравните состав тарифов и выберите подходящий формат участия.
+                    Выберите формат участия. Во все тарифы входят материалы, сертификат и доступ к памятке после курса.
                 </p>
-                <div class="pricing-common">
-                    <strong>В каждом тарифе</strong>
-                    <span>Материалы · Сертификат · Доступ к памятке после курса</span>
-                </div>
                 <div class="pricing-grid">
                     <article class="pricing-card">
                         <h3>Базовый</h3>
                         <div class="price">4 900 ₽</div>
-                        <p class="pricing-caption">Основной курс</p>
                         <ul class="pricing-list">
                             <li>Участие в полном однодневном курсе</li>
                             <li>Сертификат и памятка</li>
@@ -317,10 +312,8 @@
                     <article class="pricing-card featured">
                         <h3>Расширенный</h3>
                         <div class="price">7 900 ₽</div>
-                        <p class="pricing-caption">Базовый курс и дополнительная практика</p>
                         <ul class="pricing-list">
-                            <li>Участие в полном однодневном курсе</li>
-                            <li>Сертификат, памятка и кофе-брейки</li>
+                            <li>Всё из базового тарифа</li>
                             <li>Набор перевязочных материалов</li>
                             <li>Дополнительный практический блок</li>
                         </ul>
@@ -329,7 +322,6 @@
                     <article class="pricing-card">
                         <h3>Корпоративный</h3>
                         <div class="price">12 900 ₽</div>
-                        <p class="pricing-caption">Разбор рабочих ситуаций и документы для работодателя</p>
                         <ul class="pricing-list">
                             <li>Индивидуальный разбор рисков профессии</li>
                             <li>Консультация для HR или руководителя</li>
@@ -362,10 +354,16 @@
                             E-mail
                             <input type="email" name="email" required autocomplete="email" placeholder="you@example.ru">
                         </label>
-                        <label>
-                            Для чего вам курс?
-                            <textarea name="purpose" required rows="2" placeholder="Например: для семьи, работы или путешествий"></textarea>
-                        </label>
+                        <div class="purpose-field">
+                            <label for="course-purpose">Для чего вам курс?</label>
+                            <textarea id="course-purpose" name="purpose" required rows="2" placeholder="Например: для семьи, работы или путешествий"></textarea>
+                            <span class="purpose-hint">Можно подставить вариант и отредактировать:</span>
+                            <div class="purpose-choices" role="group" aria-label="Варианты цели обучения">
+                                <button type="button" data-purpose="Для семьи" data-purpose-key="family" aria-pressed="false">Для семьи</button>
+                                <button type="button" data-purpose="Для работы" data-purpose-key="work" aria-pressed="false">Для работы</button>
+                                <button type="button" data-purpose="Для путешествий" data-purpose-key="travel" aria-pressed="false">Для путешествий</button>
+                            </div>
+                        </div>
                         <button type="submit" class="btn">Отправить заявку</button>
                     </form>
                     <p class="form-message" id="form-message" aria-live="polite"></p>
