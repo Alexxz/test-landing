@@ -169,6 +169,28 @@ img {
 
 .program-module {
     border-left: 6px solid var(--blue);
+    padding: 0;
+}
+
+.program-module summary {
+    padding: 24px 28px;
+    cursor: pointer;
+    color: var(--heading);
+}
+
+.program-module summary h3 {
+    display: inline;
+    margin: 0;
+}
+
+.program-module summary:focus-visible {
+    outline: 2px solid #194f68;
+    outline-offset: -4px;
+}
+
+.program-module p {
+    margin: 0;
+    padding: 0 28px 24px;
 }
 
 .program-module:nth-child(2) { border-left-color: var(--mint); }
@@ -475,20 +497,7 @@ img {
     display: none;
 }
 
-/* e14: a real registration action after each content section. */
-.section-register {
-    width: auto;
-    min-height: 52px;
-    margin-top: 24px;
-    background: #194f68;
-    color: #fff;
-}
-
 @media (max-width: 560px) {
-    .section-register {
-        width: 100%;
-    }
-
     .floating-register {
         left: 16px;
         right: 16px;
