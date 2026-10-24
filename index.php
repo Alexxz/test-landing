@@ -18,11 +18,6 @@
                 реанимацию для взрослых, остановку кровотечения и помощь при травмах.
                 Группа до 14 человек.
             </p>
-            <nav class="hero-nav" aria-label="О курсе">
-                <a href="#course-program" data-section="program">Программа</a>
-                <a href="#course-instructors" data-section="instructors">Инструкторы</a>
-                <a href="#course-pricing" data-section="pricing">Тарифы</a>
-            </nav>
             <div class="hero-action">
                 <p class="hero-price">Полный день обучения — от <strong>4 900 ₽</strong></p>
                 <button type="button" class="btn btn-register hero-register" data-track-label="hero_cta">Записаться на курс</button>
@@ -76,10 +71,21 @@
                         <p>До 14 человек в группе, чтобы каждый успел отработать все ключевые навыки несколько раз.</p>
                     </article>
                 </div>
+                <div class="course-faq">
+                    <h3>Вопросы о занятии</h3>
+                    <dl>
+                        <dt>Сколько времени займёт курс?</dt>
+                        <dd>Один день, с 10:00 до 18:00. В расписании есть перерыв на обед.</dd>
+                        <dt>Как проходит практика?</dt>
+                        <dd>Каждый модуль включает демонстрацию инструктора и тренировку участников. Вы будете работать на манекенах и в парах, с обратной связью инструктора.</dd>
+                        <dt>Можно разобрать свою ситуацию?</dt>
+                        <dd>Да, на очном занятии можно задать вопросы по своим реальным ситуациям и обсудить их с инструктором.</dd>
+                    </dl>
+                </div>
             </div>
         </section>
 
-        <section class="section" id="course-program">
+        <section class="section">
             <div class="container">
                 <h2 class="section-title">Программа курса</h2>
                 <p class="section-lead program-intro">
@@ -256,7 +262,7 @@
             <img src="images/cpr-training.jpg" alt="Практика сердечно-легочной реанимации на манекене">
         </section>
 
-        <section class="section" id="course-instructors">
+        <section class="section">
             <div class="container">
                 <h2 class="section-title">Инструкторы</h2>
                 <p class="section-lead">
@@ -297,7 +303,7 @@
             </div>
         </section>
 
-        <section class="section pricing-section" id="course-pricing">
+        <section class="section pricing-section">
             <div class="container">
                 <h2 class="section-title">Тарифы</h2>
                 <p class="section-lead">
