@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'e09_base_plan';
+    const variant = 'e10_control_e07';
     const pendingEvents = [];
     let exposed = false;
     const track = (name, properties = {}) => {

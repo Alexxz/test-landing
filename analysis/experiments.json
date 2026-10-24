@@ -1280,7 +1280,7 @@
     },
     {
       "id": "e09_base_plan",
-      "status": "ready_for_deploy",
+      "status": "measured_and_reverted",
       "baseline": "e07_floating_cta31%; E08 form styling reverted exactly",
       "hypothesis": "Highlighting the base4900RUB plan, consistent with the hero starting price, may reduce perceived price mismatch and increase actual form starts.",
       "confidence": "low: visual mismatch exists, but price objections are not recorded.",
@@ -1332,6 +1332,70 @@
           "Copy outside form records only source/selection presence; clipboardData getter never read; copy inside phone ignored"
         ],
         "limitations": "Chromium emulation, not physical Safari. No production visits or submissions generated."
+      },
+      "results": {
+        "simulator": {
+          "visits": 100,
+          "orders": 25,
+          "errors": 0,
+          "duration_seconds": 528.1,
+          "conversion": 0.25
+        },
+        "tracker_report": "analysis/e09-final.json",
+        "funnel": {
+          "cta": 100,
+          "qualified_view": 100,
+          "input_start": 25,
+          "confirmed_orders": 25,
+          "copy_attempts": 0
+        },
+        "interpretation": "Highlighting the base plan did not demonstrate benefit.31vs25 in sequential100-visit runs does not establish a causal regression.",
+        "server": {
+          "visits_count": 101,
+          "orders_count": 25,
+          "generated_at": "2026-10-24T14:49:46+00:00"
+        }
+      }
+    },
+    {
+      "id": "e10_control_e07",
+      "type": "replication_control",
+      "status": "ready_for_deploy",
+      "baseline": "Exact E07 HTML and CSS, with existing measurement-only copy listener retained",
+      "hypothesis": "The31% observed in a single E07 batch may be sampling variation rather than a stable performance improvement. A repeat provides a less selection-biased baseline.",
+      "reason": "E07=31/100,E08=24/100,E09=25/100; all show100qualified views and completion for every input-start. Single sequential batches are too weak to rank small effects reliably.",
+      "changes": [
+        "Restore exact E07 HTML, including expanded plan highlight",
+        "CSS remains exact E07",
+        "Variant e10_control_e07"
+      ],
+      "unchanged": [
+        "All form behavior and required fields/API/SQL",
+        "Corrected date/copy and floating CTA",
+        "Existing funnel and copy-attempt measurement"
+      ],
+      "primary_metric": "Simulator confirmed orders /200visits; goal remains>=50%, not achieved by repeating a baseline.",
+      "diagnostics": [
+        "Qualified form views -> real input starts -> confirmed orders",
+        "Report interval estimates with counts, not only a point estimate",
+        "Separate additional/manual page loads using time window and simulator denominator"
+      ],
+      "request": "Manually deploy E10 control and run200simulator visits; send count/orders/errors/duration and start/end times. Do not redeploy or change code during this batch.",
+      "next_decision": "Use repeated baseline and its uncertainty to choose the next substantive UX experiment. Do not attribute gains to floating clicks that were absent.",
+      "validation": {
+        "interface_checks": {
+          "index.php": {
+            "matches_e07": true,
+            "sha256": "a905128966a3ef07ccbc1d5c05267b14544df9088ae8812bb7e64bbd3ab2fc9d"
+          },
+          "css/style.css": {
+            "matches_e07": true,
+            "sha256": "b01dc30a24e30205309217a50830e971facb98f762f6858d212afeebee1e08b6"
+          }
+        },
+        "syntax": "node --check js/main.js passed",
+        "protected_files": "API/SQL unchanged",
+        "functional_evidence": "Restores exactly the previously browser-validated E07 HTML/CSS. E09 copy-listener and funnel logic retained; only JS variant changed. No new user interaction logic."
       }
     }
   ]
