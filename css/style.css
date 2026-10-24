@@ -328,6 +328,12 @@ img {
     background: var(--bg-soft);
 }
 
+.program-module p,
+.legal-block p {
+    max-width: 68ch;
+    line-height: 1.75;
+}
+
 .registration-panel {
     max-width: 760px;
     margin: 0 auto;

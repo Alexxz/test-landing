@@ -347,12 +347,12 @@
                             <input type="text" name="name" required autocomplete="name" placeholder="Как к вам обращаться">
                         </label>
                         <label>
-                            E-mail
-                            <input type="email" name="email" required autocomplete="email" placeholder="you@example.ru">
-                        </label>
-                        <label>
                             Телефон
                             <input type="tel" name="phone" required autocomplete="tel" placeholder="+7 999 123-45-67">
+                        </label>
+                        <label>
+                            E-mail
+                            <input type="email" name="email" required autocomplete="email" placeholder="you@example.ru">
                         </label>
                         <label>
                             Для чего вам курс?
