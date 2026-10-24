@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'e17_registration_value_recap';
+    const variant = 'e23_section_navigation';
     const pendingEvents = [];
     let exposed = false;
     const track = (name, properties = {}) => {
@@ -44,6 +44,12 @@ document.addEventListener('DOMContentLoaded', () => {
         ];
         const source = regions.find(([selector]) => node?.closest(selector))?.[1] || 'page';
         track('copy_attempt', { source, step: selection && !selection.isCollapsed ? 'selection' : 'no_selection' });
+    });
+
+    document.querySelectorAll('.hero-nav a').forEach((link) => {
+        link.addEventListener('click', () => {
+            track('section_navigation', { step: link.dataset.section, source: 'hero_nav' });
+        });
     });
 
     const legalSection = document.querySelector('.legal-section');

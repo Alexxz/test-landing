@@ -438,6 +438,23 @@ img {
     margin: 24px 0 32px;
 }
 
+.hero-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    margin-top: 16px;
+}
+
+.hero-nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    color: var(--heading);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    font-weight: 600;
+}
+
 .hero-price {
     margin: 0 0 12px;
     font-size: 1.2rem;

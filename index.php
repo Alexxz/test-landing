@@ -18,6 +18,11 @@
                 реанимацию для взрослых, остановку кровотечения и помощь при травмах.
                 Группа до 14 человек.
             </p>
+            <nav class="hero-nav" aria-label="О курсе">
+                <a href="#course-program" data-section="program">Программа</a>
+                <a href="#course-instructors" data-section="instructors">Инструкторы</a>
+                <a href="#course-pricing" data-section="pricing">Тарифы</a>
+            </nav>
             <div class="hero-action">
                 <p class="hero-price">Полный день обучения — от <strong>4 900 ₽</strong></p>
                 <button type="button" class="btn btn-register hero-register" data-track-label="hero_cta">Записаться на курс</button>
@@ -74,7 +79,7 @@
             </div>
         </section>
 
-        <section class="section">
+        <section class="section" id="course-program">
             <div class="container">
                 <h2 class="section-title">Программа курса</h2>
                 <p class="section-lead program-intro">
@@ -251,7 +256,7 @@
             <img src="images/cpr-training.jpg" alt="Практика сердечно-легочной реанимации на манекене">
         </section>
 
-        <section class="section">
+        <section class="section" id="course-instructors">
             <div class="container">
                 <h2 class="section-title">Инструкторы</h2>
                 <p class="section-lead">
@@ -292,7 +297,7 @@
             </div>
         </section>
 
-        <section class="section pricing-section">
+        <section class="section pricing-section" id="course-pricing">
             <div class="container">
                 <h2 class="section-title">Тарифы</h2>
                 <p class="section-lead">
