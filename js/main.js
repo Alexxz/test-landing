@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'e16_location_credibility';
+    const variant = 'e17_registration_value_recap';
     const pendingEvents = [];
     let exposed = false;
     const track = (name, properties = {}) => {

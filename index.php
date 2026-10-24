@@ -337,6 +337,7 @@
             <div class="container">
                 <div class="registration-panel">
                     <h2 class="section-title">Записаться на курс</h2>
+                    <p class="registration-recap">Практика на манекенах и в парах · До 14 человек в группе · Сертификат и памятка после курса</p>
                     <p class="section-lead">
                         Заполните 4 поля — мы свяжемся с вами, подтвердим место и ответим на вопросы.
                     </p>
