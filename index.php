@@ -71,17 +71,6 @@
                         <p>До 14 человек в группе, чтобы каждый успел отработать все ключевые навыки несколько раз.</p>
                     </article>
                 </div>
-                <div class="course-faq">
-                    <h3>Вопросы о занятии</h3>
-                    <dl>
-                        <dt>Сколько времени займёт курс?</dt>
-                        <dd>Один день, с 10:00 до 18:00. В расписании есть перерыв на обед.</dd>
-                        <dt>Как проходит практика?</dt>
-                        <dd>Каждый модуль включает демонстрацию инструктора и тренировку участников. Вы будете работать на манекенах и в парах, с обратной связью инструктора.</dd>
-                        <dt>Можно разобрать свою ситуацию?</dt>
-                        <dd>Да, на очном занятии можно задать вопросы по своим реальным ситуациям и обсудить их с инструктором.</dd>
-                    </dl>
-                </div>
             </div>
         </section>
 
@@ -358,12 +347,12 @@
                             <input type="text" name="name" required autocomplete="name" placeholder="Как к вам обращаться">
                         </label>
                         <label>
-                            Телефон
-                            <input type="tel" name="phone" required autocomplete="tel" placeholder="+7 999 123-45-67">
-                        </label>
-                        <label>
                             E-mail
                             <input type="email" name="email" required autocomplete="email" placeholder="you@example.ru">
+                        </label>
+                        <label>
+                            Телефон
+                            <input type="tel" name="phone" required autocomplete="tel" placeholder="+7 999 123-45-67">
                         </label>
                         <label>
                             Для чего вам курс?

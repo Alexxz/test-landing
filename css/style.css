@@ -328,39 +328,6 @@ img {
     background: var(--bg-soft);
 }
 
-.course-faq {
-    margin-top: 28px;
-    padding: 24px;
-    border: 1px solid #d8d2cb;
-    border-radius: 16px;
-}
-
-.course-faq dl {
-    display: grid;
-    grid-template-columns: minmax(160px, 0.8fr) minmax(0, 1.4fr);
-    gap: 16px 24px;
-    margin: 0;
-}
-
-.course-faq dt {
-    font-weight: 600;
-    color: var(--heading);
-}
-
-.course-faq dd {
-    margin: 0;
-}
-
-@media (max-width: 560px) {
-    .course-faq dl {
-        grid-template-columns: 1fr;
-        gap: 8px;
-    }
-    .course-faq dd {
-        margin-bottom: 12px;
-    }
-}
-
 .registration-panel {
     max-width: 760px;
     margin: 0 auto;
