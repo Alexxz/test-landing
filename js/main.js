@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'e07_floating_cta';
+    const variant = 'e08_form_affordance';
     const pendingEvents = [];
     let exposed = false;
     const track = (name, properties = {}) => {

@@ -1,0 +1,294 @@
+[
+  {
+    "name": "desktop",
+    "geometry": {
+      "viewport": [
+        1280,
+        720
+      ],
+      "border": "rgb(100, 116, 139)",
+      "outline": "rgb(25, 79, 104)",
+      "outlineWidth": "3px",
+      "submitBackground": "rgb(25, 79, 104)",
+      "submitColor": "rgb(255, 255, 255)",
+      "focusedField": "name",
+      "autoFocusEvent": true,
+      "inputStartWithoutTyping": false,
+      "overflow": false,
+      "required": [
+        "name",
+        "phone",
+        "email",
+        "purpose"
+      ]
+    },
+    "functional": {
+      "viewport": [
+        1280,
+        720
+      ],
+      "touch": 0,
+      "reachable": [
+        {
+          "name": "name",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "phone",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "email",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "purpose",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "submit",
+          "withinViewport": true,
+          "unobstructed": true
+        }
+      ],
+      "missingBlocked": true,
+      "invalidEmailBlocked": true,
+      "errorState": {
+        "shown": true,
+        "valuesPreserved": true,
+        "buttonEnabled": true
+      },
+      "successState": {
+        "shown": true,
+        "formReset": true,
+        "buttonEnabled": true,
+        "conversionRecorded": true
+      },
+      "mockedRequests": 2,
+      "network": "Mocked form responses; no API submission"
+    }
+  },
+  {
+    "name": "small_phone",
+    "geometry": {
+      "viewport": [
+        320,
+        568
+      ],
+      "border": "rgb(100, 116, 139)",
+      "outline": "rgb(25, 79, 104)",
+      "outlineWidth": "3px",
+      "submitBackground": "rgb(25, 79, 104)",
+      "submitColor": "rgb(255, 255, 255)",
+      "focusedField": "name",
+      "autoFocusEvent": true,
+      "inputStartWithoutTyping": false,
+      "overflow": false,
+      "required": [
+        "name",
+        "phone",
+        "email",
+        "purpose"
+      ]
+    },
+    "functional": {
+      "viewport": [
+        320,
+        568
+      ],
+      "touch": 1,
+      "reachable": [
+        {
+          "name": "name",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "phone",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "email",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "purpose",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "submit",
+          "withinViewport": true,
+          "unobstructed": true
+        }
+      ],
+      "missingBlocked": true,
+      "invalidEmailBlocked": true,
+      "errorState": {
+        "shown": true,
+        "valuesPreserved": true,
+        "buttonEnabled": true
+      },
+      "successState": {
+        "shown": true,
+        "formReset": true,
+        "buttonEnabled": true,
+        "conversionRecorded": true
+      },
+      "mockedRequests": 2,
+      "network": "Mocked form responses; no API submission"
+    }
+  },
+  {
+    "name": "phone",
+    "geometry": {
+      "viewport": [
+        390,
+        844
+      ],
+      "border": "rgb(100, 116, 139)",
+      "outline": "rgb(25, 79, 104)",
+      "outlineWidth": "3px",
+      "submitBackground": "rgb(25, 79, 104)",
+      "submitColor": "rgb(255, 255, 255)",
+      "focusedField": "name",
+      "autoFocusEvent": true,
+      "inputStartWithoutTyping": false,
+      "overflow": false,
+      "required": [
+        "name",
+        "phone",
+        "email",
+        "purpose"
+      ]
+    },
+    "functional": {
+      "viewport": [
+        390,
+        844
+      ],
+      "touch": 1,
+      "reachable": [
+        {
+          "name": "name",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "phone",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "email",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "purpose",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "submit",
+          "withinViewport": true,
+          "unobstructed": true
+        }
+      ],
+      "missingBlocked": true,
+      "invalidEmailBlocked": true,
+      "errorState": {
+        "shown": true,
+        "valuesPreserved": true,
+        "buttonEnabled": true
+      },
+      "successState": {
+        "shown": true,
+        "formReset": true,
+        "buttonEnabled": true,
+        "conversionRecorded": true
+      },
+      "mockedRequests": 2,
+      "network": "Mocked form responses; no API submission"
+    }
+  },
+  {
+    "name": "tablet",
+    "geometry": {
+      "viewport": [
+        768,
+        1024
+      ],
+      "border": "rgb(100, 116, 139)",
+      "outline": "rgb(25, 79, 104)",
+      "outlineWidth": "3px",
+      "submitBackground": "rgb(25, 79, 104)",
+      "submitColor": "rgb(255, 255, 255)",
+      "focusedField": "name",
+      "autoFocusEvent": true,
+      "inputStartWithoutTyping": false,
+      "overflow": false,
+      "required": [
+        "name",
+        "phone",
+        "email",
+        "purpose"
+      ]
+    },
+    "functional": {
+      "viewport": [
+        768,
+        1024
+      ],
+      "touch": 1,
+      "reachable": [
+        {
+          "name": "name",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "phone",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "email",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "purpose",
+          "withinViewport": true,
+          "unobstructed": true
+        },
+        {
+          "name": "submit",
+          "withinViewport": true,
+          "unobstructed": true
+        }
+      ],
+      "missingBlocked": true,
+      "invalidEmailBlocked": true,
+      "errorState": {
+        "shown": true,
+        "valuesPreserved": true,
+        "buttonEnabled": true
+      },
+      "successState": {
+        "shown": true,
+        "formReset": true,
+        "buttonEnabled": true,
+        "conversionRecorded": true
+      },
+      "mockedRequests": 2,
+      "network": "Mocked form responses; no API submission"
+    }
+  }
+]
