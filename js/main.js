@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'e15_program_disclosure';
+    const variant = 'e16_location_credibility';
     const pendingEvents = [];
     let exposed = false;
     const track = (name, properties = {}) => {
@@ -44,15 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
         ];
         const source = regions.find(([selector]) => node?.closest(selector))?.[1] || 'page';
         track('copy_attempt', { source, step: selection && !selection.isCollapsed ? 'selection' : 'no_selection' });
-    });
-
-    document.querySelectorAll('details.program-module').forEach((module, index) => {
-        module.addEventListener('click', (event) => {
-            if (event.target === module) module.open = !module.open;
-        });
-        module.addEventListener('toggle', () => {
-            track('program_toggle', { step: `module_${index + 1}`, source: module.open ? 'open' : 'close' });
-        });
     });
 
     const legalSection = document.querySelector('.legal-section');
