@@ -197,7 +197,7 @@ if (!headers_sent()) {
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="landing-html-build" content="biagdiimpldkekhcaoahdojdg">
+    <meta name="landing-html-build" content="bncafcammfpejbggcfcfflkjb">
     <meta name="landing-request-id" content="<?= htmlspecialchars($landingRequestId, ENT_QUOTES, 'UTF-8') ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Первая помощь: практический курс для каждого</title>
@@ -554,13 +554,7 @@ if (!headers_sent()) {
                         </label>
                         <label>
                             Для чего вам курс?
-                            <input type="text" name="purpose" required list="purpose-suggestions" autocomplete="off" placeholder="Выберите цель или введите свою">
-                            <datalist id="purpose-suggestions">
-                                <option value="Для семьи">
-                                <option value="Для работы">
-                                <option value="Для путешествий">
-                                <option value="Для себя">
-                            </datalist>
+                            <textarea name="purpose" required rows="2" placeholder="Например: для семьи, работы или путешествий"></textarea>
                         </label>
                         <button type="submit" class="btn">Отправить заявку</button>
                     </form>
