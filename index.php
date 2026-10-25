@@ -197,12 +197,12 @@ if (!headers_sent()) {
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="landing-html-build" content="bcigogipealjpkehopckfceaj">
+    <meta name="landing-html-build" content="bncafcammfpejbggcfcfflkjb">
     <meta name="landing-request-id" content="<?= htmlspecialchars($landingRequestId, ENT_QUOTES, 'UTF-8') ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Первая помощь: практический курс для каждого</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="api/visit.php" async></script>
+    <script src="api/visit.php" defer></script>
     <script src="browser-context.php" defer></script>
     <script src="js/main.js" defer></script>
 </head>
