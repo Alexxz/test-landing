@@ -43,7 +43,7 @@ function a3Page(string $heading, string $body, array $values = [], bool $emitCon
 {
     header('Content-Type: text/html; charset=utf-8');
     $marker = 'bhjfnaonleakphaeleeolkhmk';
-    $variant = 'A3_native_server_response_flow_pilot10';
+    $variant = 'A3_native_server_response_flow';
     $form = '';
     if ($values !== []) {
         $form = '<form id="registration-form" action="registration-response.php" method="post">'
