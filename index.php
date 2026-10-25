@@ -197,7 +197,7 @@ if (!headers_sent()) {
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="landing-html-build" content="bncafcammfpejbggcfcfflkjb">
+    <meta name="landing-html-build" content="bdgcfhgnckhcldibihjkfdoal">
     <meta name="landing-request-id" content="<?= htmlspecialchars($landingRequestId, ENT_QUOTES, 'UTF-8') ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Первая помощь: практический курс для каждого</title>
@@ -218,7 +218,7 @@ if (!headers_sent()) {
             </p>
             <div class="hero-action">
                 <p class="hero-price">Полный день обучения — от <strong>4 900 ₽</strong></p>
-                <button type="button" class="btn btn-register hero-register" data-track-label="hero_cta">Записаться на курс</button>
+                <button type="button" class="btn registration-trigger hero-register" data-track-label="hero_cta">Записаться на курс</button>
                 <p class="hero-action-note">Оставьте заявку — мы подтвердим место и ответим на вопросы.</p>
             </div>
             <div class="meta-grid">
@@ -505,7 +505,7 @@ if (!headers_sent()) {
                             <li>Сертификат и памятка</li>
                             <li>Кофе-брейки</li>
                         </ul>
-                        <button type="button" class="btn btn-register">Записаться</button>
+                        <button type="button" class="btn registration-trigger">Записаться</button>
                     </article>
                     <article class="pricing-card featured">
                         <h3>Расширенный</h3>
@@ -515,7 +515,7 @@ if (!headers_sent()) {
                             <li>Набор перевязочных материалов</li>
                             <li>Дополнительный практический блок</li>
                         </ul>
-                        <button type="button" class="btn btn-register">Записаться</button>
+                        <button type="button" class="btn registration-trigger">Записаться</button>
                     </article>
                     <article class="pricing-card">
                         <h3>Корпоративный</h3>
@@ -525,7 +525,7 @@ if (!headers_sent()) {
                             <li>Консультация для HR или руководителя</li>
                             <li>Отчёт о прохождении для работодателя</li>
                         </ul>
-                        <button type="button" class="btn btn-register">Записаться</button>
+                        <button type="button" class="btn registration-trigger">Записаться</button>
                     </article>
                 </div>
             </div>
@@ -570,7 +570,7 @@ if (!headers_sent()) {
         </div>
     </footer>
 
-    <button type="button" class="btn btn-register floating-register" data-track-label="floating_cta" hidden>Записаться на курс</button>
+    <button type="button" class="btn registration-trigger floating-register" data-track-label="floating_cta" hidden>Записаться на курс</button>
 
     <script defer src="https://vps.alexxz.ru/tracker/static/tracker.js?v=20261025-referrer-empty-5"
             data-site-key="fsGaFTXh1jtgWDGeo1l73o_tuSgjK63jy8hpt2rS5YU"
