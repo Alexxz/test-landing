@@ -197,7 +197,7 @@ if (!headers_sent()) {
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="landing-html-build" content="bapglbmbolacmjpehlgkmddhc">
+    <meta name="landing-html-build" content="blheffjjlkocnkljniopaadai">
     <meta name="landing-request-id" content="<?= htmlspecialchars($landingRequestId, ENT_QUOTES, 'UTF-8') ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Первая помощь: практический курс для каждого</title>
@@ -537,12 +537,12 @@ if (!headers_sent()) {
                     <h2 class="section-title">Записаться на курс</h2>
                     <p class="registration-recap">Практика на манекенах и в парах · До 14 человек в группе · Сертификат и памятка после курса</p>
                     <p class="section-lead">
-                        Укажите телефон или e-mail — мы свяжемся с вами, подтвердим место и ответим на вопросы.
+                        Укажите имя и один способ связи — телефон или e-mail. Мы свяжемся с вами, подтвердим место и ответим на вопросы.
                     </p>
-                    <form data-required-fields="" data-contact-rule="any" class="form-grid" id="registration-form" action="api/submit.php" method="post">
+                    <form data-required-fields="name" data-contact-rule="any" class="form-grid" id="registration-form" action="api/submit.php" method="post">
                         <label>
-                            Имя (необязательно)
-                            <input type="text" name="name" autocomplete="name" placeholder="Как к вам обращаться">
+                            Имя
+                            <input type="text" name="name" required autocomplete="name" placeholder="Как к вам обращаться">
                         </label>
                         <label>
                             Телефон (один из способов связи)

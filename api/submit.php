@@ -5,7 +5,7 @@ declare(strict_types=1);
 require_once __DIR__ . '/db.php';
 
 // Compiled from the reviewed plan. Request parameters never select a policy.
-const REQUIRED_FIELDS = [];
+const REQUIRED_FIELDS = ['name'];
 const CONTACT_RULE = 'either';
 
 set_time_limit(120);
