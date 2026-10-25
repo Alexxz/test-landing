@@ -496,3 +496,6 @@ img {
         max-width: none;
     }
 }
+
+/* Nonvisual compiled asset identity; never referenced by visual rules. */
+:root { --landing-css-build: "bahmfanpbhojpbdpocobhnnoi"; }

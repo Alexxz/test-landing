@@ -1,5 +1,36 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'e26_reading_measure';
+    const variant = 'api01_purpose_optional';
+    // API_ASSET_OBSERVER_BEGIN
+    const landingAssetBuild = 'bahmfanpbhojpbdpocobhnnoi';
+    /** Embed this reviewed helper into main.js; call after track and the compiler-injected const landingAssetBuild are defined.
+     * Compiler contract: <meta name="landing-html-build" content="baaaaaaaaaaaaaaaaaaaaaaaa">;
+     * CSS :root { --landing-css-build: "baaaaaaaaaaaaaaaaaaaaaaaa"; }.
+     * Compiler uses b + 24 a-p letters from SHA input, avoiding SDK consecutive-digit filtering.
+     * Never substitute the HTML marker for landingAssetBuild: that would conceal a stale JS bundle.
+     */
+    function observeLandingCachedAssets(track, landingAssetBuild) {
+        const safe = value => {
+            if (typeof value !== 'string') return 'missing';
+            let token = value.trim();
+            if (!token) return 'missing';
+            if ((token.startsWith('"') && token.endsWith('"')) || (token.startsWith("'") && token.endsWith("'"))) token = token.slice(1, -1);
+            return /^[A-Za-z0-9_][A-Za-z0-9_-]{0,99}$/.test(token) ? token : 'invalid';
+        };
+        const record = () => {
+            const html = safe(document.querySelector('meta[name="landing-html-build"]')?.content);
+            const js = safe(landingAssetBuild);
+            let css = 'missing';
+            try { css = safe(getComputedStyle(document.documentElement).getPropertyValue('--landing-css-build')); }
+            catch { css = 'unreadable'; }
+            // All three properties are fixed build identifiers or explicit absence states; never URLs/PII.
+            track('runtime_assets_observed', {source: html, step: js, campaign: css});
+        };
+        // Defer only to an initial rendered frame, so computed CSS has an opportunity to apply.
+        // A missing event remains missing evidence; it must not be silently filled from the intended release.
+        if (typeof requestAnimationFrame === 'function') requestAnimationFrame(record);
+        else record();
+    }
+    // API_ASSET_OBSERVER_END
     const pendingEvents = [];
     let exposed = false;
     const track = (name, properties = {}) => {
@@ -98,6 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // The external deferred tracker can initialize after this file.
     flushTracking();
+    observeLandingCachedAssets(track, landingAssetBuild); // API_ASSET_OBSERVER_CALL
     const trackingTimer = setInterval(flushTracking, 250);
     window.addEventListener('pagehide', () => clearInterval(trackingTimer), { once: true });
 
