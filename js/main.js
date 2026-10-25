@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'e26_reading_measure';
+    const variant = 'e27_exact_base_price';
     const pendingEvents = [];
     let exposed = false;
     const track = (name, properties = {}) => {

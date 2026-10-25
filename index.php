@@ -215,7 +215,7 @@ if (!headers_sent()) {
                 Группа до 14 человек.
             </p>
             <div class="hero-action">
-                <p class="hero-price">Полный день обучения — от <strong>4 900 ₽</strong></p>
+                <p class="hero-price">Базовый курс — <strong>4 900 ₽</strong>. Полный день обучения.</p>
                 <button type="button" class="btn btn-register hero-register" data-track-label="hero_cta">Записаться на курс</button>
                 <p class="hero-action-note">Оставьте заявку — мы подтвердим место и ответим на вопросы.</p>
             </div>
