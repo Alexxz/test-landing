@@ -496,6 +496,3 @@ img {
         max-width: none;
     }
 }
-
-/* Wide-screen reading architecture; all source text retained. */
-@media (min-width: 1024px) { .program-module { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 68ch); column-gap: 28px; align-items: start; } .program-module h3, .program-module p { margin: 0; } }
