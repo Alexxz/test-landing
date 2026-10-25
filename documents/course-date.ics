@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Test Landing//Course calendar//RU
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:first-aid-20261215@alexxz.naition.sortedmap.ru
+DTSTAMP:20261025T083050Z
+DTSTART:20261215T070000Z
+DTEND:20261215T150000Z
+SUMMARY:Курс первой помощи — учебный центр «
+ Спаси-Себя»
+LOCATION:Москва\, учебный центр «Спаси-Себя»
+DESCRIPTION:Очный курс первой помощи. 15 декабр
+ я 2026\, 10:00–18:00 по московскому времени\, с п
+ ерерывом на обед. Сохранение даты не явл
+ яется записью на курс. Для записи оставь
+ те заявку на странице курса: https://alexxz.naition
+ .sortedmap.ru/#registration
+URL:https://alexxz.naition.sortedmap.ru/#registration
+END:VEVENT
+END:VCALENDAR

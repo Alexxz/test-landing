@@ -224,6 +224,8 @@ if (!headers_sent()) {
                 <div class="meta-card">
                     <strong>Дата</strong>
                     15 декабря 2026, вторник
+                    <a class="calendar-date-link" href="documents/course-date.ics" download="course-date.ics" data-track-label="calendar_date_download">Добавить дату в календарь</a>
+                    <p class="calendar-date-note">Сохранение даты не является записью на курс.</p>
                 </div>
                 <div class="meta-card">
                     <strong>Время</strong>
@@ -280,17 +282,6 @@ if (!headers_sent()) {
                     действовать, когда рядом нет медикаментов и оборудования. Каждый модуль включает
                     теорию, демонстрацию инструктора и практику участников.
                 </p>
-                <aside class="day-overview" aria-labelledby="day-overview-title">
-                    <h3 id="day-overview-title">Весь учебный день</h3>
-                    <ul class="day-overview-list">
-                        <li><span class="day-overview-time">10:00 – 11:00</span><span>Оценка обстановки и безопасность</span></li>
-                        <li><span class="day-overview-time">11:00 – 12:30</span><span>Сердечно-легочная реанимация</span></li>
-                        <li><span class="day-overview-time">12:30 – 13:30</span><span>Обед и разбор кейсов</span></li>
-                        <li><span class="day-overview-time">13:30 – 15:00</span><span>Кровотечения и шок</span></li>
-                        <li><span class="day-overview-time">15:00 – 16:30</span><span>Переломы, вывихи, ожоги</span></li>
-                        <li><span class="day-overview-time">16:30 – 18:00</span><span>Итоговая практика и сертификация</span></li>
-                    </ul>
-                </aside>
                 <div class="program-list">
                     <article class="program-module">
                         <h3>10:00 – 11:00 · Оценка обстановки и безопасность</h3>

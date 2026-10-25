@@ -497,30 +497,16 @@ img {
     }
 }
 
-/* e46: one complete-day map; all original detailed modules remain visible. */
-.day-overview {
-    margin: 0 0 24px;
+/* Optional calendar handoff: no registration state is implied. */
+.calendar-date-link {
+    display: inline-block;
+    margin-top: 12px;
+    padding-block: 8px;
+    color: #194f68;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    overflow-wrap: anywhere;
 }
-.day-overview h3 {
-    margin: 0 0 12px;
-}
-.day-overview-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.day-overview-list li {
-    display: grid;
-    grid-template-columns: 9rem minmax(0, 1fr);
-    gap: 8px 16px;
-    padding: 6px 0;
-}
-.day-overview-time {
-    white-space: nowrap;
-}
-@media (max-width: 560px) {
-    .day-overview-list li {
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
-}
+.calendar-date-link:focus-visible { outline: 3px solid #315f83; outline-offset: 3px; }
+.calendar-date-note { margin: 4px 0 0; font-size: 0.9rem; }

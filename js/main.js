@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'e46_day_overview';
+    const variant = 'e47_calendar_handoff';
     const pendingEvents = [];
     let exposed = false;
     const track = (name, properties = {}) => {
@@ -136,6 +136,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('registration-form');
     const message = document.getElementById('form-message');
     const registerButtons = document.querySelectorAll('.btn-register');
+    document.querySelector('.calendar-date-link')?.addEventListener('click', (event) => {
+        if (!event.isTrusted) return;
+        track('calendar_download_attempt', { source: 'hero_date_card' });
+    });
 
     let pricingButtonIndex = 0;
     registerButtons.forEach((button) => {
