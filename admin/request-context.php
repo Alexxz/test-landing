@@ -54,9 +54,17 @@ if ($exists) {
         fclose($handle);
     }
 }
+$runtimeHashes = [];
+foreach (['api/submit.php', 'api/visit.php', 'api/db.php', 'api/export.php', 'api/init.php', 'sql/schema.sql', 'admin/request-context.php'] as $relativePath) {
+    $runtimePath = dirname(__DIR__) . '/' . $relativePath;
+    $runtimeHashes[$relativePath] = is_file($runtimePath) && !is_link($runtimePath)
+        ? hash_file('sha256', $runtimePath) : null;
+}
+
 echo json_encode([
     'ok' => true,
     'source' => 'main_document_php_context_v1',
+    'runtime_hashes' => $runtimeHashes,
     'log_exists' => $exists,
     'log_bytes' => $exists ? filesize($path) : 0,
     'total_records' => $total,
