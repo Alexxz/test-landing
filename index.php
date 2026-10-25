@@ -197,7 +197,7 @@ if (!headers_sent()) {
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="landing-html-build" content="bncafcammfpejbggcfcfflkjb">
+    <meta name="landing-html-build" content="bojbflhikkeojpnpicihmnfff">
     <meta name="landing-request-id" content="<?= htmlspecialchars($landingRequestId, ENT_QUOTES, 'UTF-8') ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Первая помощь: практический курс для каждого</title>
@@ -537,17 +537,34 @@ if (!headers_sent()) {
                     <h2 class="section-title">Записаться на курс</h2>
                     <p class="registration-recap">Практика на манекенах и в парах · До 14 человек в группе · Сертификат и памятка после курса</p>
                     <p class="section-lead">
-                        Заполните 4 поля — мы свяжемся с вами, подтвердим место и ответим на вопросы.
+                        Укажите имя, телефон, e-mail и цель обучения — мы свяжемся с вами, подтвердим место и ответим на вопросы.
                     </p>
                     <form class="form-grid" id="registration-form" action="api/submit.php" method="post">
                         <label>
                             Имя
                             <input type="text" name="name" required autocomplete="name" placeholder="Как к вам обращаться">
                         </label>
-                        <label>
+                        <fieldset class="contact-components-ui" disabled>
+                            <legend>Телефон</legend>
+                            <label for="contact-mode">Код страны или полный номер</label>
+                            <select id="contact-mode" name="phone_mode_ui" required>
+                                <option value="">Выберите вариант</option>
+                                <option value="+7">Код +7</option>
+                                <option value="+1">Код +1</option>
+                                <option value="+44">Код +44</option>
+                                <option value="custom">Другой код</option>
+                                <option value="full">Ввести полный номер одной строкой</option>
+                            </select>
+                            <label class="component-custom" hidden>Ваш код страны<input type="tel" name="phone_custom_ui" disabled placeholder="Код с +"></label>
+                            <label class="component-part">Номер после кода<input type="tel" name="phone_national_ui" autocomplete="tel-national"></label>
+                            <label class="component-full" hidden>Полный телефон<input type="tel" name="phone_full_ui" autocomplete="tel" disabled></label>
+                            <button type="button" class="component-use-full">Использовать введённое как полный номер</button>
+                            <p class="component-preview" data-tracker-mask aria-live="polite">Код не выбран. Можно ввести полный номер одной строкой.</p>
+                        </fieldset>
+                        <noscript><label>
                             Телефон
                             <input type="tel" name="phone" required autocomplete="tel" placeholder="+7 999 123-45-67">
-                        </label>
+                        </label></noscript>
                         <label>
                             E-mail
                             <input type="email" name="email" required autocomplete="email" placeholder="you@example.ru">

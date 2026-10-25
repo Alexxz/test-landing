@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'rule_control_strict_baseline';
+    const variant = 'B1_explicit_phone_components';
     // API_ASSET_OBSERVER_BEGIN
-    const landingAssetBuild = 'bncafcammfpejbggcfcfflkjb';
+    const landingAssetBuild = 'bojbflhikkeojpnpicihmnfff';
     /** Embed this reviewed helper into main.js; call after track and the compiler-injected const landingAssetBuild are defined.
      * Compiler contract: <meta name="landing-html-build" content="baaaaaaaaaaaaaaaaaaaaaaaa">;
      * CSS :root { --landing-css-build: "baaaaaaaaaaaaaaaaaaaaaaaa"; }.
@@ -221,6 +221,49 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!form) {
         return;
     }
+    // CONTACT_COMPONENT_SERIALIZER_BEGIN
+    function assembleContact(choice, part, custom, full) {
+        const values=[choice,part,custom,full];
+        if (!values.every(value=>typeof value==='string')) return '';
+        if (choice==='full') return full.trim();
+        const code=choice==='custom'?custom.trim():['+7','+1','+44'].includes(choice)?choice:'';
+        if (!code || !part.trim() || part.trim().startsWith('+') || (choice==='custom'&&!/^\+[0-9]+$/.test(code))) return '';
+        // Preserve entered national digits, zeros and extension text; never infer a country or strip trunk prefixes.
+        return code+' '+part.trim();
+    }
+    // CONTACT_COMPONENT_SERIALIZER_END
+
+    const componentUI=form.querySelector('.contact-components-ui');
+    const componentChoice=componentUI.querySelector('select');
+    const componentPart=componentUI.querySelector('.component-part input');
+    const componentCustom=componentUI.querySelector('.component-custom input');
+    const componentFull=componentUI.querySelector('.component-full input');
+    const componentPreview=componentUI.querySelector('.component-preview');
+    function contactValue() {
+        return assembleContact(componentChoice.value,componentPart.value,componentCustom.value,componentFull.value);
+    }
+    function updateComponents() {
+        const full=componentChoice.value==='full',custom=componentChoice.value==='custom';
+        for(const [element,active] of [[componentPart,!full],[componentCustom,custom],[componentFull,full]]) {
+            element.closest('label').hidden=!active;
+            element.disabled=!active;
+            element.required=active;
+            if(!active)element.setCustomValidity('');
+        }
+        componentChoice.setCustomValidity('');
+        const value=contactValue();
+        componentPreview.textContent=value?'Будет отправлено: '+value:'Выберите способ и введите свой контакт.';
+    }
+    componentUI.disabled=false;
+    componentChoice.addEventListener('change',updateComponents);
+    for(const element of [componentPart,componentCustom,componentFull])element.addEventListener('input',updateComponents);
+    componentUI.querySelector('.component-use-full').addEventListener('click',()=>{
+        // Explicit visitor action only: move the actual entered string, never guess a prefix/domain.
+        if(componentPart.value.trim())componentFull.value=componentPart.value;
+        componentChoice.value='full';updateComponents();componentFull.focus();
+    });
+    form.addEventListener('reset',()=>queueMicrotask(updateComponents));
+    updateComponents();
 
     if ('IntersectionObserver' in window) {
         const observer = new IntersectionObserver((entries) => {
@@ -281,9 +324,14 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', async (event) => {
         event.preventDefault();
 
+        const componentValue=contactValue();
+        let validComponent=Boolean(componentValue);
+        if(!validComponent){componentChoice.setCustomValidity('Проверьте свой контакт или выберите ввод одной строкой.');componentChoice.reportValidity();return;}
         track('registration_submit');
         const submitButton = form.querySelector('button[type="submit"]');
         const formData = new FormData(form);
+        ["phone_mode_ui", "phone_national_ui", "phone_custom_ui", "phone_full_ui"].forEach(name=>formData.delete(name));
+        formData.set('phone',componentValue);
 
         if (submitButton instanceof HTMLButtonElement) {
             submitButton.disabled = true;
