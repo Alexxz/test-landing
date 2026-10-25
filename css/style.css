@@ -496,16 +496,3 @@ img {
         max-width: none;
     }
 }
-
-/* e43: ordinary content glyph size, without changing hero or registration. */
-.feature-card p,
-.program-module p,
-.injury-card p,
-.credentials li,
-.pricing-list li {
-    font-size: 18px;
-}
-/* Match the measured baseline width at the current 16px root and cohort font. */
-.program-module p {
-    max-width: 38.25rem;
-}

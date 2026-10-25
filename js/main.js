@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'e43_body_glyph_18px';
+    const variant = 'e44_bystander_role';
     const pendingEvents = [];
     let exposed = false;
     const track = (name, properties = {}) => {
