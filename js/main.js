@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'e42_question_led_headings';
+    const variant = 'e43_body_glyph_18px';
     const pendingEvents = [];
     let exposed = false;
     const track = (name, properties = {}) => {

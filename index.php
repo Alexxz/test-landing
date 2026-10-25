@@ -245,7 +245,7 @@ if (!headers_sent()) {
     <main>
         <section class="section">
             <div class="container">
-                <h2 class="section-title">Как устроен курс?</h2>
+                <h2 class="section-title">О курсе</h2>
                 <p class="section-lead">
                     Это не лекция «для галочки», а полноценный практический день, где каждый блок
                     заканчивается отработкой навыков под контролем инструктора.
@@ -273,7 +273,7 @@ if (!headers_sent()) {
 
         <section class="section">
             <div class="container">
-                <h2 class="section-title">Что входит в программу дня?</h2>
+                <h2 class="section-title">Программа курса</h2>
                 <p class="section-lead program-intro">
                     Программа выстроена от базовой оценки ситуации до сложных сценариев с несколькими
                     пострадавшими. Мы подробно разбираем алгоритмы, типичные ошибки и то, как
@@ -377,7 +377,7 @@ if (!headers_sent()) {
 
         <section class="section">
             <div class="container">
-                <h2 class="section-title">Какие травмы и состояния разбирают?</h2>
+                <h2 class="section-title">Виды травм и состояний</h2>
                 <p class="section-lead">
                     На курсе мы разбираем самые частые состояния, с которыми сталкиваются очевидцы
                     в городе, дома, на работе и в путешествиях.
@@ -413,7 +413,7 @@ if (!headers_sent()) {
 
         <section class="section legal-section">
             <div class="container">
-                <h2 class="section-title">Какие правовые вопросы разбирают на курсе?</h2>
+                <h2 class="section-title">Правовые основы первой помощи</h2>
                 <p class="section-lead">
                     На курсе разберём правовые основания первой помощи, действия очевидца
                     и взаимодействие с экстренными службами на понятных примерах.
@@ -450,7 +450,7 @@ if (!headers_sent()) {
 
         <section class="section">
             <div class="container">
-                <h2 class="section-title">Кто проводит занятия?</h2>
+                <h2 class="section-title">Инструкторы</h2>
                 <p class="section-lead">
                     Курс ведут специалисты с многолетним опытом работы в экстренной медицине и обучения.
                 </p>
@@ -491,7 +491,7 @@ if (!headers_sent()) {
 
         <section class="section pricing-section">
             <div class="container">
-                <h2 class="section-title">Какие тарифы доступны?</h2>
+                <h2 class="section-title">Тарифы</h2>
                 <p class="section-lead">
                     Выберите формат участия. Во все тарифы входят материалы, сертификат и доступ к памятке после курса.
                 </p>
@@ -533,7 +533,7 @@ if (!headers_sent()) {
         <section class="section registration-section" id="registration">
             <div class="container">
                 <div class="registration-panel">
-                    <h2 class="section-title">Как оставить заявку на курс?</h2>
+                    <h2 class="section-title">Записаться на курс</h2>
                     <p class="registration-recap">Практика на манекенах и в парах · До 14 человек в группе · Сертификат и памятка после курса</p>
                     <p class="section-lead">
                         Заполните 4 поля — мы свяжемся с вами, подтвердим место и ответим на вопросы.
