@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'api04_name_optional';
+    const variant = 'api05_name_phone_required';
     // API_ASSET_OBSERVER_BEGIN
-    const landingAssetBuild = 'bndklkgajcfajjbmogbcijpkn';
+    const landingAssetBuild = 'bkpgnggodpahkklkmiaoekcfd';
     /** Embed this reviewed helper into main.js; call after track and the compiler-injected const landingAssetBuild are defined.
      * Compiler contract: <meta name="landing-html-build" content="baaaaaaaaaaaaaaaaaaaaaaaa">;
      * CSS :root { --landing-css-build: "baaaaaaaaaaaaaaaaaaaaaaaa"; }.
