@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'e32_visual_identity';
+    const variant = 'e33_heading_orientation';
     const pendingEvents = [];
     let exposed = false;
     const track = (name, properties = {}) => {
@@ -149,10 +149,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             track('registration_cta', { source: button.dataset.trackLabel });
             registrationSection.scrollIntoView({ behavior: 'instant', block: 'start' });
-            const nameField = form?.querySelector('[name="name"]');
-            if (nameField) {
-                track('registration_focus_auto', { step: 'name', source: button.dataset.trackLabel });
-                nameField.focus({ preventScroll: true });
+            const heading = document.getElementById('registration-heading');
+            if (heading) {
+                track('registration_heading_orientation', { step: 'heading', source: button.dataset.trackLabel });
+                heading.focus({ preventScroll: true });
             }
             track('registration_arrival', { source: button.dataset.trackLabel });
         });
