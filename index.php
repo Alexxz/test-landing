@@ -280,6 +280,15 @@ if (!headers_sent()) {
                     действовать, когда рядом нет медикаментов и оборудования. Каждый модуль включает
                     теорию, демонстрацию инструктора и практику участников.
                 </p>
+                <aside class="program-glossary" aria-labelledby="program-glossary-title">
+                    <h3 id="program-glossary-title">Термины в программе</h3>
+                    <ul>
+                        <li><strong>СЛР</strong> — сердечно-лёгочная реанимация. В программе курса — СЛР для взрослых.</li>
+                        <li><strong>AED</strong> — автоматический дефибриллятор. На занятии используют тренировочный прибор.</li>
+                        <li><strong>Иммобилизация</strong> — фиксация повреждённой конечности.</li>
+                        <li><strong>Кейсы</strong> — реальные истории из практики инструкторов, которые разбирают на занятии.</li>
+                    </ul>
+                </aside>
                 <div class="program-list">
                     <article class="program-module">
                         <h3>10:00 – 11:00 · Оценка обстановки и безопасность</h3>
@@ -533,8 +542,7 @@ if (!headers_sent()) {
         <section class="section registration-section" id="registration">
             <div class="container">
                 <div class="registration-panel">
-                    <button type="button" class="registration-layer-close" aria-label="Закрыть форму записи" hidden>Закрыть ×</button>
-                    <h2 class="section-title" id="registration-layer-title">Записаться на курс</h2>
+                    <h2 class="section-title">Записаться на курс</h2>
                     <p class="registration-recap">Практика на манекенах и в парах · До 14 человек в группе · Сертификат и памятка после курса</p>
                     <p class="section-lead">
                         Заполните 4 поля — мы свяжемся с вами, подтвердим место и ответим на вопросы.

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'e36_context_registration_layer';
+    const variant = 'e37_plain_language_bridge';
     const pendingEvents = [];
     let exposed = false;
     const track = (name, properties = {}) => {
@@ -137,87 +137,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const message = document.getElementById('form-message');
     const registerButtons = document.querySelectorAll('.btn-register');
 
-    const registrationPanel = registrationSection?.querySelector('.registration-panel');
-    const layerClose = registrationPanel?.querySelector('.registration-layer-close');
-    let layerOpen = false;
-    let layerTrigger = null;
-    let savedBodyStyles = null;
-    let inertSiblings = [];
-    let refreshFloatingButton = () => {};
-    const layerFocusable = () => Array.from(registrationPanel.querySelectorAll(
-        'button, input, textarea, select, a[href], [tabindex]'
-    )).filter((element) => !element.disabled && element.tabIndex >= 0 && element.getClientRects().length);
-    const closeRegistrationLayer = (cause) => {
-        if (!layerOpen) return;
-        layerOpen = false;
-        registrationSection.classList.remove('registration-layer-open');
-        registrationPanel.removeAttribute('role');
-        registrationPanel.removeAttribute('aria-modal');
-        registrationPanel.removeAttribute('aria-labelledby');
-        layerClose.hidden = true;
-        inertSiblings.forEach(([element, previous]) => { element.inert = previous; });
-        inertSiblings = [];
-        document.body.style.overflow = savedBodyStyles.overflow;
-        document.body.style.paddingRight = savedBodyStyles.paddingRight;
-        registrationSection.parentElement.style.paddingBottom = savedBodyStyles.parentPaddingBottom;
-        window.scrollTo(savedBodyStyles.pageX, savedBodyStyles.pageY);
-        track('registration_layer_close', { source: layerTrigger?.dataset.trackLabel, step: cause });
-        refreshFloatingButton();
-        layerTrigger?.focus({ preventScroll: true });
-    };
-    const openRegistrationLayer = (trigger) => {
-        if (!registrationPanel || !layerClose || layerOpen) return;
-        layerTrigger = trigger;
-        layerOpen = true;
-        savedBodyStyles = {
-            overflow: document.body.style.overflow,
-            paddingRight: document.body.style.paddingRight,
-            parentPaddingBottom: registrationSection.parentElement.style.paddingBottom,
-            pageX: window.scrollX, pageY: window.scrollY,
-        };
-        // Reserve the section's original space while its fixed layer is open.
-        const parent = registrationSection.parentElement;
-        const parentPadding = parseFloat(getComputedStyle(parent).paddingBottom) || 0;
-        parent.style.paddingBottom = `${parentPadding + registrationSection.getBoundingClientRect().height}px`;
-        const scrollbar = window.innerWidth - document.documentElement.clientWidth;
-        if (scrollbar > 0) document.body.style.paddingRight = `${parseFloat(getComputedStyle(document.body).paddingRight) + scrollbar}px`;
-        document.body.style.overflow = 'hidden';
-        // Inert only siblings along the ancestor path; never inert the form's ancestor.
-        for (let current = registrationSection; current && current !== document.body; current = current.parentElement) {
-            Array.from(current.parentElement.children).forEach((sibling) => {
-                if (sibling !== current && sibling instanceof HTMLElement && !['SCRIPT', 'STYLE'].includes(sibling.tagName)) {
-                    inertSiblings.push([sibling, sibling.inert]);
-                    sibling.inert = true;
-                }
-            });
-        }
-        registrationSection.classList.add('registration-layer-open');
-        registrationSection.scrollTop = 0;
-        registrationPanel.setAttribute('role', 'dialog');
-        registrationPanel.setAttribute('aria-modal', 'true');
-        registrationPanel.setAttribute('aria-labelledby', 'registration-layer-title');
-        layerClose.hidden = false;
-        track('registration_layer_open', { source: trigger.dataset.trackLabel });
-        refreshFloatingButton();
-    };
-    layerClose?.addEventListener('click', () => closeRegistrationLayer('close_button'));
-    document.addEventListener('keydown', (event) => {
-        if (!layerOpen) return;
-        if (event.key === 'Escape') {
-            event.preventDefault();
-            closeRegistrationLayer('escape');
-        } else if (event.key === 'Tab') {
-            const elements = layerFocusable();
-            const first = elements[0];
-            const last = elements[elements.length - 1];
-            if (event.shiftKey && (document.activeElement === first || !registrationPanel.contains(document.activeElement))) {
-                event.preventDefault(); last?.focus();
-            } else if (!event.shiftKey && (document.activeElement === last || !registrationPanel.contains(document.activeElement))) {
-                event.preventDefault(); first?.focus();
-            }
-        }
-    });
-
     let pricingButtonIndex = 0;
     registerButtons.forEach((button) => {
         if (!button.dataset.trackLabel) {
@@ -229,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             track('registration_cta', { source: button.dataset.trackLabel });
-            openRegistrationLayer(button);
+            registrationSection.scrollIntoView({ behavior: 'instant', block: 'start' });
             const nameField = form?.querySelector('[name="name"]');
             if (nameField) {
                 track('registration_focus_auto', { step: 'name', source: button.dataset.trackLabel });
@@ -249,14 +168,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const viewportHeight = document.documentElement.clientHeight;
             const heroVisible = heroRect.bottom > 0 && heroRect.top < viewportHeight;
             const registrationVisible = sectionRect.bottom > 0 && sectionRect.top < viewportHeight;
-            const shouldHide = layerOpen || heroVisible || registrationVisible;
+            const shouldHide = heroVisible || registrationVisible;
             if (floatingButton.hidden !== shouldHide) floatingButton.hidden = shouldHide;
             if (!floatingButton.hidden && !floatingExposed) {
                 track('floating_cta_view', { source: 'floating_cta' });
                 floatingExposed = true;
             }
         };
-        refreshFloatingButton = updateFloatingButton;
         // Actual geometry also handles a phone with a short initial viewport.
         if ('IntersectionObserver' in window) {
             const floatingObserver = new IntersectionObserver(updateFloatingButton);
