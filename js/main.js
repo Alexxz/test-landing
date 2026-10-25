@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const variant = 'A1_review_before_final_application_diagnostic10';
     // API_ASSET_OBSERVER_BEGIN
-    const landingAssetBuild = 'bejfknnjdobpmgjlapidgifcn';
+    const landingAssetBuild = 'balcjgbjfcompeaoepmjnaado';
     /** Embed this reviewed helper into main.js; call after track and the compiler-injected const landingAssetBuild are defined.
      * Compiler contract: <meta name="landing-html-build" content="baaaaaaaaaaaaaaaaaaaaaaaa">;
      * CSS :root { --landing-css-build: "baaaaaaaaaaaaaaaaaaaaaaaa"; }.
@@ -310,7 +310,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const response = await fetch(confirming ? 'api/submit.php' : form.action, {
                 method: 'POST', body: formData, headers: {Accept: 'application/json'},
             });
-            reviewStage = response.ok ? 'json' : 'http_error';
+            const contentType = response.headers.get('content-type') || '';
+            reviewStage = !response.ok ? 'http_error' : contentType.includes('json') ? 'json_media' : contentType.includes('html') ? 'html_media' : 'other_media';
             const data = await response.json();
             reviewStage = data.review_ready === true ? 'echo' : 'rejected';
             if (!response.ok || (confirming ? data.ok !== true : data.review_ready !== true)) throw new Error(data.error || 'Не удалось обработать заявку.');
