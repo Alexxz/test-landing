@@ -197,7 +197,7 @@ if (!headers_sent()) {
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="landing-html-build" content="bbdlmdkpkjphmdigcjnebgcno">
+    <meta name="landing-html-build" content="bncafcammfpejbggcfcfflkjb">
     <meta name="landing-request-id" content="<?= htmlspecialchars($landingRequestId, ENT_QUOTES, 'UTF-8') ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Первая помощь: практический курс для каждого</title>
@@ -505,6 +505,7 @@ if (!headers_sent()) {
                             <li>Сертификат и памятка</li>
                             <li>Кофе-брейки</li>
                         </ul>
+                        <button type="button" class="btn btn-register">Записаться</button>
                     </article>
                     <article class="pricing-card featured">
                         <h3>Расширенный</h3>
@@ -514,6 +515,7 @@ if (!headers_sent()) {
                             <li>Набор перевязочных материалов</li>
                             <li>Дополнительный практический блок</li>
                         </ul>
+                        <button type="button" class="btn btn-register">Записаться</button>
                     </article>
                     <article class="pricing-card">
                         <h3>Корпоративный</h3>
@@ -523,6 +525,7 @@ if (!headers_sent()) {
                             <li>Консультация для HR или руководителя</li>
                             <li>Отчёт о прохождении для работодателя</li>
                         </ul>
+                        <button type="button" class="btn btn-register">Записаться</button>
                     </article>
                 </div>
             </div>
