@@ -497,7 +497,5 @@ img {
     }
 }
 
-.program-glossary { max-width: 760px; margin: 0 0 28px; }
-.program-glossary h3 { margin: 0 0 12px; color: var(--heading); }
-.program-glossary ul { margin: 0; padding-left: 1.25em; }
-.program-glossary li { margin: 6px 0; }
+/* Wide-screen reading architecture; all source text retained. */
+@media (min-width: 1024px) { .program-module { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 68ch); column-gap: 28px; align-items: start; } .program-module h3, .program-module p { margin: 0; } }

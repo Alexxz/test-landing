@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'e37_plain_language_bridge';
+    const variant = 'e38_parallel_program_layout';
     const pendingEvents = [];
     let exposed = false;
     const track = (name, properties = {}) => {
