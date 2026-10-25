@@ -496,3 +496,5 @@ img {
         max-width: none;
     }
 }
+
+.organizer-identity { margin: 0 0 12px; font-size: 1rem; color: var(--heading); font-weight: 600; }

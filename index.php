@@ -208,6 +208,7 @@ if (!headers_sent()) {
 <body>
     <header class="hero">
         <div class="container hero-content">
+            <p class="organizer-identity">Учебный центр «Спаси-Себя» · Москва</p>
             <span class="hero-badge">Офлайн-курс · 15 декабря 2026</span>
             <h1>Первая помощь для семьи, работы и поездок</h1>
             <p class="hero-text">
@@ -533,7 +534,8 @@ if (!headers_sent()) {
         <section class="section registration-section" id="registration">
             <div class="container">
                 <div class="registration-panel">
-                    <h2 class="section-title" id="registration-heading" tabindex="-1">Записаться на курс</h2>
+                    <h2 class="section-title">Записаться на курс</h2>
+                    <p class="organizer-identity">Заявка в учебный центр «Спаси-Себя», Москва</p>
                     <p class="registration-recap">Практика на манекенах и в парах · До 14 человек в группе · Сертификат и памятка после курса</p>
                     <p class="section-lead">
                         Заполните 4 поля — мы свяжемся с вами, подтвердим место и ответим на вопросы.
