@@ -497,16 +497,13 @@ img {
     }
 }
 
-/* Optional calendar handoff: no registration state is implied. */
-.calendar-date-link {
-    display: inline-block;
-    margin-top: 12px;
-    padding-block: 8px;
-    color: #194f68;
-    font-weight: 600;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    overflow-wrap: anywhere;
-}
-.calendar-date-link:focus-visible { outline: 3px solid #315f83; outline-offset: 3px; }
-.calendar-date-note { margin: 4px 0 0; font-size: 0.9rem; }
+/* e48: optional search controls; full modules remain in normal document flow. */
+.program-search { margin: 0 0 24px; }
+.program-search label { display: block; margin-bottom: 8px; }
+.program-search-controls { display: flex; flex-wrap: wrap; gap: 8px; }
+.program-search input { min-width: 0; width: min(100%, 24rem); padding: 10px; font: inherit; }
+.program-search button { max-width: 100%; padding: 10px 14px; font: inherit; cursor: pointer; }
+.program-search p { margin: 8px 0; }
+.program-search-navigation button { margin: 0 8px 8px 0; }
+mark.program-search-match { background: #fff0a6; color: inherit; }
+mark.program-search-current { outline: 2px solid currentColor; }

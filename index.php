@@ -224,8 +224,6 @@ if (!headers_sent()) {
                 <div class="meta-card">
                     <strong>Дата</strong>
                     15 декабря 2026, вторник
-                    <a class="calendar-date-link" href="documents/course-date.ics" download="course-date.ics" data-track-label="calendar_date_download">Добавить дату в календарь</a>
-                    <p class="calendar-date-note">Сохранение даты не является записью на курс.</p>
                 </div>
                 <div class="meta-card">
                     <strong>Время</strong>
@@ -282,6 +280,18 @@ if (!headers_sent()) {
                     действовать, когда рядом нет медикаментов и оборудования. Каждый модуль включает
                     теорию, демонстрацию инструктора и практику участников.
                 </p>
+                <div class="program-search" role="search" aria-label="Поиск по программе">
+                    <label for="program-search-input">Найти слово в программе</label>
+                    <div class="program-search-controls">
+                        <input id="program-search-input" type="search" maxlength="128" placeholder="Например: кровотечения" autocomplete="off">
+                        <button type="button" id="program-search-clear">Очистить</button>
+                    </div>
+                    <p id="program-search-status" role="status" aria-live="polite">Все разделы программы показаны полностью.</p>
+                    <div id="program-search-navigation" hidden>
+                        <button type="button" id="program-search-previous">Предыдущее совпадение</button>
+                        <button type="button" id="program-search-next">Следующее совпадение</button>
+                    </div>
+                </div>
                 <div class="program-list">
                     <article class="program-module">
                         <h3>10:00 – 11:00 · Оценка обстановки и безопасность</h3>
