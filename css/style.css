@@ -496,3 +496,41 @@ img {
         max-width: none;
     }
 }
+
+/* Candidate: coherent restrained visual identity. Append to fixed reference CSS.
+   No content, dimensions, section order or field requirements change. */
+:root {
+    --bg-main: #f8fafc;
+    --bg-soft: #edf2f7;
+    --blue: #dbe8f2;
+    --mint: #e2edf3;
+    --pink: #e2edf3;
+    --peach: #e2edf3;
+    --text: #334155;
+    --heading: #142c43;
+    --shadow: 0 4px 16px rgba(20,44,67,.06);
+}
+.hero { background: #f8fafc; }
+.hero-badge { border-radius: 6px; background: #dbe8f2; }
+.meta-card,
+.feature-card,
+.injury-card,
+.instructor-card,
+.pricing-card,
+.program-module,
+.legal-block,
+.registration-panel,
+.hero-note { border-radius: 8px; }
+.feature-card:nth-child(n),
+.injury-card:nth-child(n) { background: #fff; }
+.pricing-section { background: #edf2f7; }
+.program-module:nth-child(n),
+.legal-block { border-left-color: #7293ac; }
+.pricing-card.featured { border-color: #3d6b8c; }
+.btn { border-radius: 6px; background: #174e72; color: #fff; }
+.btn:hover { background: #103c59; }
+.btn:focus-visible { outline: 3px solid #b96912; outline-offset: 3px; }
+.instructor-title,
+.site-footer { color: #526273; }
+.form-grid input,
+.form-grid textarea { border-color: #8293a4; border-radius: 6px; }
