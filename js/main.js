@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'rule_control_strict_baseline';
+    const variant = 'cta_delete_hero_button_vs_hidden';
     // API_ASSET_OBSERVER_BEGIN
-    const landingAssetBuild = 'bncafcammfpejbggcfcfflkjb';
+    const landingAssetBuild = 'bdfaihcopleganeacoonjbflb';
     /** Embed this reviewed helper into main.js; call after track and the compiler-injected const landingAssetBuild are defined.
      * Compiler contract: <meta name="landing-html-build" content="baaaaaaaaaaaaaaaaaaaaaaaa">;
      * CSS :root { --landing-css-build: "baaaaaaaaaaaaaaaaaaaaaaaa"; }.

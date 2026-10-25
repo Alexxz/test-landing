@@ -197,7 +197,7 @@ if (!headers_sent()) {
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="landing-html-build" content="bncafcammfpejbggcfcfflkjb">
+    <meta name="landing-html-build" content="bdfaihcopleganeacoonjbflb">
     <meta name="landing-request-id" content="<?= htmlspecialchars($landingRequestId, ENT_QUOTES, 'UTF-8') ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Первая помощь: практический курс для каждого</title>
@@ -218,7 +218,6 @@ if (!headers_sent()) {
             </p>
             <div class="hero-action">
                 <p class="hero-price">Полный день обучения — от <strong>4 900 ₽</strong></p>
-                <button type="button" class="btn btn-register hero-register" data-track-label="hero_cta">Записаться на курс</button>
                 <p class="hero-action-note">Оставьте заявку — мы подтвердим место и ответим на вопросы.</p>
             </div>
             <div class="meta-grid">
