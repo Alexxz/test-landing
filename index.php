@@ -268,26 +268,6 @@ if (!headers_sent()) {
                         <p>До 14 человек в группе, чтобы каждый успел отработать все ключевые навыки несколько раз.</p>
                     </article>
                 </div>
-
-                <div class="message-preview">
-                    <h3>Попробуйте составить сообщение диспетчеру</h3>
-                    <p>Соберите три известных факта в короткое сообщение.</p>
-                    <details>
-                        <summary data-track-label="emergency_example_open">Открыть учебный пример</summary>
-                        <p><strong>Учебный пример. Вымышленная ситуация.</strong> В Учебном городе, на улице Велосипедной, у дома7 столкнулись два велосипеда. Пострадавших двое.</p>
-                        <p>Выберите сведения для начального сообщения. Их порядок можно менять.</p>
-                        <fieldset class="message-preview-options">
-                            <legend>Что включить в сообщение?</legend>
-                            <label><input type="checkbox" data-message-fact="location"> Где: Учебный город, улица Велосипедная, у дома7</label>
-                            <label><input type="checkbox" data-message-fact="event"> Что случилось: столкнулись два велосипеда</label>
-                            <label><input type="checkbox" data-message-fact="count"> Сколько пострадавших: двое</label>
-                        </fieldset>
-                        <button type="button" class="btn" data-track-label="emergency_example_feedback">Посмотреть сообщение и разбор</button>
-                        <div class="message-preview-feedback" aria-live="polite"></div>
-                        <p class="message-preview-source"><a href="https://60.mchs.gov.ru/deyatelnost/press-centr/novosti/5790783" target="_blank" rel="noopener noreferrer" data-track-label="emergency_example_source">Рекомендация МЧС о вызове экстренных служб (новая вкладка)</a></p>
-                    </details>
-                    <noscript><p>Пример сообщения: Учебный город, улица Велосипедная, у дома7. Столкнулись два велосипеда. Пострадавших двое. В реальном разговоре диспетчер уточнит необходимые сведения.</p></noscript>
-                </div>
             </div>
         </section>
 
@@ -460,6 +440,7 @@ if (!headers_sent()) {
                         Разберём, какие сведения передавать диспетчеру и прибывшим медикам,
                         а также какие обстоятельства происшествия важно зафиксировать.
                     </p>
+                    <p class="learning-source">Официальный материал для самостоятельного чтения: <a href="https://mchs.gov.ru/deyatelnost/bezopasnost-grazhdan/kak-pravilno-vyzvat-skoruyu_5" target="_blank" rel="noopener noreferrer" data-track-label="mchs_learning_source">МЧС России — «Как правильно вызвать скорую?» (откроется в новой вкладке)</a>.</p>
                 </div>
             </div>
         </section>
