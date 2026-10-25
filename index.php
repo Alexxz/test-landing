@@ -280,6 +280,10 @@ if (!headers_sent()) {
                     действовать, когда рядом нет медикаментов и оборудования. Каждый модуль включает
                     теорию, демонстрацию инструктора и практику участников.
                 </p>
+                <p class="program-download">
+                    <a href="documents/course-agenda.pdf" download="programma-kursa-15-dekabrya-2026.pdf" data-track-label="program_agenda_download">Скачать программу дня (PDF, 1 страница)</a><br>
+                    <small>Сохраните расписание, чтобы спланировать участие. Запись — через форму на сайте.</small>
+                </p>
                 <div class="program-list">
                     <article class="program-module">
                         <h3>10:00 – 11:00 · Оценка обстановки и безопасность</h3>
@@ -495,7 +499,7 @@ if (!headers_sent()) {
                 <p class="section-lead">
                     Выберите формат участия. Во все тарифы входят материалы, сертификат и доступ к памятке после курса.
                 </p>
-                <div class="pricing-grid pricing-primary-offer">
+                <div class="pricing-grid">
                     <article class="pricing-card">
                         <h3>Базовый</h3>
                         <div class="price">4 900 ₽</div>
@@ -506,10 +510,6 @@ if (!headers_sent()) {
                         </ul>
                         <button type="button" class="btn btn-register">Записаться</button>
                     </article>
-                </div>
-                <details class="pricing-secondary-options">
-                    <summary>Расширенный и корпоративный варианты</summary>
-                    <div class="pricing-grid">
                     <article class="pricing-card featured">
                         <h3>Расширенный</h3>
                         <div class="price">7 900 ₽</div>
@@ -530,8 +530,7 @@ if (!headers_sent()) {
                         </ul>
                         <button type="button" class="btn btn-register">Записаться</button>
                     </article>
-                    </div>
-                </details>
+                </div>
             </div>
         </section>
 

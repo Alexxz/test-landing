@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'e39_primary_offer_disclosure';
+    const variant = 'e40_portable_program_agenda';
     const pendingEvents = [];
     let exposed = false;
     const track = (name, properties = {}) => {
@@ -101,6 +101,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const trackingTimer = setInterval(flushTracking, 250);
     window.addEventListener('pagehide', () => clearInterval(trackingTimer), { once: true });
 
+    document.querySelector('[data-track-label="program_agenda_download"]')?.addEventListener('click', (event) => {
+        if (event.isTrusted) track('program_agenda_download_attempt', {source: 'program_agenda_download', step: 'native_link'});
+    });
+
     // Observe copy intent without reading clipboard data or selected text.
     document.addEventListener('copy', (event) => {
         const selection = window.getSelection?.();
@@ -131,29 +135,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }, { threshold: [0, 0.25] });
         legalObserver.observe(legalSection);
     }
-
-    // Availability/visibility telemetry for the primary-offer policy, never conversion.
-    (() => {
-        const options = document.querySelector('.pricing-secondary-options');
-        if (!options) return;
-        const observeOnce = (element, name, source, threshold) => {
-            if (!element || !('IntersectionObserver' in window)) return;
-            const observer = new IntersectionObserver((entries) => {
-                const visible = typeof element.checkVisibility === 'function'
-                    ? element.checkVisibility() : !element.closest('details:not([open])');
-                if (visible && entries.some(entry => entry.isIntersecting && entry.intersectionRatio >= threshold)) {
-                    track(name, {source, step: 'visible'});
-                    observer.disconnect();
-                }
-            }, {threshold: [threshold]});
-            observer.observe(element);
-        };
-        observeOnce(document.querySelector('.pricing-primary-offer .pricing-card'), 'pricing_primary_offer_view', 'base', .25);
-        observeOnce(options.querySelector('summary'), 'pricing_options_summary_view', 'options', .5);
-        options.addEventListener('toggle', () => {
-            track('pricing_options_state', {source: 'options', step: options.open ? 'open' : 'closed'});
-        });
-    })();
 
     const registrationSection = document.getElementById('registration');
     const form = document.getElementById('registration-form');
