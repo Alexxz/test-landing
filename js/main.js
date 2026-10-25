@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'e27_exact_base_price';
+    const variant = 'e28_purpose_default';
     const pendingEvents = [];
     let exposed = false;
     const track = (name, properties = {}) => {
@@ -115,6 +115,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('registration-form');
     const message = document.getElementById('form-message');
     const registerButtons = document.querySelectorAll('.btn-register');
+    const purposeField = form?.querySelector('[name="purpose"]');
+    const purposeHint = document.getElementById('purpose-default-hint');
+    const registrationLead = document.getElementById('registration-lead');
+    const defaultPurpose = 'Освоить навыки первой помощи';
+    let purposeEdited = Boolean(purposeField?.value);
+    let purposeDefaultApplied = false;
+    purposeField?.addEventListener('input', () => { purposeEdited = true; });
+    const purposeOrigin = () => purposeDefaultApplied && !purposeEdited && purposeField?.value === defaultPurpose
+        ? 'suggested_unchanged' : purposeEdited ? 'user_edited' : 'unclassified';
+    form?.addEventListener('reset', () => {
+        purposeEdited = false;
+        purposeDefaultApplied = false;
+        if (purposeHint) purposeHint.hidden = true;
+        if (registrationLead) registrationLead.textContent = 'Оставьте контакты и цель обучения — мы свяжемся с вами, подтвердим место и ответим на вопросы.';
+    });
 
     let pricingButtonIndex = 0;
     registerButtons.forEach((button) => {
@@ -127,6 +142,13 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             track('registration_cta', { source: button.dataset.trackLabel });
+            if (purposeField && !purposeEdited && !purposeDefaultApplied && !purposeField.value.trim()) {
+                purposeField.value = defaultPurpose;
+                purposeDefaultApplied = true;
+                if (purposeHint) purposeHint.hidden = false;
+                if (registrationLead) registrationLead.textContent = 'Укажите имя, телефон и e-mail — мы свяжемся с вами, подтвердим место и ответим на вопросы. Общую цель обучения можно изменить.';
+                track('purpose_default_applied', { source: button.dataset.trackLabel, step: 'site_suggestion' });
+            }
             registrationSection.scrollIntoView({ behavior: 'instant', block: 'start' });
             const nameField = form?.querySelector('[name="name"]');
             if (nameField) {
@@ -228,7 +250,8 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', async (event) => {
         event.preventDefault();
 
-        track('registration_submit');
+        const submittedPurposeOrigin = purposeOrigin();
+        track('registration_submit', { step: submittedPurposeOrigin });
         const submitButton = form.querySelector('button[type="submit"]');
         const formData = new FormData(form);
 
@@ -258,7 +281,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 message.className = 'form-message success';
             }
 
-            track('conversion_success', { source: 'registration' });
+            track('conversion_success', { source: 'registration', step: submittedPurposeOrigin });
             form.reset();
         } catch (error) {
             track('registration_error', { source: 'submit' });

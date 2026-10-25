@@ -215,7 +215,7 @@ if (!headers_sent()) {
                 Группа до 14 человек.
             </p>
             <div class="hero-action">
-                <p class="hero-price">Базовый курс — <strong>4 900 ₽</strong>. Полный день обучения.</p>
+                <p class="hero-price">Полный день обучения — от <strong>4 900 ₽</strong></p>
                 <button type="button" class="btn btn-register hero-register" data-track-label="hero_cta">Записаться на курс</button>
                 <p class="hero-action-note">Оставьте заявку — мы подтвердим место и ответим на вопросы.</p>
             </div>
@@ -534,8 +534,8 @@ if (!headers_sent()) {
                 <div class="registration-panel">
                     <h2 class="section-title">Записаться на курс</h2>
                     <p class="registration-recap">Практика на манекенах и в парах · До 14 человек в группе · Сертификат и памятка после курса</p>
-                    <p class="section-lead">
-                        Заполните 4 поля — мы свяжемся с вами, подтвердим место и ответим на вопросы.
+                    <p class="section-lead" id="registration-lead">
+                        Оставьте контакты и цель обучения — мы свяжемся с вами, подтвердим место и ответим на вопросы.
                     </p>
                     <form class="form-grid" id="registration-form" action="api/submit.php" method="post">
                         <label>
@@ -552,7 +552,8 @@ if (!headers_sent()) {
                         </label>
                         <label>
                             Для чего вам курс?
-                            <textarea name="purpose" required rows="2" placeholder="Например: для семьи, работы или путешествий"></textarea>
+                            <textarea name="purpose" required rows="2" placeholder="Например: для семьи, работы или путешествий" aria-describedby="purpose-default-hint"></textarea>
+                            <small id="purpose-default-hint" hidden>Подставлен общий вариант цели курса. При желании уточните его.</small>
                         </label>
                         <button type="submit" class="btn">Отправить заявку</button>
                     </form>
