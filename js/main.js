@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'rule_control_strict_baseline';
+    const variant = 'api09_phone_or_email_required';
     // API_ASSET_OBSERVER_BEGIN
-    const landingAssetBuild = 'bncafcammfpejbggcfcfflkjb';
+    const landingAssetBuild = 'bapglbmbolacmjpehlgkmddhc';
     /** Embed this reviewed helper into main.js; call after track and the compiler-injected const landingAssetBuild are defined.
      * Compiler contract: <meta name="landing-html-build" content="baaaaaaaaaaaaaaaaaaaaaaaa">;
      * CSS :root { --landing-css-build: "baaaaaaaaaaaaaaaaaaaaaaaa"; }.
@@ -221,6 +221,18 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!form) {
         return;
     }
+
+    // One real contact route is required; neither contact control alone is compulsory.
+    const contactPhone = form.querySelector('[name="phone"]');
+    const contactEmail = form.querySelector('[name="email"]');
+    const updateContactValidity = () => {
+        const missing = !contactPhone.value.trim() && !contactEmail.value.trim();
+        contactPhone.setCustomValidity(missing ? 'Укажите телефон или e-mail для связи.' : '');
+    };
+    contactPhone.addEventListener('input', updateContactValidity);
+    contactEmail.addEventListener('input', updateContactValidity);
+    form.addEventListener('reset', () => queueMicrotask(updateContactValidity));
+    updateContactValidity();
 
     if ('IntersectionObserver' in window) {
         const observer = new IntersectionObserver((entries) => {
