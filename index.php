@@ -197,7 +197,7 @@ if (!headers_sent()) {
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="landing-html-build" content="bojbflhikkeojpnpicihmnfff">
+    <meta name="landing-html-build" content="bfbnnhjbaijomlncdkbifbhob">
     <meta name="landing-request-id" content="<?= htmlspecialchars($landingRequestId, ENT_QUOTES, 'UTF-8') ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Первая помощь: практический курс для каждого</title>
@@ -544,31 +544,31 @@ if (!headers_sent()) {
                             Имя
                             <input type="text" name="name" required autocomplete="name" placeholder="Как к вам обращаться">
                         </label>
-                        <fieldset class="contact-components-ui" disabled>
-                            <legend>Телефон</legend>
-                            <label for="contact-mode">Код страны или полный номер</label>
-                            <select id="contact-mode" name="phone_mode_ui" required>
-                                <option value="">Выберите вариант</option>
-                                <option value="+7">Код +7</option>
-                                <option value="+1">Код +1</option>
-                                <option value="+44">Код +44</option>
-                                <option value="custom">Другой код</option>
-                                <option value="full">Ввести полный номер одной строкой</option>
-                            </select>
-                            <label class="component-custom" hidden>Ваш код страны<input type="tel" name="phone_custom_ui" disabled placeholder="Код с +"></label>
-                            <label class="component-part">Номер после кода<input type="tel" name="phone_national_ui" autocomplete="tel-national"></label>
-                            <label class="component-full" hidden>Полный телефон<input type="tel" name="phone_full_ui" autocomplete="tel" disabled></label>
-                            <button type="button" class="component-use-full">Использовать введённое как полный номер</button>
-                            <p class="component-preview" data-tracker-mask aria-live="polite">Код не выбран. Можно ввести полный номер одной строкой.</p>
-                        </fieldset>
-                        <noscript><label>
+                        <label>
                             Телефон
                             <input type="tel" name="phone" required autocomplete="tel" placeholder="+7 999 123-45-67">
-                        </label></noscript>
-                        <label>
+                        </label>
+                        <fieldset class="contact-components-ui" disabled>
+                            <legend>E-mail</legend>
+                            <label for="contact-mode">Домен или полный адрес</label>
+                            <select id="contact-mode" name="email_mode_ui" required>
+                                <option value="">Выберите вариант</option>
+                                <option value="gmail.com">@gmail.com</option>
+                                <option value="yandex.ru">@yandex.ru</option>
+                                <option value="mail.ru">@mail.ru</option>
+                                <option value="custom">Другой домен</option>
+                                <option value="full">Ввести полный адрес одной строкой</option>
+                            </select>
+                            <label class="component-custom" hidden>Ваш домен<input type="text" name="email_custom_ui" disabled placeholder="Домен после @"></label>
+                            <label class="component-part">Часть адреса до @<input type="text" name="email_local_ui" autocomplete="off" autocapitalize="none" spellcheck="false"></label>
+                            <label class="component-full" hidden>Полный e-mail<input type="email" name="email_full_ui" autocomplete="email" disabled></label>
+                            <button type="button" class="component-use-full">Использовать введённое как полный адрес</button>
+                            <p class="component-preview" data-tracker-mask aria-live="polite">Домен не выбран. Можно ввести полный адрес одной строкой.</p>
+                        </fieldset>
+                        <noscript><label>
                             E-mail
                             <input type="email" name="email" required autocomplete="email" placeholder="you@example.ru">
-                        </label>
+                        </label></noscript>
                         <label>
                             Для чего вам курс?
                             <textarea name="purpose" required rows="2" placeholder="Например: для семьи, работы или путешествий"></textarea>

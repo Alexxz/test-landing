@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'B1_explicit_phone_components';
+    const variant = 'B3_explicit_email_components';
     // API_ASSET_OBSERVER_BEGIN
-    const landingAssetBuild = 'bojbflhikkeojpnpicihmnfff';
+    const landingAssetBuild = 'bfbnnhjbaijomlncdkbifbhob';
     /** Embed this reviewed helper into main.js; call after track and the compiler-injected const landingAssetBuild are defined.
      * Compiler contract: <meta name="landing-html-build" content="baaaaaaaaaaaaaaaaaaaaaaaa">;
      * CSS :root { --landing-css-build: "baaaaaaaaaaaaaaaaaaaaaaaa"; }.
@@ -226,10 +226,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const values=[choice,part,custom,full];
         if (!values.every(value=>typeof value==='string')) return '';
         if (choice==='full') return full.trim();
-        const code=choice==='custom'?custom.trim():['+7','+1','+44'].includes(choice)?choice:'';
-        if (!code || !part.trim() || part.trim().startsWith('+') || (choice==='custom'&&!/^\+[0-9]+$/.test(code))) return '';
-        // Preserve entered national digits, zeros and extension text; never infer a country or strip trunk prefixes.
-        return code+' '+part.trim();
+        const domain=choice==='custom'?custom.trim():['gmail.com','yandex.ru','mail.ru'].includes(choice)?choice:'';
+        if (!domain || !part.trim() || part.includes('@') || domain.includes('@')) return '';
+        return part.trim()+'@'+domain;
     }
     // CONTACT_COMPONENT_SERIALIZER_END
 
@@ -326,12 +325,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const componentValue=contactValue();
         let validComponent=Boolean(componentValue);
+        const emailValidation=document.createElement('input');emailValidation.type='email';emailValidation.value=componentValue;
+        validComponent=validComponent&&emailValidation.checkValidity();
         if(!validComponent){componentChoice.setCustomValidity('Проверьте свой контакт или выберите ввод одной строкой.');componentChoice.reportValidity();return;}
         track('registration_submit');
         const submitButton = form.querySelector('button[type="submit"]');
         const formData = new FormData(form);
-        ["phone_mode_ui", "phone_national_ui", "phone_custom_ui", "phone_full_ui"].forEach(name=>formData.delete(name));
-        formData.set('phone',componentValue);
+        ["email_mode_ui", "email_local_ui", "email_custom_ui", "email_full_ui"].forEach(name=>formData.delete(name));
+        formData.set('email',componentValue);
 
         if (submitButton instanceof HTMLButtonElement) {
             submitButton.disabled = true;
