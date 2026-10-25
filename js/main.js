@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'rule_control_strict_baseline';
+    const variant = 'A1_review_before_final_application';
     // API_ASSET_OBSERVER_BEGIN
-    const landingAssetBuild = 'bncafcammfpejbggcfcfflkjb';
+    const landingAssetBuild = 'bppgbonjbcjigjpdkncholdgj';
     /** Embed this reviewed helper into main.js; call after track and the compiler-injected const landingAssetBuild are defined.
      * Compiler contract: <meta name="landing-html-build" content="baaaaaaaaaaaaaaaaaaaaaaaa">;
      * CSS :root { --landing-css-build: "baaaaaaaaaaaaaaaaaaaaaaaa"; }.
@@ -278,51 +278,63 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // A1: review uses the same four controls, with no extra named fields or defaults.
+    const submitButton = form.querySelector('button[type="submit"]');
+    const reviewNote = document.getElementById('registration-review-note');
+    const businessNames = ['name', 'phone', 'email', 'purpose'];
+    let reviewedSnapshot = null;
+    const snapshot = () => JSON.stringify(businessNames.map(name => [name, form.elements.namedItem(name).value]));
+    const showReviewState = (ready) => {
+        if (submitButton) submitButton.textContent = ready ? 'Подтвердить заявку' : 'Проверить заявку';
+        if (reviewNote) reviewNote.hidden = !ready;
+    };
+    form.addEventListener('input', (event) => {
+        if (!businessNames.includes(event.target.name)) return;
+        reviewedSnapshot = null;
+        showReviewState(false);
+    });
+    form.addEventListener('reset', () => {
+        reviewedSnapshot = null;
+        showReviewState(false);
+    });
     form.addEventListener('submit', async (event) => {
         event.preventDefault();
-
-        track('registration_submit');
-        const submitButton = form.querySelector('button[type="submit"]');
+        const sentSnapshot = snapshot();
+        const confirming = reviewedSnapshot === sentSnapshot;
         const formData = new FormData(form);
-
-        if (submitButton instanceof HTMLButtonElement) {
-            submitButton.disabled = true;
-        }
-
-        if (message) {
-            message.textContent = '';
-            message.className = 'form-message';
-        }
-
+        if (submitButton) submitButton.disabled = true;
+        if (message) { message.textContent = ''; message.className = 'form-message'; }
+        track(confirming ? 'registration_submit' : 'application_review_request');
         try {
-            const response = await fetch(form.action, {
-                method: 'POST',
-                body: formData,
+            const response = await fetch(confirming ? 'api/submit.php' : form.action, {
+                method: 'POST', body: formData, headers: {Accept: 'application/json'},
             });
-
             const data = await response.json();
-
-            if (!response.ok || !data.ok) {
-                throw new Error(data.error || 'Не удалось отправить заявку.');
+            if (!response.ok || (confirming ? data.ok !== true : data.review_ready !== true)) throw new Error(data.error || 'Не удалось обработать заявку.');
+            if (!confirming) {
+                const genuineEcho = data.review && businessNames.every(name =>
+                    typeof data.review[name] === 'string' && data.review[name] === formData.get(name).replace(/^[ \t\n\r\0\v]+|[ \t\n\r\0\v]+$/g, ''));
+                if (!genuineEcho) throw new Error('Не удалось проверить введённые данные.');
+                if (snapshot() !== sentSnapshot) throw new Error('Данные изменились. Проверьте заявку ещё раз.');
+                reviewedSnapshot = sentSnapshot;
+                showReviewState(true);
+                track('application_review_ready');
+                return;
             }
-
             if (message) {
                 message.textContent = 'Заявка успешно отправлена. Мы свяжемся с вами в ближайшее время.';
                 message.className = 'form-message success';
             }
-
-            track('conversion_success', { source: 'registration' });
+            track('conversion_success', {source: 'registration'});
             form.reset();
         } catch (error) {
-            track('registration_error', { source: 'submit' });
+            track('registration_error', {source: confirming ? 'submit' : 'review', reason: error instanceof Error ? error.message : 'unknown'});
             if (message) {
-                message.textContent = error instanceof Error ? error.message : 'Не удалось отправить заявку.';
+                message.textContent = error instanceof Error ? error.message : 'Не удалось обработать заявку.';
                 message.className = 'form-message error';
             }
         } finally {
-            if (submitButton instanceof HTMLButtonElement) {
-                submitButton.disabled = false;
-            }
+            if (submitButton) submitButton.disabled = false;
         }
     });
 });
