@@ -19,7 +19,7 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') === 'GET' && ($_GET['verify'] ?? '') === 
     exit;
 }
 // A1_SOURCE_VERIFICATION_END
-$wantsJson = str_contains($_SERVER['HTTP_ACCEPT'] ?? '', 'application/json');
+$wantsJson = ($_GET['response'] ?? '') === 'json' || str_contains($_SERVER['HTTP_ACCEPT'] ?? '', 'application/json');
 $values = [];
 $error = '';
 if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') {

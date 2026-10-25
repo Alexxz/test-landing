@@ -197,7 +197,7 @@ if (!headers_sent()) {
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="landing-html-build" content="balcjgbjfcompeaoepmjnaado">
+    <meta name="landing-html-build" content="bilegekbhcclhgbfljdffpnpe">
     <meta name="landing-request-id" content="<?= htmlspecialchars($landingRequestId, ENT_QUOTES, 'UTF-8') ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Первая помощь: практический курс для каждого</title>
