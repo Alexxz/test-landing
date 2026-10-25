@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'e41_compact_hero';
+    const variant = 'e42_question_led_headings';
     const pendingEvents = [];
     let exposed = false;
     const track = (name, properties = {}) => {
