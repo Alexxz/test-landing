@@ -202,6 +202,7 @@ if (!headers_sent()) {
     <title>Первая помощь: практический курс для каждого</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="api/visit.php" defer></script>
+    <script src="browser-context.php" defer></script>
     <script src="js/main.js" defer></script>
 </head>
 <body>
@@ -534,8 +535,8 @@ if (!headers_sent()) {
                 <div class="registration-panel">
                     <h2 class="section-title">Записаться на курс</h2>
                     <p class="registration-recap">Практика на манекенах и в парах · До 14 человек в группе · Сертификат и памятка после курса</p>
-                    <p class="section-lead" id="registration-lead">
-                        Оставьте контакты и цель обучения — мы свяжемся с вами, подтвердим место и ответим на вопросы.
+                    <p class="section-lead">
+                        Заполните 4 поля — мы свяжемся с вами, подтвердим место и ответим на вопросы.
                     </p>
                     <form class="form-grid" id="registration-form" action="api/submit.php" method="post">
                         <label>
@@ -552,8 +553,7 @@ if (!headers_sent()) {
                         </label>
                         <label>
                             Для чего вам курс?
-                            <textarea name="purpose" required rows="2" placeholder="Например: для семьи, работы или путешествий" aria-describedby="purpose-default-hint"></textarea>
-                            <small id="purpose-default-hint" hidden>Подставлен общий вариант цели курса. При желании уточните его.</small>
+                            <textarea name="purpose" required rows="2" placeholder="Например: для семьи, работы или путешествий"></textarea>
                         </label>
                         <button type="submit" class="btn">Отправить заявку</button>
                     </form>

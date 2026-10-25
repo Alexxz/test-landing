@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'e28_purpose_default';
+    const variant = 'e26_reading_measure';
     const pendingEvents = [];
     let exposed = false;
     const track = (name, properties = {}) => {
@@ -27,6 +27,27 @@ document.addEventListener('DOMContentLoaded', () => {
     if (/^[a-p]{24}$/.test(documentRequestId)) {
         track('document_request_context', { campaign: documentRequestId, source: 'main_document', step: 'v1' });
     }
+
+    // Insert inside the existing DOMContentLoaded closure after track() is defined.
+    // Own first-party browser-context observation only; never a persona or conversion.
+    (() => {
+        let campaign = 'unlinked';
+        let source = 'unavailable';
+        let step = 'not_observed';
+        try {
+            const requestId = document.querySelector('meta[name="landing-request-id"]')?.content || '';
+            if (/^[a-p]{24}$/.test(requestId)) campaign = requestId;
+        } catch (_) { /* Missing request linkage is explicit. */ }
+        try {
+            const context = window.landingBrowserContext;
+            if (context && typeof context.id === 'string' && /^[a-p]{24}$/.test(context.id)
+                && typeof context.created === 'boolean') {
+                source = context.id;
+                step = context.created ? 'new_cookie_emitted' : 'cookie_returned';
+            }
+        } catch (_) { /* A missing probe must not interrupt registration. */ }
+        track('browser_context_observed', { campaign, source, step });
+    })();
 
     // Technical observations only: window.name is NOT a Chrome profile name.
     // Enumerate matching own-property NAMES; never read those arbitrary property values/getters.
@@ -115,21 +136,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('registration-form');
     const message = document.getElementById('form-message');
     const registerButtons = document.querySelectorAll('.btn-register');
-    const purposeField = form?.querySelector('[name="purpose"]');
-    const purposeHint = document.getElementById('purpose-default-hint');
-    const registrationLead = document.getElementById('registration-lead');
-    const defaultPurpose = 'Освоить навыки первой помощи';
-    let purposeEdited = Boolean(purposeField?.value);
-    let purposeDefaultApplied = false;
-    purposeField?.addEventListener('input', () => { purposeEdited = true; });
-    const purposeOrigin = () => purposeDefaultApplied && !purposeEdited && purposeField?.value === defaultPurpose
-        ? 'suggested_unchanged' : purposeEdited ? 'user_edited' : 'unclassified';
-    form?.addEventListener('reset', () => {
-        purposeEdited = false;
-        purposeDefaultApplied = false;
-        if (purposeHint) purposeHint.hidden = true;
-        if (registrationLead) registrationLead.textContent = 'Оставьте контакты и цель обучения — мы свяжемся с вами, подтвердим место и ответим на вопросы.';
-    });
 
     let pricingButtonIndex = 0;
     registerButtons.forEach((button) => {
@@ -142,13 +148,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             track('registration_cta', { source: button.dataset.trackLabel });
-            if (purposeField && !purposeEdited && !purposeDefaultApplied && !purposeField.value.trim()) {
-                purposeField.value = defaultPurpose;
-                purposeDefaultApplied = true;
-                if (purposeHint) purposeHint.hidden = false;
-                if (registrationLead) registrationLead.textContent = 'Укажите имя, телефон и e-mail — мы свяжемся с вами, подтвердим место и ответим на вопросы. Общую цель обучения можно изменить.';
-                track('purpose_default_applied', { source: button.dataset.trackLabel, step: 'site_suggestion' });
-            }
             registrationSection.scrollIntoView({ behavior: 'instant', block: 'start' });
             const nameField = form?.querySelector('[name="name"]');
             if (nameField) {
@@ -250,8 +249,7 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', async (event) => {
         event.preventDefault();
 
-        const submittedPurposeOrigin = purposeOrigin();
-        track('registration_submit', { step: submittedPurposeOrigin });
+        track('registration_submit');
         const submitButton = form.querySelector('button[type="submit"]');
         const formData = new FormData(form);
 
@@ -281,7 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 message.className = 'form-message success';
             }
 
-            track('conversion_success', { source: 'registration', step: submittedPurposeOrigin });
+            track('conversion_success', { source: 'registration' });
             form.reset();
         } catch (error) {
             track('registration_error', { source: 'submit' });
