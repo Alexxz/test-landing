@@ -440,7 +440,6 @@ if (!headers_sent()) {
                         Разберём, какие сведения передавать диспетчеру и прибывшим медикам,
                         а также какие обстоятельства происшествия важно зафиксировать.
                     </p>
-                    <p class="learning-source">Официальный материал для самостоятельного чтения: <a href="https://mchs.gov.ru/deyatelnost/bezopasnost-grazhdan/kak-pravilno-vyzvat-skoruyu_5" target="_blank" rel="noopener noreferrer" data-track-label="mchs_learning_source">МЧС России — «Как правильно вызвать скорую?» (откроется в новой вкладке)</a>.</p>
                 </div>
             </div>
         </section>

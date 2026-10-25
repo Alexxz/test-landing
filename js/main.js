@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'e51_inspectable_learning_source';
+    const variant = 'e26_reading_measure';
     const pendingEvents = [];
     let exposed = false;
     const track = (name, properties = {}) => {
