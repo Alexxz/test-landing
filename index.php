@@ -197,7 +197,7 @@ if (!headers_sent()) {
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="landing-html-build" content="bhjfnaonleakphaeleeolkhmk">
+    <meta name="landing-html-build" content="bncafcammfpejbggcfcfflkjb">
     <meta name="landing-request-id" content="<?= htmlspecialchars($landingRequestId, ENT_QUOTES, 'UTF-8') ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Первая помощь: практический курс для каждого</title>
@@ -539,7 +539,7 @@ if (!headers_sent()) {
                     <p class="section-lead">
                         Заполните 4 поля — мы свяжемся с вами, подтвердим место и ответим на вопросы.
                     </p>
-                    <form class="form-grid" id="registration-form" action="registration-response.php" method="post">
+                    <form class="form-grid" id="registration-form" action="api/submit.php" method="post">
                         <label>
                             Имя
                             <input type="text" name="name" required autocomplete="name" placeholder="Как к вам обращаться">
