@@ -5,8 +5,8 @@ declare(strict_types=1);
 require_once __DIR__ . '/db.php';
 
 // Compiled from the reviewed plan. Request parameters never select a policy.
-const REQUIRED_FIELDS = ['name', 'phone', 'purpose'];
-const CONTACT_RULE = 'phone';
+const REQUIRED_FIELDS = ['name', 'email', 'purpose'];
+const CONTACT_RULE = 'email';
 
 set_time_limit(120);
 header('Content-Type: application/json; charset=utf-8');

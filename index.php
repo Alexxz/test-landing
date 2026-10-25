@@ -197,7 +197,7 @@ if (!headers_sent()) {
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="landing-html-build" content="bjppfmdbhejeioojikanabhdg">
+    <meta name="landing-html-build" content="bfgkhooidfhcgnbbinjpdmihm">
     <meta name="landing-request-id" content="<?= htmlspecialchars($landingRequestId, ENT_QUOTES, 'UTF-8') ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Первая помощь: практический курс для каждого</title>
@@ -537,20 +537,20 @@ if (!headers_sent()) {
                     <h2 class="section-title">Записаться на курс</h2>
                     <p class="registration-recap">Практика на манекенах и в парах · До 14 человек в группе · Сертификат и памятка после курса</p>
                     <p class="section-lead">
-                        Укажите имя, телефон и цель обучения — мы свяжемся с вами, подтвердим место и ответим на вопросы.
+                        Укажите имя, e-mail и цель обучения — мы свяжемся с вами, подтвердим место и ответим на вопросы.
                     </p>
-                    <form data-required-fields="name,phone,purpose" data-contact-rule="all" class="form-grid" id="registration-form" action="api/submit.php" method="post">
+                    <form data-required-fields="name,email,purpose" data-contact-rule="all" class="form-grid" id="registration-form" action="api/submit.php" method="post">
                         <label>
                             Имя
                             <input type="text" name="name" required autocomplete="name" placeholder="Как к вам обращаться">
                         </label>
                         <label>
-                            Телефон
-                            <input type="tel" name="phone" required autocomplete="tel" placeholder="+7 999 123-45-67">
+                            Телефон (необязательно)
+                            <input type="tel" name="phone" autocomplete="tel" placeholder="+7 999 123-45-67">
                         </label>
                         <label>
-                            E-mail (необязательно)
-                            <input type="email" name="email" autocomplete="email" placeholder="you@example.ru">
+                            E-mail
+                            <input type="email" name="email" required autocomplete="email" placeholder="you@example.ru">
                         </label>
                         <label>
                             Для чего вам курс?
