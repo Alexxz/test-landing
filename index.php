@@ -210,8 +210,6 @@ if (!headers_sent()) {
         <div class="container hero-content">
             <span class="hero-badge">Офлайн-курс · 15 декабря 2026</span>
             <h1>Первая помощь для семьи, работы и поездок</h1>
-            <div class="hero-practice-layout">
-                <div class="hero-practice-copy">
             <p class="hero-text">
                 Очный курс в Москве. На манекенах и в парах отработаете сердечно-лёгочную
                 реанимацию для взрослых, остановку кровотечения и помощь при травмах.
@@ -221,12 +219,6 @@ if (!headers_sent()) {
                 <p class="hero-price">Полный день обучения — от <strong>4 900 ₽</strong></p>
                 <button type="button" class="btn btn-register hero-register" data-track-label="hero_cta">Записаться на курс</button>
                 <p class="hero-action-note">Оставьте заявку — мы подтвердим место и ответим на вопросы.</p>
-            </div>
-                </div>
-                <figure class="hero-practice-figure">
-                    <img src="images/cpr-training.jpg" width="1600" height="1067" alt="Пример тренировки сердечно-лёгочной реанимации на манекене">
-                    <figcaption>Пример отработки СЛР на манекене.</figcaption>
-                </figure>
             </div>
             <div class="meta-grid">
                 <div class="meta-card">
@@ -541,7 +533,8 @@ if (!headers_sent()) {
         <section class="section registration-section" id="registration">
             <div class="container">
                 <div class="registration-panel">
-                    <h2 class="section-title">Записаться на курс</h2>
+                    <button type="button" class="registration-layer-close" aria-label="Закрыть форму записи" hidden>Закрыть ×</button>
+                    <h2 class="section-title" id="registration-layer-title">Записаться на курс</h2>
                     <p class="registration-recap">Практика на манекенах и в парах · До 14 человек в группе · Сертификат и памятка после курса</p>
                     <p class="section-lead">
                         Заполните 4 поля — мы свяжемся с вами, подтвердим место и ответим на вопросы.

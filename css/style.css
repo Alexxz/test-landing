@@ -497,10 +497,32 @@ img {
     }
 }
 
-/* Existing training illustration at the first course decision point. */
-.hero-practice-layout { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 28px; align-items: center; }
-.hero-practice-copy { min-width: 0; }
-.hero-practice-figure { margin: 0; }
-.hero-practice-figure img { width: 100%; height: auto; aspect-ratio: 1600 / 1067; border-radius: 12px; }
-.hero-practice-figure figcaption { margin-top: 10px; font-size: .9rem; line-height: 1.45; }
-@media (max-width: 900px) { .hero-practice-layout { grid-template-columns: minmax(0, 1fr); gap: 12px; } }
+/* Candidate: preserve page context while the original registration form opens. */
+.registration-layer-close[hidden] { display: none; }
+.registration-layer-close {
+    display: block;
+    margin: 0 0 16px auto;
+    padding: 10px 14px;
+    font: inherit;
+    color: #2c2c2c;
+    background: #fff;
+    border: 1px solid #777;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.registration-section.registration-layer-open {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    padding: 24px 0;
+    height: 100%;
+    height: 100dvh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    background: rgba(0, 0, 0, .58);
+}
+.registration-layer-open .registration-panel { position: relative; }
+@media (max-width: 560px) {
+    .registration-section.registration-layer-open { padding: 12px 0; }
+    .registration-layer-open .container { width: 100%; padding: 0 12px; }
+}
