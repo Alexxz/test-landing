@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'B2_explicit_structured_purpose';
+    const variant = 'rule_control_strict_baseline';
     // API_ASSET_OBSERVER_BEGIN
-    const landingAssetBuild = 'bihcainkgladfknopanjcmmpa';
+    const landingAssetBuild = 'bncafcammfpejbggcfcfflkjb';
     /** Embed this reviewed helper into main.js; call after track and the compiler-injected const landingAssetBuild are defined.
      * Compiler contract: <meta name="landing-html-build" content="baaaaaaaaaaaaaaaaaaaaaaaa">;
      * CSS :root { --landing-css-build: "baaaaaaaaaaaaaaaaaaaaaaaa"; }.
@@ -222,39 +222,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    // B2_PURPOSE_SERIALIZER_BEGIN
-    function selectedPurposeValue(selection, otherText) {
-        const offered = ['Для семьи', 'Для работы', 'Для поездок'];
-        if (offered.includes(selection)) return selection;
-        if (selection === 'other' && typeof otherText === 'string') return otherText.trim();
-        return '';
-    }
-    function writeChosenPurpose(formData, selection, otherText) {
-        const purpose = selectedPurposeValue(selection, otherText);
-        if (!purpose) return false;
-        formData.delete('purpose_ui');
-        formData.delete('purpose_other_ui');
-        formData.set('purpose', purpose);
-        return true;
-    }
-    // B2_PURPOSE_SERIALIZER_END
-
-    const purposeUI = form.querySelector('.purpose-choice-ui');
-    const purposeChoice = form.querySelector('[name="purpose_ui"]');
-    const purposeOther = form.querySelector('[name="purpose_other_ui"]');
-    const updatePurposeChoice = () => {
-        const other = purposeChoice.value === 'other';
-        purposeOther.closest('label').hidden = !other;
-        purposeOther.disabled = !other;
-        purposeOther.required = other;
-        purposeChoice.setCustomValidity('');
-    };
-    purposeUI.disabled = false;
-    purposeChoice.addEventListener('change', updatePurposeChoice);
-    purposeOther.addEventListener('input', () => purposeChoice.setCustomValidity(''));
-    form.addEventListener('reset', () => queueMicrotask(updatePurposeChoice));
-    updatePurposeChoice();
-
     if ('IntersectionObserver' in window) {
         const observer = new IntersectionObserver((entries) => {
             if (entries.some((entry) => entry.isIntersecting)) {
@@ -313,17 +280,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     form.addEventListener('submit', async (event) => {
         event.preventDefault();
-        if (!form.reportValidity()) return;
-        if (!selectedPurposeValue(purposeChoice.value, purposeOther.value)) {
-            purposeChoice.setCustomValidity('Выберите цель обучения или опишите другую цель.');
-            purposeChoice.reportValidity();
-            return;
-        }
 
         track('registration_submit');
         const submitButton = form.querySelector('button[type="submit"]');
         const formData = new FormData(form);
-        if (!writeChosenPurpose(formData, purposeChoice.value, purposeOther.value)) return;
 
         if (submitButton instanceof HTMLButtonElement) {
             submitButton.disabled = true;
