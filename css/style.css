@@ -320,7 +320,7 @@ img {
     box-shadow: 0 10px 24px rgba(45, 52, 54, 0.12);
 }
 
-.registration-trigger {
+.btn-register {
     width: 100%;
 }
 
@@ -498,4 +498,4 @@ img {
 }
 
 /* Nonvisual compiled asset identity; never referenced by visual rules. */
-:root { --landing-css-build: "bdgcfhgnckhcldibihjkfdoal"; }
+:root { --landing-css-build: "bncafcammfpejbggcfcfflkjb"; }
