@@ -497,4 +497,10 @@ img {
     }
 }
 
-.organizer-identity { margin: 0 0 12px; font-size: 1rem; color: var(--heading); font-weight: 600; }
+/* Existing training illustration at the first course decision point. */
+.hero-practice-layout { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 28px; align-items: center; }
+.hero-practice-copy { min-width: 0; }
+.hero-practice-figure { margin: 0; }
+.hero-practice-figure img { width: 100%; height: auto; aspect-ratio: 1600 / 1067; border-radius: 12px; }
+.hero-practice-figure figcaption { margin-top: 10px; font-size: .9rem; line-height: 1.45; }
+@media (max-width: 900px) { .hero-practice-layout { grid-template-columns: minmax(0, 1fr); gap: 12px; } }
