@@ -497,14 +497,5 @@ img {
     }
 }
 
-/* Only the waived contact field's new controls; all other layout and styling unchanged. */
-.contact-components-ui { min-width: 0; margin: 0; padding: 12px; border: 1px solid #d8d2cb; }
-.contact-components-ui label { display: block; margin: 8px 0; }
-.contact-components-ui select { width: 100%; min-height: 44px; padding: 8px; font: inherit; }
-.contact-components-ui input { min-height: 44px; }
-.contact-components-ui button { max-width: 100%; min-height: 44px; padding: 8px; font: inherit; white-space: normal; }
-.contact-components-ui label[hidden] { display: none; }
-.component-preview { margin: 8px 0 0; overflow-wrap: anywhere; }
-
 /* Nonvisual compiled asset identity; never referenced by visual rules. */
-:root { --landing-css-build: "bfbnnhjbaijomlncdkbifbhob"; }
+:root { --landing-css-build: "bncafcammfpejbggcfcfflkjb"; }
