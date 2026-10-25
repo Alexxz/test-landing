@@ -197,7 +197,7 @@ if (!headers_sent()) {
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="landing-html-build" content="bipphpmljclklfjhjfdcjnihl">
+    <meta name="landing-html-build" content="bihcainkgladfknopanjcmmpa">
     <meta name="landing-request-id" content="<?= htmlspecialchars($landingRequestId, ENT_QUOTES, 'UTF-8') ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Первая помощь: практический курс для каждого</title>
@@ -244,38 +244,6 @@ if (!headers_sent()) {
     </header>
 
     <main>
-        <section class="section registration-section" id="registration">
-            <div class="container">
-                <div class="registration-panel">
-                    <h2 class="section-title">Записаться на курс</h2>
-                    <p class="registration-recap">Практика на манекенах и в парах · До 14 человек в группе · Сертификат и памятка после курса</p>
-                    <p class="section-lead">
-                        Заполните 4 поля — мы свяжемся с вами, подтвердим место и ответим на вопросы.
-                    </p>
-                    <form class="form-grid" id="registration-form" action="api/submit.php" method="post">
-                        <label>
-                            Имя
-                            <input type="text" name="name" required autocomplete="name" placeholder="Как к вам обращаться">
-                        </label>
-                        <label>
-                            Телефон
-                            <input type="tel" name="phone" required autocomplete="tel" placeholder="+7 999 123-45-67">
-                        </label>
-                        <label>
-                            E-mail
-                            <input type="email" name="email" required autocomplete="email" placeholder="you@example.ru">
-                        </label>
-                        <label>
-                            Для чего вам курс?
-                            <textarea name="purpose" required rows="2" placeholder="Например: для семьи, работы или путешествий"></textarea>
-                        </label>
-                        <button type="submit" class="btn">Отправить заявку</button>
-                    </form>
-                    <p class="form-message" id="form-message" aria-live="polite"></p>
-                </div>
-            </div>
-        </section>
-
         <section class="section">
             <div class="container">
                 <h2 class="section-title">О курсе</h2>
@@ -563,6 +531,50 @@ if (!headers_sent()) {
             </div>
         </section>
 
+        <section class="section registration-section" id="registration">
+            <div class="container">
+                <div class="registration-panel">
+                    <h2 class="section-title">Записаться на курс</h2>
+                    <p class="registration-recap">Практика на манекенах и в парах · До 14 человек в группе · Сертификат и памятка после курса</p>
+                    <p class="section-lead">
+                        Укажите имя, телефон, e-mail и выберите цель обучения — мы свяжемся с вами, подтвердим место и ответим на вопросы.
+                    </p>
+                    <form class="form-grid" id="registration-form" action="api/submit.php" method="post">
+                        <label>
+                            Имя
+                            <input type="text" name="name" required autocomplete="name" placeholder="Как к вам обращаться">
+                        </label>
+                        <label>
+                            Телефон
+                            <input type="tel" name="phone" required autocomplete="tel" placeholder="+7 999 123-45-67">
+                        </label>
+                        <label>
+                            E-mail
+                            <input type="email" name="email" required autocomplete="email" placeholder="you@example.ru">
+                        </label>
+                        <fieldset class="purpose-choice-ui" disabled>
+                            <legend>Для чего вам курс?</legend>
+                            <label for="purpose-choice">Выберите цель обучения</label>
+                            <select id="purpose-choice" name="purpose_ui" required>
+                                <option value="">Выберите вариант</option>
+                                <option value="Для семьи">Для семьи</option>
+                                <option value="Для работы">Для работы</option>
+                                <option value="Для поездок">Для поездок</option>
+                                <option value="other">Другая цель</option>
+                            </select>
+                            <label class="purpose-choice-other" hidden>
+                                Ваша цель обучения
+                                <textarea name="purpose_other_ui" rows="2" disabled></textarea>
+                            </label>
+                            <p>Выберите подходящий вариант или опишите другую цель.</p>
+                        </fieldset>
+                        <noscript><label>Для чего вам курс?<textarea name="purpose" required rows="2" placeholder="Например: для семьи, работы или поездок"></textarea></label></noscript>
+                        <button type="submit" class="btn">Отправить заявку</button>
+                    </form>
+                    <p class="form-message" id="form-message" aria-live="polite"></p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="site-footer">
