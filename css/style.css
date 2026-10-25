@@ -496,3 +496,31 @@ img {
         max-width: none;
     }
 }
+
+/* e46: one complete-day map; all original detailed modules remain visible. */
+.day-overview {
+    margin: 0 0 24px;
+}
+.day-overview h3 {
+    margin: 0 0 12px;
+}
+.day-overview-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.day-overview-list li {
+    display: grid;
+    grid-template-columns: 9rem minmax(0, 1fr);
+    gap: 8px 16px;
+    padding: 6px 0;
+}
+.day-overview-time {
+    white-space: nowrap;
+}
+@media (max-width: 560px) {
+    .day-overview-list li {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
