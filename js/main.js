@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'e49_voluntary_fit_checklist';
+    const variant = 'e50_emergency_message_preview';
     const pendingEvents = [];
     let exposed = false;
     const track = (name, properties = {}) => {
@@ -100,6 +100,37 @@ document.addEventListener('DOMContentLoaded', () => {
     flushTracking();
     const trackingTimer = setInterval(flushTracking, 250);
     window.addEventListener('pagehide', () => clearInterval(trackingTimer), { once: true });
+
+
+    // MESSAGE_PREVIEW_PURE_BEGIN
+    function landingMessagePreview(selected) {
+        const facts = [
+            {id:'location',label:'места происшествия',text:'Учебный город, улица Велосипедная, у дома7.'},
+            {id:'event',label:'описания события',text:'Столкнулись два велосипеда.'},
+            {id:'count',label:'числа пострадавших',text:'Пострадавших двое.'}
+        ];
+        const known = new Set(selected);
+        const missing = facts.filter(fact=>!known.has(fact.id));
+        return {
+            message:facts.filter(fact=>known.has(fact.id)).map(fact=>fact.text).join(' '),
+            missing:missing.map(fact=>fact.id),
+            feedback:missing.length
+                ? 'Добавьте известные сведения: '+missing.map(fact=>fact.label).join(', ')+'.'
+                : 'В сообщении есть все три факта примера: место, событие и число пострадавших.',
+            context:'В реальном разговоре диспетчер уточнит необходимые сведения. Отвечайте на его вопросы и дождитесь завершения разговора диспетчером.'
+        };
+    }
+    // MESSAGE_PREVIEW_PURE_END
+    const messagePreview=document.querySelector('.message-preview');
+    messagePreview?.querySelector('[data-track-label="emergency_example_feedback"]')?.addEventListener('click',()=>{
+        const selected=[...messagePreview.querySelectorAll('[data-message-fact]:checked')].map(input=>input.dataset.messageFact);
+        const result=landingMessagePreview(selected);
+        const region=messagePreview.querySelector('.message-preview-feedback');
+        region.replaceChildren();
+        for(const text of [result.message ? 'Ваш вариант сообщения: '+result.message : 'Выберите сведения для сообщения.',result.feedback,result.context]) {
+            const paragraph=document.createElement('p');paragraph.textContent=text;region.append(paragraph);
+        }
+    });
 
     // Observe copy intent without reading clipboard data or selected text.
     document.addEventListener('copy', (event) => {
