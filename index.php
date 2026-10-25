@@ -1,7 +1,203 @@
+<?php
+/* LANDING_REQUEST_CONTEXT_V1_BEGIN — embed verbatim before the existing HTML. */
+declare(strict_types=1);
+
+function landingContextIsCredential(string $name): bool
+{
+    $name = strtolower(str_replace('-', '_', $name));
+    if (in_array($name, ['bot_session_id', 'profile', 'profile_id', 'persona', 'persona_id'], true)) {
+        return false;
+    }
+    return in_array($name, [
+        'authorization', 'proxy_authorization', 'password', 'passwd', 'pwd',
+        'auth', 'auth_token', 'access_token', 'refresh_token', 'id_token',
+        'api_key', 'csrf_token', 'csrftoken', 'xsrf_token', 'token',
+        'session', 'sessionid', 'session_id', 'phpsessid',
+        'x_api_key', 'x_auth_token', 'x_access_token', 'x_session_token',
+        'x_site_key', 'x_csrf_token', 'x_xsrf_token',
+        strtolower(session_name()),
+    ], true);
+}
+
+function landingContextSanitize($value, int $depth = 0)
+{
+    if ($depth > 8) {
+        return '[DEPTH_LIMIT]';
+    }
+    if (is_array($value)) {
+        $clean = [];
+        $count = 0;
+        foreach ($value as $key => $item) {
+            if (++$count > 256) {
+                $clean['__omitted_items'] = count($value) - 256;
+                break;
+            }
+            $clean[$key] = landingContextIsCredential((string) $key)
+                ? '[REDACTED]' : landingContextSanitize($item, $depth + 1);
+        }
+        return $clean;
+    }
+    if (is_string($value)) {
+        // Preserve useful bot-profile JSON while redacting nested credential fields.
+        if (strlen($value) <= 32768 && preg_match('/^\s*[\[{]/', $value)) {
+            $decoded = json_decode($value, true);
+            if (is_array($decoded) && json_last_error() === JSON_ERROR_NONE) {
+                return landingContextSanitize($decoded, $depth + 1);
+            }
+        }
+        return strlen($value) > 32768
+            ? substr($value, 0, 32768) . '[VALUE_LIMIT]' : $value;
+    }
+    return is_scalar($value) || $value === null ? $value : '[UNSUPPORTED_TYPE]';
+}
+
+function landingContextSanitizeUrl(string $value): string
+{
+    if ($value === '') {
+        return '';
+    }
+    // Keep raw URI/referrer query data except known credentials; no broad profile filtering.
+    $value = preg_replace('~^(https?://)[^/@\s]+@~i', '$1', $value) ?? '';
+    $value = preg_replace_callback('/([?&#;])([^=&#;]+)=([^&#;]*)/', static function (array $match): string {
+        $keyParts = preg_split('/[\[\]]+/', urldecode($match[2]), -1, PREG_SPLIT_NO_EMPTY) ?: [];
+        foreach ($keyParts as $keyPart) {
+            if (landingContextIsCredential($keyPart)) {
+                return $match[1] . $match[2] . '=[REDACTED]';
+            }
+        }
+        $decodedValue = urldecode($match[3]);
+        if (strlen($decodedValue) <= 32768 && preg_match('/^\s*[\[{]/', $decodedValue)) {
+            $decoded = json_decode($decodedValue, true);
+            if (is_array($decoded) && json_last_error() === JSON_ERROR_NONE) {
+                $clean = landingContextSanitize($decoded);
+                if ($clean !== $decoded) {
+                    $cleanJson = json_encode($clean, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_INVALID_UTF8_SUBSTITUTE);
+                    return $match[1] . $match[2] . '=' . rawurlencode((string) $cleanJson);
+                }
+            }
+        }
+        return $match[0];
+    }, $value) ?? '';
+    return strlen($value) > 32768 ? substr($value, 0, 32768) . '[VALUE_LIMIT]' : $value;
+}
+
+$landingRequestId = '';
+$landingSourceSha256 = '';
+$landingRequestContextLogged = false;
+try {
+    $landingRequestId = strtr(bin2hex(random_bytes(12)), '0123456789abcdef', 'abcdefghijklmnop');
+    $landingSourceSha256 = (string) @hash_file('sha256', __FILE__);
+    $headers = function_exists('getallheaders') ? getallheaders() : [];
+    if (!is_array($headers)) {
+        $headers = [];
+    }
+    if (!$headers) {
+        foreach ($_SERVER as $key => $value) {
+            if (strpos((string) $key, 'HTTP_') === 0) {
+                $headers[str_replace('_', '-', substr((string) $key, 5))] = $value;
+            }
+        }
+    }
+    $cleanHeaders = [];
+    foreach ($headers as $name => $value) {
+        $lowerName = strtolower((string) $name);
+        if ($lowerName === 'cookie') {
+            $cleanHeaders[$name] = '[STORED_SEPARATELY_WITH_CREDENTIAL_REDACTION]';
+        } elseif (landingContextIsCredential((string) $name)) {
+            $cleanHeaders[$name] = '[REDACTED]';
+        } elseif ($lowerName === 'referer' || $lowerName === 'referrer') {
+            $cleanHeaders[$name] = landingContextSanitizeUrl((string) $value);
+        } else {
+            $cleanHeaders[$name] = landingContextSanitize($value);
+        }
+    }
+    $record = [
+        'version' => 1,
+        'request_id' => $landingRequestId,
+        'time_ms' => (int) round(microtime(true) * 1000),
+        'source_sha256' => $landingSourceSha256,
+        'method' => (string) ($_SERVER['REQUEST_METHOD'] ?? ''),
+        'request_uri' => landingContextSanitizeUrl((string) ($_SERVER['REQUEST_URI'] ?? '')),
+        'get' => landingContextSanitize($_GET),
+        'remote_addr' => (string) ($_SERVER['REMOTE_ADDR'] ?? ''),
+        'forwarded_for' => (string) ($_SERVER['HTTP_X_FORWARDED_FOR'] ?? ''),
+        'referer' => landingContextSanitizeUrl((string) ($_SERVER['HTTP_REFERER'] ?? '')),
+        'headers' => $cleanHeaders,
+        'cookies' => landingContextSanitize($_COOKIE),
+        'credential_values_redacted' => true,
+    ];
+    $json = json_encode($record, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_INVALID_UTF8_SUBSTITUTE);
+    if (!is_string($json)) {
+        throw new RuntimeException('Context encoding failed');
+    }
+    if (strlen($json) > 262144) {
+        $json = (string) json_encode([
+            'version' => 1, 'request_id' => $landingRequestId,
+            'time_ms' => $record['time_ms'], 'source_sha256' => $landingSourceSha256,
+            'record_omitted' => 'size_limit', 'original_bytes' => strlen($json),
+        ]);
+    }
+    $privateDir = sys_get_temp_dir() . '/landing-request-context-v1';
+    $oldUmask = umask(0077);
+    try {
+        if (!is_dir($privateDir) && !@mkdir($privateDir, 0700, true) && !is_dir($privateDir)) {
+            throw new RuntimeException('Context directory unavailable');
+        }
+        if (is_link($privateDir)) {
+            throw new RuntimeException('Context directory must not be a symlink');
+        }
+        $logPath = $privateDir . '/requests.jsonl';
+        if (is_link($logPath)) {
+            throw new RuntimeException('Context log must not be a symlink');
+        }
+        $handle = @fopen($logPath, 'ab');
+        if ($handle === false) {
+            throw new RuntimeException('Context log unavailable');
+        }
+        try {
+            @chmod($privateDir, 0700);
+            @chmod($logPath, 0600);
+            if (!flock($handle, LOCK_EX)) {
+                throw new RuntimeException('Context log lock unavailable');
+            }
+            try {
+                $line = $json . "\n";
+                $written = 0;
+                while ($written < strlen($line)) {
+                    $count = fwrite($handle, substr($line, $written));
+                    if ($count === false || $count === 0) {
+                        throw new RuntimeException('Context write failed');
+                    }
+                    $written += $count;
+                }
+                fflush($handle);
+                $landingRequestContextLogged = true;
+            } finally {
+                flock($handle, LOCK_UN);
+            }
+        } finally {
+            fclose($handle);
+        }
+    } finally {
+        umask($oldUmask);
+    }
+} catch (Throwable $error) {
+    // Measurement is fail-open: no context, exception text or request values enter HTML.
+}
+if (!headers_sent()) {
+    if (preg_match('/^[a-f0-9]{64}$/', $landingSourceSha256)) {
+        header('X-Landing-Source-SHA256: ' . $landingSourceSha256);
+    }
+    header('X-Landing-Context-Logged: ' . ($landingRequestContextLogged ? '1' : '0'));
+    header('Cache-Control: no-store');
+}
+/* LANDING_REQUEST_CONTEXT_V1_END */
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="landing-request-id" content="<?= htmlspecialchars($landingRequestId, ENT_QUOTES, 'UTF-8') ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Первая помощь: практический курс для каждого</title>
     <link rel="stylesheet" href="css/style.css">
@@ -374,7 +570,7 @@
 
     <button type="button" class="btn btn-register floating-register" data-track-label="floating_cta" hidden>Записаться на курс</button>
 
-    <script defer src="https://vps.alexxz.ru/tracker/static/tracker.js"
+    <script defer src="https://vps.alexxz.ru/tracker/static/tracker.js?v=20261025-referrer-empty-5"
             data-site-key="fsGaFTXh1jtgWDGeo1l73o_tuSgjK63jy8hpt2rS5YU"
             data-start="auto"></script>
 

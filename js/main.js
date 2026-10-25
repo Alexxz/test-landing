@@ -21,6 +21,60 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
+    // Insert inside the existing DOMContentLoaded closure after track() is defined.
+    // Only an opaque request ID enters tracker events; raw context stays behind admin auth.
+    const documentRequestId = document.querySelector('meta[name="landing-request-id"]')?.content || '';
+    if (/^[a-p]{24}$/.test(documentRequestId)) {
+        track('document_request_context', { campaign: documentRequestId, source: 'main_document', step: 'v1' });
+    }
+
+    // Technical observations only: window.name is NOT a Chrome profile name.
+    // Enumerate matching own-property NAMES; never read those arbitrary property values/getters.
+    (() => {
+        const campaign = /^[a-p]{24}$/.test(documentRequestId) ? documentRequestId : 'unlinked';
+        const send = (name, source, step) => track(name, { campaign, source, step });
+        const read = (getter) => {
+            try { return getter(); } catch (_) { return undefined; }
+        };
+        const safeScalar = (name, source, value) => {
+            if (typeof value !== 'string' || !value) {
+                send(name, `${source}_unavailable`, 'not_transmitted');
+                return;
+            }
+            if (!/^[A-Za-z0-9_:./-]+$/.test(value) || (value.match(/\d/g) || []).length >= 7) {
+                send(name, `${source}_unsupported`, 'not_transmitted');
+                return;
+            }
+            send(name, value.length > 100 ? `${source}_truncated` : source, value.slice(0, 100));
+        };
+        const webdriver = read(() => navigator.webdriver);
+        send('browser_automation_state', 'webdriver', webdriver === true ? 'true' : webdriver === false ? 'false' : 'unavailable');
+        safeScalar('browser_language', 'navigator_language', read(() => navigator.language));
+        safeScalar('browser_platform', 'navigator_platform', read(() => navigator.platform));
+        safeScalar('browser_timezone', 'intl_timezone', read(() => Intl.DateTimeFormat().resolvedOptions().timeZone));
+        const windowName = read(() => window.name);
+        if (windowName === '') {
+            send('browser_window_name', 'empty', 'not_transmitted');
+        } else if (typeof windowName === 'string') {
+            safeScalar('browser_window_name', 'nonempty', windowName);
+        } else {
+            send('browser_window_name', 'unavailable', 'not_transmitted');
+        }
+        const names = read(() => Object.getOwnPropertyNames(window));
+        if (Array.isArray(names)) {
+            const matches = names.filter((name) => /mcp|playwright|puppeteer|webdriver|automation|profile/i.test(name));
+            send('browser_window_name_inventory', 'matching_own_property_names', matches.length);
+            for (const name of matches.slice(0, 16)) {
+                safeScalar('browser_window_property_name', 'own_property_name_only', name);
+            }
+            if (matches.length > 16) {
+                send('browser_window_name_inventory', 'names_omitted_by_limit', matches.length - 16);
+            }
+        } else {
+            send('browser_window_name_inventory', 'unavailable', 'not_transmitted');
+        }
+    })();
+
     // The external deferred tracker can initialize after this file.
     flushTracking();
     const trackingTimer = setInterval(flushTracking, 250);
