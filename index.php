@@ -197,7 +197,7 @@ if (!headers_sent()) {
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="landing-html-build" content="bncafcammfpejbggcfcfflkjb">
+    <meta name="landing-html-build" content="bfbnnhjbaijomlncdkbifbhob">
     <meta name="landing-request-id" content="<?= htmlspecialchars($landingRequestId, ENT_QUOTES, 'UTF-8') ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Первая помощь: практический курс для каждого</title>
@@ -537,7 +537,7 @@ if (!headers_sent()) {
                     <h2 class="section-title">Записаться на курс</h2>
                     <p class="registration-recap">Практика на манекенах и в парах · До 14 человек в группе · Сертификат и памятка после курса</p>
                     <p class="section-lead">
-                        Заполните 4 поля — мы свяжемся с вами, подтвердим место и ответим на вопросы.
+                        Укажите имя, телефон, e-mail и цель обучения — мы свяжемся с вами, подтвердим место и ответим на вопросы.
                     </p>
                     <form class="form-grid" id="registration-form" action="api/submit.php" method="post">
                         <label>
@@ -548,10 +548,27 @@ if (!headers_sent()) {
                             Телефон
                             <input type="tel" name="phone" required autocomplete="tel" placeholder="+7 999 123-45-67">
                         </label>
-                        <label>
+                        <fieldset class="contact-components-ui" disabled>
+                            <legend>E-mail</legend>
+                            <label for="contact-mode">Домен или полный адрес</label>
+                            <select id="contact-mode" name="email_mode_ui" required>
+                                <option value="">Выберите вариант</option>
+                                <option value="gmail.com">@gmail.com</option>
+                                <option value="yandex.ru">@yandex.ru</option>
+                                <option value="mail.ru">@mail.ru</option>
+                                <option value="custom">Другой домен</option>
+                                <option value="full">Ввести полный адрес одной строкой</option>
+                            </select>
+                            <label class="component-custom" hidden>Ваш домен<input type="text" name="email_custom_ui" disabled placeholder="Домен после @"></label>
+                            <label class="component-part">Часть адреса до @<input type="text" name="email_local_ui" autocomplete="off" autocapitalize="none" spellcheck="false"></label>
+                            <label class="component-full" hidden>Полный e-mail<input type="email" name="email_full_ui" autocomplete="email" disabled></label>
+                            <button type="button" class="component-use-full">Использовать введённое как полный адрес</button>
+                            <p class="component-preview" data-tracker-mask aria-live="polite">Домен не выбран. Можно ввести полный адрес одной строкой.</p>
+                        </fieldset>
+                        <noscript><label>
                             E-mail
                             <input type="email" name="email" required autocomplete="email" placeholder="you@example.ru">
-                        </label>
+                        </label></noscript>
                         <label>
                             Для чего вам курс?
                             <textarea name="purpose" required rows="2" placeholder="Например: для семьи, работы или путешествий"></textarea>
