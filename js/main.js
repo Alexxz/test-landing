@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'rule_control_strict_baseline';
+    const variant = 'A3_native_server_response_flow_pilot10';
     // API_ASSET_OBSERVER_BEGIN
-    const landingAssetBuild = 'bncafcammfpejbggcfcfflkjb';
+    const landingAssetBuild = 'bkckiigfpgdgmbpfonfibjobp';
     /** Embed this reviewed helper into main.js; call after track and the compiler-injected const landingAssetBuild are defined.
      * Compiler contract: <meta name="landing-html-build" content="baaaaaaaaaaaaaaaaaaaaaaaa">;
      * CSS :root { --landing-css-build: "baaaaaaaaaaaaaaaaaaaaaaaa"; }.
@@ -278,51 +278,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    form.addEventListener('submit', async (event) => {
-        event.preventDefault();
-
-        track('registration_submit');
-        const submitButton = form.querySelector('button[type="submit"]');
-        const formData = new FormData(form);
-
-        if (submitButton instanceof HTMLButtonElement) {
-            submitButton.disabled = true;
-        }
-
-        if (message) {
-            message.textContent = '';
-            message.className = 'form-message';
-        }
-
-        try {
-            const response = await fetch(form.action, {
-                method: 'POST',
-                body: formData,
-            });
-
-            const data = await response.json();
-
-            if (!response.ok || !data.ok) {
-                throw new Error(data.error || 'Не удалось отправить заявку.');
-            }
-
-            if (message) {
-                message.textContent = 'Заявка успешно отправлена. Мы свяжемся с вами в ближайшее время.';
-                message.className = 'form-message success';
-            }
-
-            track('conversion_success', { source: 'registration' });
-            form.reset();
-        } catch (error) {
-            track('registration_error', { source: 'submit' });
-            if (message) {
-                message.textContent = error instanceof Error ? error.message : 'Не удалось отправить заявку.';
-                message.className = 'form-message error';
-            }
-        } finally {
-            if (submitButton instanceof HTMLButtonElement) {
-                submitButton.disabled = false;
-            }
-        }
+    form.addEventListener('submit', () => {
+        track('registration_submit', {source: 'native'});
     });
 });
