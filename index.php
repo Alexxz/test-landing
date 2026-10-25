@@ -197,7 +197,7 @@ if (!headers_sent()) {
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="landing-html-build" content="bncafcammfpejbggcfcfflkjb">
+    <meta name="landing-html-build" content="bdbjhdkdclkdjfalehjmkgdla">
     <meta name="landing-request-id" content="<?= htmlspecialchars($landingRequestId, ENT_QUOTES, 'UTF-8') ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Первая помощь: практический курс для каждого</title>
@@ -570,7 +570,6 @@ if (!headers_sent()) {
         </div>
     </footer>
 
-    <button type="button" class="btn btn-register floating-register" data-track-label="floating_cta" hidden>Записаться на курс</button>
 
     <script defer src="https://vps.alexxz.ru/tracker/static/tracker.js?v=20261025-referrer-empty-5"
             data-site-key="fsGaFTXh1jtgWDGeo1l73o_tuSgjK63jy8hpt2rS5YU"
