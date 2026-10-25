@@ -197,7 +197,7 @@ if (!headers_sent()) {
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="landing-html-build" content="bpimhjpiecimhakeakjaikdhd">
+    <meta name="landing-html-build" content="bipphpmljclklfjhjfdcjnihl">
     <meta name="landing-request-id" content="<?= htmlspecialchars($landingRequestId, ENT_QUOTES, 'UTF-8') ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Первая помощь: практический курс для каждого</title>
@@ -244,43 +244,34 @@ if (!headers_sent()) {
     </header>
 
     <main>
-        <section class="section">
+        <section class="section registration-section" id="registration">
             <div class="container">
-                <h2 class="section-title">Инструкторы</h2>
-                <p class="section-lead">
-                    Курс ведут специалисты с многолетним опытом работы в экстренной медицине и обучения.
-                </p>
-                <div class="instructors-grid">
-                    <article class="instructor-card">
-                        <div class="instructor-photo">АК</div>
-                        <h3>Алексей Кравцов</h3>
-                        <p class="instructor-title">Врач скорой медицинской помощи, стаж 14 лет</p>
-                        <ul class="credentials">
-                            <li>Более 8 000 выездов бригады скорой помощи</li>
-                            <li>Сертификат European Resuscitation Council BLS</li>
-                            <li>Автор программы «Первая помощь дома и на работе»</li>
-                        </ul>
-                    </article>
-                    <article class="instructor-card">
-                        <div class="instructor-photo">МС</div>
-                        <h3>Марина Соколова</h3>
-                        <p class="instructor-title">Инструктор РКК, фельдшер, стаж 11 лет</p>
-                        <ul class="credentials">
-                            <li>Обучила более 1 200 слушателей базовой первой помощи</li>
-                            <li>Член региональной команды инструкторов РКК</li>
-                            <li>Специализация: помощь детям и подросткам</li>
-                        </ul>
-                    </article>
-                    <article class="instructor-card">
-                        <div class="instructor-photo">ДН</div>
-                        <h3>Дмитрий Новиков</h3>
-                        <p class="instructor-title">Парамедик, наставник учебного центра</p>
-                        <ul class="credentials">
-                            <li>Сертификат ERC First Aid Provider</li>
-                            <li>Опыт работы в корпоративных программах безопасности</li>
-                            <li>Ведёт практические блоки по кровотечениям и травмам</li>
-                        </ul>
-                    </article>
+                <div class="registration-panel">
+                    <h2 class="section-title">Записаться на курс</h2>
+                    <p class="registration-recap">Практика на манекенах и в парах · До 14 человек в группе · Сертификат и памятка после курса</p>
+                    <p class="section-lead">
+                        Заполните 4 поля — мы свяжемся с вами, подтвердим место и ответим на вопросы.
+                    </p>
+                    <form class="form-grid" id="registration-form" action="api/submit.php" method="post">
+                        <label>
+                            Имя
+                            <input type="text" name="name" required autocomplete="name" placeholder="Как к вам обращаться">
+                        </label>
+                        <label>
+                            Телефон
+                            <input type="tel" name="phone" required autocomplete="tel" placeholder="+7 999 123-45-67">
+                        </label>
+                        <label>
+                            E-mail
+                            <input type="email" name="email" required autocomplete="email" placeholder="you@example.ru">
+                        </label>
+                        <label>
+                            Для чего вам курс?
+                            <textarea name="purpose" required rows="2" placeholder="Например: для семьи, работы или путешествий"></textarea>
+                        </label>
+                        <button type="submit" class="btn">Отправить заявку</button>
+                    </form>
+                    <p class="form-message" id="form-message" aria-live="polite"></p>
                 </div>
             </div>
         </section>
@@ -490,6 +481,47 @@ if (!headers_sent()) {
             <img src="images/cpr-training.jpg" alt="Практика сердечно-легочной реанимации на манекене">
         </section>
 
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Инструкторы</h2>
+                <p class="section-lead">
+                    Курс ведут специалисты с многолетним опытом работы в экстренной медицине и обучения.
+                </p>
+                <div class="instructors-grid">
+                    <article class="instructor-card">
+                        <div class="instructor-photo">АК</div>
+                        <h3>Алексей Кравцов</h3>
+                        <p class="instructor-title">Врач скорой медицинской помощи, стаж 14 лет</p>
+                        <ul class="credentials">
+                            <li>Более 8 000 выездов бригады скорой помощи</li>
+                            <li>Сертификат European Resuscitation Council BLS</li>
+                            <li>Автор программы «Первая помощь дома и на работе»</li>
+                        </ul>
+                    </article>
+                    <article class="instructor-card">
+                        <div class="instructor-photo">МС</div>
+                        <h3>Марина Соколова</h3>
+                        <p class="instructor-title">Инструктор РКК, фельдшер, стаж 11 лет</p>
+                        <ul class="credentials">
+                            <li>Обучила более 1 200 слушателей базовой первой помощи</li>
+                            <li>Член региональной команды инструкторов РКК</li>
+                            <li>Специализация: помощь детям и подросткам</li>
+                        </ul>
+                    </article>
+                    <article class="instructor-card">
+                        <div class="instructor-photo">ДН</div>
+                        <h3>Дмитрий Новиков</h3>
+                        <p class="instructor-title">Парамедик, наставник учебного центра</p>
+                        <ul class="credentials">
+                            <li>Сертификат ERC First Aid Provider</li>
+                            <li>Опыт работы в корпоративных программах безопасности</li>
+                            <li>Ведёт практические блоки по кровотечениям и травмам</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
         <section class="section pricing-section">
             <div class="container">
                 <h2 class="section-title">Тарифы</h2>
@@ -531,37 +563,6 @@ if (!headers_sent()) {
             </div>
         </section>
 
-        <section class="section registration-section" id="registration">
-            <div class="container">
-                <div class="registration-panel">
-                    <h2 class="section-title">Записаться на курс</h2>
-                    <p class="registration-recap">Практика на манекенах и в парах · До 14 человек в группе · Сертификат и памятка после курса</p>
-                    <p class="section-lead">
-                        Заполните 4 поля — мы свяжемся с вами, подтвердим место и ответим на вопросы.
-                    </p>
-                    <form class="form-grid" id="registration-form" action="api/submit.php" method="post">
-                        <label>
-                            Имя
-                            <input type="text" name="name" required autocomplete="name" placeholder="Как к вам обращаться">
-                        </label>
-                        <label>
-                            Телефон
-                            <input type="tel" name="phone" required autocomplete="tel" placeholder="+7 999 123-45-67">
-                        </label>
-                        <label>
-                            E-mail
-                            <input type="email" name="email" required autocomplete="email" placeholder="you@example.ru">
-                        </label>
-                        <label>
-                            Для чего вам курс?
-                            <textarea name="purpose" required rows="2" placeholder="Например: для семьи, работы или путешествий"></textarea>
-                        </label>
-                        <button type="submit" class="btn">Отправить заявку</button>
-                    </form>
-                    <p class="form-message" id="form-message" aria-live="polite"></p>
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer class="site-footer">
