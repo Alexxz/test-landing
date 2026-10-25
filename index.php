@@ -280,10 +280,6 @@ if (!headers_sent()) {
                     действовать, когда рядом нет медикаментов и оборудования. Каждый модуль включает
                     теорию, демонстрацию инструктора и практику участников.
                 </p>
-                <p class="program-download">
-                    <a href="documents/course-agenda.pdf" download="programma-kursa-15-dekabrya-2026.pdf" data-track-label="program_agenda_download">Скачать программу дня (PDF, 1 страница)</a><br>
-                    <small>Сохраните расписание, чтобы спланировать участие. Запись — через форму на сайте.</small>
-                </p>
                 <div class="program-list">
                     <article class="program-module">
                         <h3>10:00 – 11:00 · Оценка обстановки и безопасность</h3>

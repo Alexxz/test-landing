@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'e40_portable_program_agenda';
+    const variant = 'e41_compact_hero';
     const pendingEvents = [];
     let exposed = false;
     const track = (name, properties = {}) => {
@@ -100,10 +100,6 @@ document.addEventListener('DOMContentLoaded', () => {
     flushTracking();
     const trackingTimer = setInterval(flushTracking, 250);
     window.addEventListener('pagehide', () => clearInterval(trackingTimer), { once: true });
-
-    document.querySelector('[data-track-label="program_agenda_download"]')?.addEventListener('click', (event) => {
-        if (event.isTrusted) track('program_agenda_download_attempt', {source: 'program_agenda_download', step: 'native_link'});
-    });
 
     // Observe copy intent without reading clipboard data or selected text.
     document.addEventListener('copy', (event) => {
