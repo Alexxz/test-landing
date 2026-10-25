@@ -1,105 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'e48_literal_program_search';
+    const variant = 'e49_voluntary_fit_checklist';
     const pendingEvents = [];
     let exposed = false;
     const track = (name, properties = {}) => {
         pendingEvents.push({ name, properties: { variant, ...properties } });
         flushTracking();
     };
-    // Optional literal retrieval: never filters modules or writes registration values.
-    const programSearch = document.getElementById('program-search-input');
-    if (programSearch) {
-        const root = document.querySelector('.program-list');
-        const status = document.getElementById('program-search-status');
-        const navigation = document.getElementById('program-search-navigation');
-        let marks = [];
-        let selected = -1;
-        let composing = false;
-        let inputTracked = false;
-        const fold = value => value.toLocaleLowerCase('ru-RU');
-        const bucket = length => length <= 3 ? 'short' : length <= 12 ? 'medium' : 'long';
-        const clearMarks = () => {
-            root.querySelectorAll('mark.program-search-match').forEach(mark => {
-                mark.replaceWith(document.createTextNode(mark.textContent));
-            });
-            root.normalize();
-            marks = [];
-            selected = -1;
-        };
-        const update = () => {
-            clearMarks();
-            const query = programSearch.value.slice(0, 128).trim();
-            if (query) {
-                const needle = fold(query);
-                const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
-                    acceptNode: node => node.parentElement?.closest('.program-module h3, .program-module p')
-                        ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT
-                });
-                const nodes = [];
-                while (walker.nextNode()) nodes.push(walker.currentNode);
-                for (const node of nodes) {
-                    const text = node.nodeValue;
-                    const haystack = fold(text);
-                    let start = 0;
-                    let found = haystack.indexOf(needle);
-                    if (found < 0) continue;
-                    const fragment = document.createDocumentFragment();
-                    while (found >= 0) {
-                        fragment.append(document.createTextNode(text.slice(start, found)));
-                        const mark = document.createElement('mark');
-                        mark.className = 'program-search-match';
-                        mark.textContent = text.slice(found, found + query.length);
-                        fragment.append(mark);
-                        marks.push(mark);
-                        start = found + query.length;
-                        found = haystack.indexOf(needle, start);
-                    }
-                    fragment.append(document.createTextNode(text.slice(start)));
-                    node.replaceWith(fragment);
-                }
-            }
-            navigation.hidden = !marks.length;
-            status.textContent = !query ? 'Все разделы программы показаны полностью.'
-                : marks.length ? `Совпадений: ${marks.length}. Все разделы показаны полностью.`
-                : 'Совпадений нет. Все разделы программы показаны полностью.';
-        };
-        const maybeTrackInput = event => {
-            if (event.isTrusted && !inputTracked && programSearch.value.trim()) {
-                track('program_search', {source: 'program_search', step: 'input', campaign: bucket(programSearch.value.trim().length)});
-                inputTracked = true;
-            }
-        };
-        programSearch.addEventListener('compositionstart', () => { composing = true; });
-        programSearch.addEventListener('compositionend', event => {
-            composing = false;
-            update();
-            maybeTrackInput(event);
-        });
-        programSearch.addEventListener('input', event => {
-            if (composing || event.isComposing) return;
-            update();
-            maybeTrackInput(event);
-        });
-        programSearch.addEventListener('keydown', event => {
-            if (event.key === 'Enter') event.preventDefault();
-        });
-        document.getElementById('program-search-clear').addEventListener('click', event => {
-            const hadQuery = Boolean(programSearch.value);
-            programSearch.value = '';
-            update();
-            programSearch.focus({preventScroll: true});
-            if (event.isTrusted && hadQuery) track('program_search', {source: 'program_search', step: 'clear'});
-        });
-        const navigate = direction => {
-            if (!marks.length) return;
-            if (selected >= 0) marks[selected].classList.remove('program-search-current');
-            selected = (selected + direction + marks.length) % marks.length;
-            marks[selected].classList.add('program-search-current');
-            marks[selected].scrollIntoView({block: 'center', behavior: 'instant'});
-        };
-        document.getElementById('program-search-next').addEventListener('click', () => navigate(1));
-        document.getElementById('program-search-previous').addEventListener('click', () => navigate(-1));
-    }
     function flushTracking() {
         if (!window.sessionTracker) return;
         if (!exposed) {

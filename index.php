@@ -268,6 +268,22 @@ if (!headers_sent()) {
                         <p>До 14 человек в группе, чтобы каждый успел отработать все ключевые навыки несколько раз.</p>
                     </article>
                 </div>
+                <fieldset class="voluntary-fit-checklist">
+                    <legend>Сверьте планы перед заявкой</legend>
+                    <p class="fit-checklist-note">Необязательная памятка: отмечать пункты не требуется для отправки заявки. Отметки не подтверждают запись на курс.</p>
+                    <label for="fit-check-date">
+                        <input type="checkbox" id="fit-check-date">
+                        <span>Я проверил(а) дату и время: 15 декабря 2026, 10:00–18:00, с перерывом на обед.</span>
+                    </label>
+                    <label for="fit-check-place">
+                        <input type="checkbox" id="fit-check-place">
+                        <span>Я учитываю, что занятие проходит очно в Москве.</span>
+                    </label>
+                    <label for="fit-check-scope">
+                        <input type="checkbox" id="fit-check-scope">
+                        <span>Я ознакомился(ась), что в программе указана сердечно-лёгочная реанимация для взрослых.</span>
+                    </label>
+                </fieldset>
             </div>
         </section>
 
@@ -280,18 +296,6 @@ if (!headers_sent()) {
                     действовать, когда рядом нет медикаментов и оборудования. Каждый модуль включает
                     теорию, демонстрацию инструктора и практику участников.
                 </p>
-                <div class="program-search" role="search" aria-label="Поиск по программе">
-                    <label for="program-search-input">Найти слово в программе</label>
-                    <div class="program-search-controls">
-                        <input id="program-search-input" type="search" maxlength="128" placeholder="Например: кровотечения" autocomplete="off">
-                        <button type="button" id="program-search-clear">Очистить</button>
-                    </div>
-                    <p id="program-search-status" role="status" aria-live="polite">Все разделы программы показаны полностью.</p>
-                    <div id="program-search-navigation" hidden>
-                        <button type="button" id="program-search-previous">Предыдущее совпадение</button>
-                        <button type="button" id="program-search-next">Следующее совпадение</button>
-                    </div>
-                </div>
                 <div class="program-list">
                     <article class="program-module">
                         <h3>10:00 – 11:00 · Оценка обстановки и безопасность</h3>
