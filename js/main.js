@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const variant = 'e26_reading_measure';
+    const variant = 'e39_primary_offer_disclosure';
     const pendingEvents = [];
     let exposed = false;
     const track = (name, properties = {}) => {
@@ -131,6 +131,29 @@ document.addEventListener('DOMContentLoaded', () => {
         }, { threshold: [0, 0.25] });
         legalObserver.observe(legalSection);
     }
+
+    // Availability/visibility telemetry for the primary-offer policy, never conversion.
+    (() => {
+        const options = document.querySelector('.pricing-secondary-options');
+        if (!options) return;
+        const observeOnce = (element, name, source, threshold) => {
+            if (!element || !('IntersectionObserver' in window)) return;
+            const observer = new IntersectionObserver((entries) => {
+                const visible = typeof element.checkVisibility === 'function'
+                    ? element.checkVisibility() : !element.closest('details:not([open])');
+                if (visible && entries.some(entry => entry.isIntersecting && entry.intersectionRatio >= threshold)) {
+                    track(name, {source, step: 'visible'});
+                    observer.disconnect();
+                }
+            }, {threshold: [threshold]});
+            observer.observe(element);
+        };
+        observeOnce(document.querySelector('.pricing-primary-offer .pricing-card'), 'pricing_primary_offer_view', 'base', .25);
+        observeOnce(options.querySelector('summary'), 'pricing_options_summary_view', 'options', .5);
+        options.addEventListener('toggle', () => {
+            track('pricing_options_state', {source: 'options', step: options.open ? 'open' : 'closed'});
+        });
+    })();
 
     const registrationSection = document.getElementById('registration');
     const form = document.getElementById('registration-form');

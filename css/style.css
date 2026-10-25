@@ -496,3 +496,28 @@ img {
         max-width: none;
     }
 }
+
+/* Candidate: one initially visible full-course offer, with native secondary disclosure. */
+.pricing-primary-offer {
+    max-width: 560px;
+    margin-inline: auto;
+    grid-template-columns: minmax(0, 1fr);
+}
+.pricing-secondary-options { margin-top: 24px; }
+.pricing-secondary-options > summary {
+    cursor: pointer;
+    padding: 16px;
+    border: 1px solid #777;
+    border-radius: 12px;
+    font-weight: 600;
+    color: var(--heading);
+    background: #fff;
+}
+.pricing-secondary-options > summary:focus-visible {
+    outline: 3px solid #315f83;
+    outline-offset: 3px;
+}
+.pricing-secondary-options[open] > summary { margin-bottom: 24px; }
+.pricing-secondary-options .pricing-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+}

@@ -495,7 +495,7 @@ if (!headers_sent()) {
                 <p class="section-lead">
                     Выберите формат участия. Во все тарифы входят материалы, сертификат и доступ к памятке после курса.
                 </p>
-                <div class="pricing-grid">
+                <div class="pricing-grid pricing-primary-offer">
                     <article class="pricing-card">
                         <h3>Базовый</h3>
                         <div class="price">4 900 ₽</div>
@@ -506,6 +506,10 @@ if (!headers_sent()) {
                         </ul>
                         <button type="button" class="btn btn-register">Записаться</button>
                     </article>
+                </div>
+                <details class="pricing-secondary-options">
+                    <summary>Расширенный и корпоративный варианты</summary>
+                    <div class="pricing-grid">
                     <article class="pricing-card featured">
                         <h3>Расширенный</h3>
                         <div class="price">7 900 ₽</div>
@@ -526,7 +530,8 @@ if (!headers_sent()) {
                         </ul>
                         <button type="button" class="btn btn-register">Записаться</button>
                     </article>
-                </div>
+                    </div>
+                </details>
             </div>
         </section>
 
